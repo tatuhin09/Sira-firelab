@@ -52,6 +52,6 @@ The workflow supports metadata discovery through Crossref, OpenAlex, Semantic Sc
 
 ## Provenance, use, and licensing boundaries
 
-The team reports that local-event teachers/organizers supplied the PSI-69 FLEX Version 5 and PSI-25 BASS-II Version 4 packages and instructed the team to use them for local judging. Underlying scientific records are attributed to NASA PSI. NASA datasets and third-party materials retain their applicable terms. Apache-2.0 applies only to original FireLab software.
+The bundled PSI-69 FLEX Version 5 and PSI-25 BASS-II Study Version 4 records are attributed to their NASA Physical Sciences Informatics investigation records and DOIs listed above. NASA datasets and third-party materials retain their applicable terms. Apache-2.0 applies only to original FireLab software.
 
 List all data, code, text, images, video, and other resources actually used in the submission, including open-source and freely available materials. Do not list a resource as used if it was merely reviewed and not incorporated.
