@@ -26,7 +26,12 @@
 - [x] Public Ask SIRA runtime accurately described as model-free with deterministic registered analyses; generative explanations are disabled.
 - [x] NASA experimental data and deterministic numerical results identified as not AI-generated.
 - [ ] Confirm that the disclosure matches every contributor's actual tool use.
-- [ ] Check any separately created demo video, slides, narration, music, and other media; apply the GO Team's AI-generated media watermark/metadata rules where applicable.
+- [x] Demo-video production method disclosed: selected AI-generated visuals, NASA footage, real application screen recordings, and human-recorded narration by Sadia.
+- [ ] Add a clearly visible `AI-GENERATED` watermark throughout every AI-generated visual/video segment before publishing.
+- [ ] Confirm AI-generated visuals do not contain, imitate, or alter NASA branding, logos, flags, or mission identifiers.
+- [ ] Record exact NASA video clip titles, official URLs, and source credits in video end credits/description and submission references.
+- [ ] Check NASA source clips for embedded third-party copyrighted footage/music and obtain any required permissions.
+- [x] Narration is recorded by Sadia; no AI-generated voice is used.
 
 ## Rights and licensing
 
