@@ -66,9 +66,9 @@ Include only resources actually used in project research, implementation, or pre
 
 ## AI/SI tools disclosure
 
-OpenAI ChatGPT and Anthropic Claude assisted software development, including planning, architecture discussions, code drafting/refinement, debugging, test design/review, verification support, and documentation. AI-assisted code and suggestions were reviewed and tested. NASA experimental data and deterministic numerical results were not AI-generated. Parsing, registered calculations, cohort summaries, rankings, and PSI-25 evidence synthesis are deterministic. See docs/AI_USAGE.md.
+OpenAI ChatGPT, Anthropic Claude, and Google Gemini assisted the development of SIRA FireLab. Their roles included planning, architecture and task decomposition, implementation guidance, code drafting/refinement, debugging, test design/review, technical review, and documentation. AI-assisted code is included in the public repository and was reviewed and tested by the team. The deployed Ask SIRA runtime does not call these models: it is a model-free, server-side evidence assistant using registered deterministic analyses. NASA experimental data were not AI-generated or altered; numeric results and PSI-25 evidence-synthesis artifacts are deterministic (`llm_used: false`). Exact model-version identifiers were not consistently recorded. See [docs/AI_USAGE.md](docs/AI_USAGE.md); add any other tools used by a contributor before final submission.
 
-Before submitting, confirm this disclosure with every team contributor and add any other AI tools actually used by any contributor. Do not list tools that were not used.
+Before submitting, confirm this disclosure with every team contributor. Add any other AI/SI tools, AI-generated media, or externally created assets actually used by any contributor. Do not list tools that were not used. Follow the GO Team's watermark and metadata disclosure requirements for any AI-generated images, video, or audio.
 
 ## NASA independence statement
 
