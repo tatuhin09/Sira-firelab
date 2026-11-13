@@ -1,0 +1,61 @@
+{
+  "analysis_type": "paired_descriptive_concentration_change",
+  "builder": {
+    "path": "tools/firelab/psi25_analysis.py",
+    "sha256": "4cf89727129257f031e0b4ec00f0e183f0942b5317cb5e20485c5a02709f76a9"
+  },
+  "dataset": "NASA PSI-25 BASS-II",
+  "derived_output": {
+    "bytes": 473815,
+    "path": "paired_measurement_analysis.json",
+    "sha256": "a0562fe7a587e4f63cbb09fff226e5e9bfc5d7ee4bc1cd9aeee03085cf504e4b"
+  },
+  "deterministic_build": true,
+  "independent_sample_inference": false,
+  "o2_calibration_caveat_included": true,
+  "output_policy": "create_new_directory_refuse_overwrite",
+  "pair_counts": {
+    "co": {
+      "eligible_pairs": 106,
+      "excluded_pairs": 23,
+      "records": 129
+    },
+    "co2": {
+      "eligible_pairs": 121,
+      "excluded_pairs": 8,
+      "records": 129
+    },
+    "o2": {
+      "eligible_pairs": 127,
+      "excluded_pairs": 2,
+      "records": 129
+    }
+  },
+  "record_count": 129,
+  "sample_reuse_summary": {
+    "distinct_nonblank_exact_raw_sample_ids": 107,
+    "identifier_matching": "exact_raw_case_sensitive",
+    "records_flagged_reused_by_canonicalizer": 42,
+    "records_in_reused_exact_raw_id_groups": 42,
+    "reused_exact_raw_id_groups": 20
+  },
+  "schema": "sira.psi25.paired_analysis_manifest.v1",
+  "source_artifacts": {
+    "canonical_manifest": {
+      "bytes": 1916,
+      "path": "firelab_site/data/derived/psi25_bass_ii_v4/canonical_manifest.json",
+      "sha256": "6b0c2dd6d2f8db7453617d956f897646cfedee7f8a684c6a41edf79d4285d8f3"
+    },
+    "canonical_records": {
+      "bytes": 550498,
+      "path": "firelab_site/data/derived/psi25_bass_ii_v4/canonical_records.json",
+      "sha256": "568da88a10a8482a023e2c3016df4a4cd2c5903c110bc728d0784aa779639a6f"
+    },
+    "quality_report": {
+      "bytes": 4745,
+      "path": "firelab_site/data/derived/psi25_bass_ii_v4/quality_report.json",
+      "sha256": "8fb15d6f22baa756a07e173b88ef2f8e4fbb5e87a3bd06c37469cae5bbc1f9c7"
+    }
+  },
+  "study_version": 4
+}

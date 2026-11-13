@@ -1,0 +1,4742 @@
+{
+  "analysis_type": "descriptive_cohort_findings_and_rankings",
+  "causal_claims_produced": false,
+  "cross_metric_ranking": false,
+  "dataset": "NASA PSI-25 BASS-II",
+  "independent_sample_inference": false,
+  "inferential_statistics_produced": false,
+  "measurement_provenance_caveats": {
+    "o2": {
+      "analysis_handling": "Use canonical exported calibrated values as recorded; no independent recalibration or new offset correction is performed.",
+      "interpretation_limit": "O2 differences remain subject to the source-stated sensor/calibration limitation; residual measurement uncertainty is not quantified by this analysis.",
+      "source_document": "PSI-25_Science Documents_BASS-II_ReadMe.docx",
+      "source_note": "The BASS-II ReadMe states that the O2 sensor was out of calibration and that an MCA ISS reading was used for daily constant-offset correction.",
+      "source_sha256": "69f32647792f54ab2a561e3cdafc6c87d854564fe487aed2b09265286bd84e1d"
+    }
+  },
+  "metrics": {
+    "co": {
+      "cohort_count": 18,
+      "extremes": {
+        "highest_mean": {
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 1,
+          "eligible_pairs": 5,
+          "mean": "395",
+          "mean_median_sign_relation": "same_sign",
+          "median": "428",
+          "rank": 1,
+          "summary_status": "descriptive_only"
+        },
+        "lowest_mean": {
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Ferkul"
+          },
+          "display_order": 15,
+          "eligible_pairs": 3,
+          "mean": "4.333333333333333333333333333",
+          "mean_median_sign_relation": "same_sign",
+          "median": "2",
+          "rank": 15,
+          "summary_status": "small_n_descriptive_only"
+        },
+        "most_negative_mean": null,
+        "strongest_positive_mean": {
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 1,
+          "eligible_pairs": 5,
+          "mean": "395",
+          "mean_median_sign_relation": "same_sign",
+          "median": "428",
+          "rank": 1,
+          "summary_status": "descriptive_only"
+        }
+      },
+      "interpretation_limit": "Descriptive cohort ordering only. No causal interpretation, inferential statistics, or independent physical-sample claim is supported.",
+      "label": "Carbon monoxide concentration change",
+      "metric": "co",
+      "not_rankable_cohort_count": 3,
+      "not_rankable_cohorts": [
+        {
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 0,
+          "eligible_record_evidence": [],
+          "excluded_pairs": 2,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Bhattacharjee::B21",
+              "sample_id_raw": "174m",
+              "test_id": "B21"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Bhattacharjee::B22",
+              "sample_id_raw": "176m",
+              "test_id": "B22"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "not_rankable_reason": "no_eligible_pairs",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "no_eligible_pairs"
+        },
+        {
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "unclassified",
+            "pi": "Ferkul"
+          },
+          "distinct_exact_sample_ids_in_cohort": 1,
+          "eligible_pairs": 0,
+          "eligible_record_evidence": [],
+          "excluded_pairs": 1,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Ferkul::F3",
+              "sample_id_raw": "229m",
+              "test_id": "F3"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "not_rankable_reason": "no_eligible_pairs",
+          "records_in_cohort": 1,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "no_eligible_pairs"
+        },
+        {
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 0,
+          "eligible_record_evidence": [],
+          "excluded_pairs": 6,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "T'ien::T25",
+              "sample_id_raw": "138m",
+              "test_id": "T25"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "T'ien::T26",
+              "sample_id_raw": "137m",
+              "test_id": "T26"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "T'ien::T27",
+              "sample_id_raw": "146m",
+              "test_id": "T27"
+            },
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none",
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "T'ien::T28a",
+              "sample_id_raw": "144m",
+              "test_id": "T28a"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_parsed_decimal_missing_or_invalid",
+                "initial_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "T'ien::T28b",
+              "sample_id_raw": "144m",
+              "test_id": "T28b"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "T'ien::T29",
+              "sample_id_raw": "145m",
+              "test_id": "T29"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "not_rankable_reason": "no_eligible_pairs",
+          "records_in_cohort": 6,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "no_eligible_pairs"
+        }
+      ],
+      "pair_counts": {
+        "eligible_pairs": 106,
+        "excluded_pairs": 23,
+        "records": 129
+      },
+      "rankable_cohort_count": 15,
+      "ranked_cohorts": [
+        {
+          "absolute_mean_median_gap": "33",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 1,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 5,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "428",
+              "record_key": "Miller::M12",
+              "sample_id_raw": "165m",
+              "sample_id_reused": false,
+              "test_id": "M12"
+            },
+            {
+              "delta_final_minus_initial": "487",
+              "record_key": "Miller::M13",
+              "sample_id_raw": "169m",
+              "sample_id_reused": false,
+              "test_id": "M13"
+            },
+            {
+              "delta_final_minus_initial": "157",
+              "record_key": "Miller::M20",
+              "sample_id_raw": "172m",
+              "sample_id_reused": false,
+              "test_id": "M20"
+            },
+            {
+              "delta_final_minus_initial": "559",
+              "record_key": "Miller::M4",
+              "sample_id_raw": "171m",
+              "sample_id_reused": false,
+              "test_id": "M4"
+            },
+            {
+              "delta_final_minus_initial": "344",
+              "record_key": "Miller::M6",
+              "sample_id_raw": "163m",
+              "sample_id_reused": false,
+              "test_id": "M6"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 1,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 5,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "559",
+            "mean": "395",
+            "median": "428",
+            "minimum": "157",
+            "n": 5
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 2,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "348",
+              "record_key": "Olson::O14",
+              "sample_id_raw": "183m",
+              "sample_id_reused": false,
+              "test_id": "O14"
+            },
+            {
+              "delta_final_minus_initial": "334",
+              "record_key": "Olson::O19",
+              "sample_id_raw": "213m",
+              "sample_id_reused": false,
+              "test_id": "O19"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 2,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "348",
+            "mean": "341",
+            "median": "341",
+            "minimum": "334",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Olson"
+          },
+          "display_order": 3,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "561",
+              "record_key": "Olson::O13a",
+              "sample_id_raw": "221m",
+              "sample_id_reused": true,
+              "test_id": "O13a"
+            },
+            {
+              "delta_final_minus_initial": "94",
+              "record_key": "Olson::O5b",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O5b"
+            }
+          ],
+          "excluded_pairs": 2,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:over_range_threshold_unspecified"
+              ],
+              "record_key": "Olson::O13b",
+              "sample_id_raw": "221m",
+              "test_id": "O13b"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Olson::O5a",
+              "sample_id_raw": "220m",
+              "test_id": "O5a"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 3,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 4,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "561",
+            "mean": "327.5",
+            "median": "327.5",
+            "minimum": "94",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 4,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 1,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "313",
+              "record_key": "Miller::M2",
+              "sample_id_raw": "224",
+              "sample_id_reused": false,
+              "test_id": "M2"
+            }
+          ],
+          "excluded_pairs": 1,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:right_censored"
+              ],
+              "record_key": "Miller::M5",
+              "sample_id_raw": "167",
+              "test_id": "M5"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 4,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "313",
+            "mean": "313",
+            "median": "313",
+            "minimum": "313",
+            "n": 1
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "3.1666666666666666666666667",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 5,
+          "distinct_exact_sample_ids_in_cohort": 13,
+          "eligible_pairs": 12,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "60",
+              "record_key": "Miller::M1",
+              "sample_id_raw": "222",
+              "sample_id_reused": false,
+              "test_id": "M1"
+            },
+            {
+              "delta_final_minus_initial": "531",
+              "record_key": "Miller::M11",
+              "sample_id_raw": "181m",
+              "sample_id_reused": false,
+              "test_id": "M11"
+            },
+            {
+              "delta_final_minus_initial": "198",
+              "record_key": "Miller::M14",
+              "sample_id_raw": "223",
+              "sample_id_reused": false,
+              "test_id": "M14"
+            },
+            {
+              "delta_final_minus_initial": "219",
+              "record_key": "Miller::M15",
+              "sample_id_raw": "225m",
+              "sample_id_reused": false,
+              "test_id": "M15"
+            },
+            {
+              "delta_final_minus_initial": "303",
+              "record_key": "Miller::M16",
+              "sample_id_raw": "164m",
+              "sample_id_reused": false,
+              "test_id": "M16"
+            },
+            {
+              "delta_final_minus_initial": "481",
+              "record_key": "Miller::M17",
+              "sample_id_raw": "166m",
+              "sample_id_reused": false,
+              "test_id": "M17"
+            },
+            {
+              "delta_final_minus_initial": "335",
+              "record_key": "Miller::M18",
+              "sample_id_raw": "168m",
+              "sample_id_reused": false,
+              "test_id": "M18"
+            },
+            {
+              "delta_final_minus_initial": "354",
+              "record_key": "Miller::M19",
+              "sample_id_raw": "170m",
+              "sample_id_reused": false,
+              "test_id": "M19"
+            },
+            {
+              "delta_final_minus_initial": "289",
+              "record_key": "Miller::M3",
+              "sample_id_raw": "226m",
+              "sample_id_reused": false,
+              "test_id": "M3"
+            },
+            {
+              "delta_final_minus_initial": "214",
+              "record_key": "Miller::M7",
+              "sample_id_raw": "177m",
+              "sample_id_reused": false,
+              "test_id": "M7"
+            },
+            {
+              "delta_final_minus_initial": "415",
+              "record_key": "Miller::M8",
+              "sample_id_raw": "178m",
+              "sample_id_reused": false,
+              "test_id": "M8"
+            },
+            {
+              "delta_final_minus_initial": "191",
+              "record_key": "Miller::M9",
+              "sample_id_raw": "179m",
+              "sample_id_reused": false,
+              "test_id": "M9"
+            }
+          ],
+          "excluded_pairs": 1,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Miller::M10",
+              "sample_id_raw": "180m",
+              "test_id": "M10"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 5,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 13,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "531",
+            "mean": "299.1666666666666666666666667",
+            "median": "296",
+            "minimum": "60",
+            "n": 12
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "22.6428571428571428571428571",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 6,
+          "distinct_exact_sample_ids_in_cohort": 15,
+          "eligible_pairs": 14,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "193",
+              "record_key": "Olson::O10",
+              "sample_id_raw": "210m",
+              "sample_id_reused": false,
+              "test_id": "O10"
+            },
+            {
+              "delta_final_minus_initial": "288",
+              "record_key": "Olson::O11",
+              "sample_id_raw": "184m",
+              "sample_id_reused": false,
+              "test_id": "O11"
+            },
+            {
+              "delta_final_minus_initial": "176",
+              "record_key": "Olson::O15a",
+              "sample_id_raw": "218m",
+              "sample_id_reused": true,
+              "test_id": "O15a"
+            },
+            {
+              "delta_final_minus_initial": "575",
+              "record_key": "Olson::O15b",
+              "sample_id_raw": "218m",
+              "sample_id_reused": true,
+              "test_id": "O15b"
+            },
+            {
+              "delta_final_minus_initial": "31",
+              "record_key": "Olson::O16",
+              "sample_id_raw": "219m",
+              "sample_id_reused": true,
+              "test_id": "O16"
+            },
+            {
+              "delta_final_minus_initial": "375",
+              "record_key": "Olson::O17",
+              "sample_id_raw": "211m",
+              "sample_id_reused": false,
+              "test_id": "O17"
+            },
+            {
+              "delta_final_minus_initial": "293",
+              "record_key": "Olson::O18",
+              "sample_id_raw": "212m",
+              "sample_id_reused": false,
+              "test_id": "O18"
+            },
+            {
+              "delta_final_minus_initial": "6",
+              "record_key": "Olson::O3a",
+              "sample_id_raw": "205M",
+              "sample_id_reused": true,
+              "test_id": "O3a"
+            },
+            {
+              "delta_final_minus_initial": "94",
+              "record_key": "Olson::O3b",
+              "sample_id_raw": "205M",
+              "sample_id_reused": true,
+              "test_id": "O3b"
+            },
+            {
+              "delta_final_minus_initial": "231",
+              "record_key": "Olson::O6",
+              "sample_id_raw": "206M",
+              "sample_id_reused": false,
+              "test_id": "O6"
+            },
+            {
+              "delta_final_minus_initial": "280",
+              "record_key": "Olson::O7",
+              "sample_id_raw": "214m",
+              "sample_id_reused": false,
+              "test_id": "O7"
+            },
+            {
+              "delta_final_minus_initial": "100",
+              "record_key": "Olson::O8a",
+              "sample_id_raw": "208m",
+              "sample_id_reused": true,
+              "test_id": "O8a"
+            },
+            {
+              "delta_final_minus_initial": "124",
+              "record_key": "Olson::O8b",
+              "sample_id_raw": "208m",
+              "sample_id_reused": true,
+              "test_id": "O8b"
+            },
+            {
+              "delta_final_minus_initial": "134",
+              "record_key": "Olson::O9",
+              "sample_id_raw": "209m",
+              "sample_id_reused": false,
+              "test_id": "O9"
+            }
+          ],
+          "excluded_pairs": 4,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Olson::O1",
+              "sample_id_raw": "207",
+              "test_id": "O1"
+            },
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:right_censored",
+                "initial_aggregation_eligible_false",
+                "initial_parsed_decimal_missing_or_invalid",
+                "initial_status_not_numeric_exact:right_censored"
+              ],
+              "record_key": "Olson::O12",
+              "sample_id_raw": "217m",
+              "test_id": "O12"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Olson::O2",
+              "sample_id_raw": "204",
+              "test_id": "O2"
+            },
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:right_censored"
+              ],
+              "record_key": "Olson::O4",
+              "sample_id_raw": "216m",
+              "test_id": "O4"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 6,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 18,
+          "records_marked_with_reused_sample_id": 8,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "575",
+            "mean": "207.1428571428571428571428571",
+            "median": "184.5",
+            "minimum": "6",
+            "n": 14
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 7,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "135",
+              "record_key": "Olson::O21",
+              "sample_id_raw": "219m",
+              "sample_id_reused": true,
+              "test_id": "O21"
+            },
+            {
+              "delta_final_minus_initial": "137",
+              "record_key": "Olson::O22",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O22"
+            }
+          ],
+          "excluded_pairs": 1,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Olson::O20",
+              "sample_id_raw": "204m",
+              "test_id": "O20"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 7,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "137",
+            "mean": "136",
+            "median": "136",
+            "minimum": "135",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "55.32",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Fernandez-Pello"
+          },
+          "display_order": 8,
+          "distinct_exact_sample_ids_in_cohort": 21,
+          "eligible_pairs": 25,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "13",
+              "record_key": "Fernandez-Pello::P1",
+              "sample_id_raw": "185M",
+              "sample_id_reused": false,
+              "test_id": "P1"
+            },
+            {
+              "delta_final_minus_initial": "42",
+              "record_key": "Fernandez-Pello::P10",
+              "sample_id_raw": "187m",
+              "sample_id_reused": false,
+              "test_id": "P10"
+            },
+            {
+              "delta_final_minus_initial": "55",
+              "record_key": "Fernandez-Pello::P12",
+              "sample_id_raw": "199m",
+              "sample_id_reused": false,
+              "test_id": "P12"
+            },
+            {
+              "delta_final_minus_initial": "412",
+              "record_key": "Fernandez-Pello::P13a",
+              "sample_id_raw": "203m",
+              "sample_id_reused": true,
+              "test_id": "P13a"
+            },
+            {
+              "delta_final_minus_initial": "67",
+              "record_key": "Fernandez-Pello::P13b",
+              "sample_id_raw": "203m",
+              "sample_id_reused": true,
+              "test_id": "P13b"
+            },
+            {
+              "delta_final_minus_initial": "87",
+              "record_key": "Fernandez-Pello::P14",
+              "sample_id_raw": "189M",
+              "sample_id_reused": false,
+              "test_id": "P14"
+            },
+            {
+              "delta_final_minus_initial": "18",
+              "record_key": "Fernandez-Pello::P15",
+              "sample_id_raw": "190M",
+              "sample_id_reused": false,
+              "test_id": "P15"
+            },
+            {
+              "delta_final_minus_initial": "56",
+              "record_key": "Fernandez-Pello::P16",
+              "sample_id_raw": "191m",
+              "sample_id_reused": false,
+              "test_id": "P16"
+            },
+            {
+              "delta_final_minus_initial": "11",
+              "record_key": "Fernandez-Pello::P17",
+              "sample_id_raw": "192m",
+              "sample_id_reused": false,
+              "test_id": "P17"
+            },
+            {
+              "delta_final_minus_initial": "25",
+              "record_key": "Fernandez-Pello::P18",
+              "sample_id_raw": "193m",
+              "sample_id_reused": false,
+              "test_id": "P18"
+            },
+            {
+              "delta_final_minus_initial": "40",
+              "record_key": "Fernandez-Pello::P19",
+              "sample_id_raw": "194m",
+              "sample_id_reused": false,
+              "test_id": "P19"
+            },
+            {
+              "delta_final_minus_initial": "12",
+              "record_key": "Fernandez-Pello::P2",
+              "sample_id_raw": "188M",
+              "sample_id_reused": false,
+              "test_id": "P2"
+            },
+            {
+              "delta_final_minus_initial": "76",
+              "record_key": "Fernandez-Pello::P20",
+              "sample_id_raw": "195m",
+              "sample_id_reused": false,
+              "test_id": "P20"
+            },
+            {
+              "delta_final_minus_initial": "8",
+              "record_key": "Fernandez-Pello::P21a",
+              "sample_id_raw": "196M",
+              "sample_id_reused": true,
+              "test_id": "P21a"
+            },
+            {
+              "delta_final_minus_initial": "4",
+              "record_key": "Fernandez-Pello::P21b",
+              "sample_id_raw": "196M",
+              "sample_id_reused": true,
+              "test_id": "P21b"
+            },
+            {
+              "delta_final_minus_initial": "81",
+              "record_key": "Fernandez-Pello::P23",
+              "sample_id_raw": "201m",
+              "sample_id_reused": false,
+              "test_id": "P23"
+            },
+            {
+              "delta_final_minus_initial": "234",
+              "record_key": "Fernandez-Pello::P24",
+              "sample_id_raw": "819L",
+              "sample_id_reused": false,
+              "test_id": "P24"
+            },
+            {
+              "delta_final_minus_initial": "162",
+              "record_key": "Fernandez-Pello::P25",
+              "sample_id_raw": "217m",
+              "sample_id_reused": true,
+              "test_id": "P25"
+            },
+            {
+              "delta_final_minus_initial": "31",
+              "record_key": "Fernandez-Pello::P3a",
+              "sample_id_raw": "215M",
+              "sample_id_reused": true,
+              "test_id": "P3a"
+            },
+            {
+              "delta_final_minus_initial": "46",
+              "record_key": "Fernandez-Pello::P3b",
+              "sample_id_raw": "215M",
+              "sample_id_reused": true,
+              "test_id": "P3b"
+            },
+            {
+              "delta_final_minus_initial": "429",
+              "record_key": "Fernandez-Pello::P4",
+              "sample_id_raw": "197m",
+              "sample_id_reused": true,
+              "test_id": "P4"
+            },
+            {
+              "delta_final_minus_initial": "525",
+              "record_key": "Fernandez-Pello::P5",
+              "sample_id_raw": "202m",
+              "sample_id_reused": true,
+              "test_id": "P5"
+            },
+            {
+              "delta_final_minus_initial": "64",
+              "record_key": "Fernandez-Pello::P6",
+              "sample_id_raw": "186m",
+              "sample_id_reused": false,
+              "test_id": "P6"
+            },
+            {
+              "delta_final_minus_initial": "25",
+              "record_key": "Fernandez-Pello::P8",
+              "sample_id_raw": "197m",
+              "sample_id_reused": true,
+              "test_id": "P8"
+            },
+            {
+              "delta_final_minus_initial": "10",
+              "record_key": "Fernandez-Pello::P9",
+              "sample_id_raw": "202m",
+              "sample_id_reused": true,
+              "test_id": "P9"
+            }
+          ],
+          "excluded_pairs": 2,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Fernandez-Pello::P22a",
+              "sample_id_raw": "200m",
+              "test_id": "P22a"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_parsed_decimal_missing_or_invalid",
+                "initial_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Fernandez-Pello::P22b",
+              "sample_id_raw": "200m",
+              "test_id": "P22b"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 8,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 27,
+          "records_marked_with_reused_sample_id": 13,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "525",
+            "mean": "101.32",
+            "median": "46",
+            "minimum": "4",
+            "n": 25
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "T'ien"
+          },
+          "display_order": 9,
+          "distinct_exact_sample_ids_in_cohort": 1,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "68",
+              "record_key": "T'ien::T3",
+              "sample_id_raw": "182m",
+              "sample_id_reused": true,
+              "test_id": "T3"
+            },
+            {
+              "delta_final_minus_initial": "91",
+              "record_key": "T'ien::T7",
+              "sample_id_raw": "182m",
+              "sample_id_reused": true,
+              "test_id": "T7"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 9,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "91",
+            "mean": "79.5",
+            "median": "79.5",
+            "minimum": "68",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "22.5",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 10,
+          "distinct_exact_sample_ids_in_cohort": 4,
+          "eligible_pairs": 4,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "22",
+              "record_key": "Bhattacharjee::B15",
+              "sample_id_raw": "149m",
+              "sample_id_reused": false,
+              "test_id": "B15"
+            },
+            {
+              "delta_final_minus_initial": "31",
+              "record_key": "Bhattacharjee::B18",
+              "sample_id_raw": "176m",
+              "sample_id_reused": true,
+              "test_id": "B18"
+            },
+            {
+              "delta_final_minus_initial": "12",
+              "record_key": "Bhattacharjee::B19",
+              "sample_id_raw": "151m",
+              "sample_id_reused": false,
+              "test_id": "B19"
+            },
+            {
+              "delta_final_minus_initial": "131",
+              "record_key": "Bhattacharjee::B8",
+              "sample_id_raw": "157m",
+              "sample_id_reused": false,
+              "test_id": "B8"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 10,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 4,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "131",
+            "mean": "49",
+            "median": "26.5",
+            "minimum": "12",
+            "n": 4
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "3.66666666666666666666666667",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 11,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "30",
+              "record_key": "T'ien::T15",
+              "sample_id_raw": "138",
+              "sample_id_reused": false,
+              "test_id": "T15"
+            },
+            {
+              "delta_final_minus_initial": "38",
+              "record_key": "T'ien::T17",
+              "sample_id_raw": "142m",
+              "sample_id_reused": false,
+              "test_id": "T17"
+            },
+            {
+              "delta_final_minus_initial": "11",
+              "record_key": "T'ien::T21",
+              "sample_id_raw": "145m",
+              "sample_id_reused": true,
+              "test_id": "T21"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 11,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "38",
+            "mean": "26.33333333333333333333333333",
+            "median": "30",
+            "minimum": "11",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "6.4",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 12,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 5,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "16",
+              "record_key": "Bhattacharjee::B12",
+              "sample_id_raw": "160",
+              "sample_id_reused": false,
+              "test_id": "B12"
+            },
+            {
+              "delta_final_minus_initial": "61",
+              "record_key": "Bhattacharjee::B13",
+              "sample_id_raw": "162m",
+              "sample_id_reused": false,
+              "test_id": "B13"
+            },
+            {
+              "delta_final_minus_initial": "7",
+              "record_key": "Bhattacharjee::B3",
+              "sample_id_raw": "148",
+              "sample_id_reused": false,
+              "test_id": "B3"
+            },
+            {
+              "delta_final_minus_initial": "12",
+              "record_key": "Bhattacharjee::B5",
+              "sample_id_raw": "156",
+              "sample_id_reused": false,
+              "test_id": "B5"
+            },
+            {
+              "delta_final_minus_initial": "16",
+              "record_key": "Bhattacharjee::B7",
+              "sample_id_raw": "161",
+              "sample_id_reused": false,
+              "test_id": "B7"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 12,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 5,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "61",
+            "mean": "22.4",
+            "median": "16",
+            "minimum": "7",
+            "n": 5
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "1.22222222222222222222222222",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 13,
+          "distinct_exact_sample_ids_in_cohort": 17,
+          "eligible_pairs": 18,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "40",
+              "record_key": "T'ien::T1",
+              "sample_id_raw": "128",
+              "sample_id_reused": false,
+              "test_id": "T1"
+            },
+            {
+              "delta_final_minus_initial": "5",
+              "record_key": "T'ien::T10",
+              "sample_id_raw": "134M",
+              "sample_id_reused": false,
+              "test_id": "T10"
+            },
+            {
+              "delta_final_minus_initial": "44",
+              "record_key": "T'ien::T11",
+              "sample_id_raw": "135m",
+              "sample_id_reused": false,
+              "test_id": "T11"
+            },
+            {
+              "delta_final_minus_initial": "4",
+              "record_key": "T'ien::T12",
+              "sample_id_raw": "136m",
+              "sample_id_reused": false,
+              "test_id": "T12"
+            },
+            {
+              "delta_final_minus_initial": "10",
+              "record_key": "T'ien::T13",
+              "sample_id_raw": "137",
+              "sample_id_reused": false,
+              "test_id": "T13"
+            },
+            {
+              "delta_final_minus_initial": "35",
+              "record_key": "T'ien::T14",
+              "sample_id_raw": "140m",
+              "sample_id_reused": false,
+              "test_id": "T14"
+            },
+            {
+              "delta_final_minus_initial": "24",
+              "record_key": "T'ien::T16",
+              "sample_id_raw": "139",
+              "sample_id_reused": false,
+              "test_id": "T16"
+            },
+            {
+              "delta_final_minus_initial": "20",
+              "record_key": "T'ien::T18",
+              "sample_id_raw": "141M",
+              "sample_id_reused": false,
+              "test_id": "T18"
+            },
+            {
+              "delta_final_minus_initial": "19",
+              "record_key": "T'ien::T19",
+              "sample_id_raw": "143m",
+              "sample_id_reused": false,
+              "test_id": "T19"
+            },
+            {
+              "delta_final_minus_initial": "38",
+              "record_key": "T'ien::T2",
+              "sample_id_raw": "129",
+              "sample_id_reused": false,
+              "test_id": "T2"
+            },
+            {
+              "delta_final_minus_initial": "14",
+              "record_key": "T'ien::T20",
+              "sample_id_raw": "144m",
+              "sample_id_reused": true,
+              "test_id": "T20"
+            },
+            {
+              "delta_final_minus_initial": "22",
+              "record_key": "T'ien::T22",
+              "sample_id_raw": "146m",
+              "sample_id_reused": true,
+              "test_id": "T22"
+            },
+            {
+              "delta_final_minus_initial": "4",
+              "record_key": "T'ien::T23",
+              "sample_id_raw": "133m",
+              "sample_id_reused": true,
+              "test_id": "T23"
+            },
+            {
+              "delta_final_minus_initial": "22",
+              "record_key": "T'ien::T24",
+              "sample_id_raw": "133m",
+              "sample_id_reused": true,
+              "test_id": "T24"
+            },
+            {
+              "delta_final_minus_initial": "13",
+              "record_key": "T'ien::T4",
+              "sample_id_raw": "130",
+              "sample_id_reused": false,
+              "test_id": "T4"
+            },
+            {
+              "delta_final_minus_initial": "39",
+              "record_key": "T'ien::T5",
+              "sample_id_raw": "131",
+              "sample_id_reused": false,
+              "test_id": "T5"
+            },
+            {
+              "delta_final_minus_initial": "38",
+              "record_key": "T'ien::T6",
+              "sample_id_raw": "132",
+              "sample_id_reused": false,
+              "test_id": "T6"
+            },
+            {
+              "delta_final_minus_initial": "9",
+              "record_key": "T'ien::T9",
+              "sample_id_raw": "133M",
+              "sample_id_reused": false,
+              "test_id": "T9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 13,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 18,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "44",
+            "mean": "22.22222222222222222222222222",
+            "median": "21",
+            "minimum": "4",
+            "n": 18
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "2.1625",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 14,
+          "distinct_exact_sample_ids_in_cohort": 11,
+          "eligible_pairs": 8,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "6",
+              "record_key": "Bhattacharjee::B1",
+              "sample_id_raw": "147",
+              "sample_id_reused": false,
+              "test_id": "B1"
+            },
+            {
+              "delta_final_minus_initial": "23",
+              "record_key": "Bhattacharjee::B10",
+              "sample_id_raw": "173m",
+              "sample_id_reused": false,
+              "test_id": "B10"
+            },
+            {
+              "delta_final_minus_initial": "46",
+              "record_key": "Bhattacharjee::B11",
+              "sample_id_raw": "158m",
+              "sample_id_reused": false,
+              "test_id": "B11"
+            },
+            {
+              "delta_final_minus_initial": "16",
+              "record_key": "Bhattacharjee::B16",
+              "sample_id_raw": "150m",
+              "sample_id_reused": false,
+              "test_id": "B16"
+            },
+            {
+              "delta_final_minus_initial": "47",
+              "record_key": "Bhattacharjee::B17",
+              "sample_id_raw": "175m",
+              "sample_id_reused": false,
+              "test_id": "B17"
+            },
+            {
+              "delta_final_minus_initial": "25",
+              "record_key": "Bhattacharjee::B20",
+              "sample_id_raw": "152m",
+              "sample_id_reused": false,
+              "test_id": "B20"
+            },
+            {
+              "delta_final_minus_initial": "0.3",
+              "record_key": "Bhattacharjee::B6",
+              "sample_id_raw": "153m",
+              "sample_id_reused": false,
+              "test_id": "B6"
+            },
+            {
+              "delta_final_minus_initial": "10",
+              "record_key": "Bhattacharjee::B9",
+              "sample_id_raw": "154m",
+              "sample_id_reused": false,
+              "test_id": "B9"
+            }
+          ],
+          "excluded_pairs": 3,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Bhattacharjee::B14",
+              "sample_id_raw": "174m",
+              "test_id": "B14"
+            },
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:blank"
+              ],
+              "record_key": "Bhattacharjee::B2",
+              "sample_id_raw": "155",
+              "test_id": "B2"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_negative_co_requires_review",
+                "initial_status_not_numeric_exact:negative_numeric_requires_review"
+              ],
+              "record_key": "Bhattacharjee::B4",
+              "sample_id_raw": "159",
+              "test_id": "B4"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 14,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 11,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "47",
+            "mean": "21.6625",
+            "median": "19.5",
+            "minimum": "0.3",
+            "n": 8
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "2.333333333333333333333333333",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Ferkul"
+          },
+          "display_order": 15,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "2",
+              "record_key": "Ferkul::F1",
+              "sample_id_raw": "227",
+              "sample_id_reused": false,
+              "test_id": "F1"
+            },
+            {
+              "delta_final_minus_initial": "-23",
+              "record_key": "Ferkul::F2",
+              "sample_id_raw": "228m",
+              "sample_id_reused": false,
+              "test_id": "F2"
+            },
+            {
+              "delta_final_minus_initial": "34",
+              "record_key": "Ferkul::F4",
+              "sample_id_raw": "39M",
+              "sample_id_reused": false,
+              "test_id": "F4"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 15,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "34",
+            "mean": "4.333333333333333333333333333",
+            "median": "2",
+            "minimum": "-23",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        }
+      ],
+      "ranking_method": "Descending signed mean of precomputed paired changes; ranking is confined to this metric and its unit.",
+      "unit": "ppm"
+    },
+    "co2": {
+      "cohort_count": 18,
+      "extremes": {
+        "highest_mean": {
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 1,
+          "eligible_pairs": 2,
+          "mean": "1.825",
+          "mean_median_sign_relation": "same_sign",
+          "median": "1.825",
+          "rank": 1,
+          "summary_status": "small_n_descriptive_only"
+        },
+        "lowest_mean": {
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 17,
+          "eligible_pairs": 18,
+          "mean": "0.02166666666666666666666666667",
+          "mean_median_sign_relation": "same_sign",
+          "median": "0.02",
+          "rank": 17,
+          "summary_status": "descriptive_only"
+        },
+        "most_negative_mean": null,
+        "strongest_positive_mean": {
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 1,
+          "eligible_pairs": 2,
+          "mean": "1.825",
+          "mean_median_sign_relation": "same_sign",
+          "median": "1.825",
+          "rank": 1,
+          "summary_status": "small_n_descriptive_only"
+        }
+      },
+      "interpretation_limit": "Descriptive cohort ordering only. No causal interpretation, inferential statistics, or independent physical-sample claim is supported.",
+      "label": "Carbon dioxide concentration change",
+      "metric": "co2",
+      "not_rankable_cohort_count": 1,
+      "not_rankable_cohorts": [
+        {
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "unclassified",
+            "pi": "Ferkul"
+          },
+          "distinct_exact_sample_ids_in_cohort": 1,
+          "eligible_pairs": 0,
+          "eligible_record_evidence": [],
+          "excluded_pairs": 1,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Ferkul::F3",
+              "sample_id_raw": "229m",
+              "test_id": "F3"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "not_rankable_reason": "no_eligible_pairs",
+          "records_in_cohort": 1,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "no_eligible_pairs"
+        }
+      ],
+      "pair_counts": {
+        "eligible_pairs": 121,
+        "excluded_pairs": 8,
+        "records": 129
+      },
+      "rankable_cohort_count": 17,
+      "ranked_cohorts": [
+        {
+          "absolute_mean_median_gap": "0.000",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 1,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.87",
+              "record_key": "Miller::M2",
+              "sample_id_raw": "224",
+              "sample_id_reused": false,
+              "test_id": "M2"
+            },
+            {
+              "delta_final_minus_initial": "2.78",
+              "record_key": "Miller::M5",
+              "sample_id_raw": "167",
+              "sample_id_reused": false,
+              "test_id": "M5"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 1,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "2.78",
+            "mean": "1.825",
+            "median": "1.825",
+            "minimum": "0.87",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.092",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 2,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 5,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "1",
+              "record_key": "Miller::M12",
+              "sample_id_raw": "165m",
+              "sample_id_reused": false,
+              "test_id": "M12"
+            },
+            {
+              "delta_final_minus_initial": "1.39",
+              "record_key": "Miller::M13",
+              "sample_id_raw": "169m",
+              "sample_id_reused": false,
+              "test_id": "M13"
+            },
+            {
+              "delta_final_minus_initial": "0.45",
+              "record_key": "Miller::M20",
+              "sample_id_raw": "172m",
+              "sample_id_reused": false,
+              "test_id": "M20"
+            },
+            {
+              "delta_final_minus_initial": "1.73",
+              "record_key": "Miller::M4",
+              "sample_id_raw": "171m",
+              "sample_id_reused": false,
+              "test_id": "M4"
+            },
+            {
+              "delta_final_minus_initial": "0.89",
+              "record_key": "Miller::M6",
+              "sample_id_raw": "163m",
+              "sample_id_reused": false,
+              "test_id": "M6"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 2,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 5,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "1.73",
+            "mean": "1.092",
+            "median": "1",
+            "minimum": "0.45",
+            "n": 5
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.03",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 3,
+          "distinct_exact_sample_ids_in_cohort": 13,
+          "eligible_pairs": 13,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.16",
+              "record_key": "Miller::M1",
+              "sample_id_raw": "222",
+              "sample_id_reused": false,
+              "test_id": "M1"
+            },
+            {
+              "delta_final_minus_initial": "1.23",
+              "record_key": "Miller::M10",
+              "sample_id_raw": "180m",
+              "sample_id_reused": false,
+              "test_id": "M10"
+            },
+            {
+              "delta_final_minus_initial": "1.1",
+              "record_key": "Miller::M11",
+              "sample_id_raw": "181m",
+              "sample_id_reused": false,
+              "test_id": "M11"
+            },
+            {
+              "delta_final_minus_initial": "0.53",
+              "record_key": "Miller::M14",
+              "sample_id_raw": "223",
+              "sample_id_reused": false,
+              "test_id": "M14"
+            },
+            {
+              "delta_final_minus_initial": "0.73",
+              "record_key": "Miller::M15",
+              "sample_id_raw": "225m",
+              "sample_id_reused": false,
+              "test_id": "M15"
+            },
+            {
+              "delta_final_minus_initial": "0.8",
+              "record_key": "Miller::M16",
+              "sample_id_raw": "164m",
+              "sample_id_reused": false,
+              "test_id": "M16"
+            },
+            {
+              "delta_final_minus_initial": "1.35",
+              "record_key": "Miller::M17",
+              "sample_id_raw": "166m",
+              "sample_id_reused": false,
+              "test_id": "M17"
+            },
+            {
+              "delta_final_minus_initial": "0.99",
+              "record_key": "Miller::M18",
+              "sample_id_raw": "168m",
+              "sample_id_reused": false,
+              "test_id": "M18"
+            },
+            {
+              "delta_final_minus_initial": "1.25",
+              "record_key": "Miller::M19",
+              "sample_id_raw": "170m",
+              "sample_id_reused": false,
+              "test_id": "M19"
+            },
+            {
+              "delta_final_minus_initial": "0.85",
+              "record_key": "Miller::M3",
+              "sample_id_raw": "226m",
+              "sample_id_reused": false,
+              "test_id": "M3"
+            },
+            {
+              "delta_final_minus_initial": "0.42",
+              "record_key": "Miller::M7",
+              "sample_id_raw": "177m",
+              "sample_id_reused": false,
+              "test_id": "M7"
+            },
+            {
+              "delta_final_minus_initial": "0.84",
+              "record_key": "Miller::M8",
+              "sample_id_raw": "178m",
+              "sample_id_reused": false,
+              "test_id": "M8"
+            },
+            {
+              "delta_final_minus_initial": "0.28",
+              "record_key": "Miller::M9",
+              "sample_id_raw": "179m",
+              "sample_id_reused": false,
+              "test_id": "M9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 3,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 13,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "1.35",
+            "mean": "0.81",
+            "median": "0.84",
+            "minimum": "0.16",
+            "n": 13
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.00",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 4,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.57",
+              "record_key": "Olson::O14",
+              "sample_id_raw": "183m",
+              "sample_id_reused": false,
+              "test_id": "O14"
+            },
+            {
+              "delta_final_minus_initial": "0.65",
+              "record_key": "Olson::O19",
+              "sample_id_raw": "213m",
+              "sample_id_reused": false,
+              "test_id": "O19"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 4,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.65",
+            "mean": "0.61",
+            "median": "0.61",
+            "minimum": "0.57",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0979166666666666666666666667",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Fernandez-Pello"
+          },
+          "display_order": 5,
+          "distinct_exact_sample_ids_in_cohort": 21,
+          "eligible_pairs": 24,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.17",
+              "record_key": "Fernandez-Pello::P1",
+              "sample_id_raw": "185M",
+              "sample_id_reused": false,
+              "test_id": "P1"
+            },
+            {
+              "delta_final_minus_initial": "0.43",
+              "record_key": "Fernandez-Pello::P10",
+              "sample_id_raw": "187m",
+              "sample_id_reused": false,
+              "test_id": "P10"
+            },
+            {
+              "delta_final_minus_initial": "0.66",
+              "record_key": "Fernandez-Pello::P12",
+              "sample_id_raw": "199m",
+              "sample_id_reused": false,
+              "test_id": "P12"
+            },
+            {
+              "delta_final_minus_initial": "1.27",
+              "record_key": "Fernandez-Pello::P13a",
+              "sample_id_raw": "203m",
+              "sample_id_reused": true,
+              "test_id": "P13a"
+            },
+            {
+              "delta_final_minus_initial": "0.21",
+              "record_key": "Fernandez-Pello::P13b",
+              "sample_id_raw": "203m",
+              "sample_id_reused": true,
+              "test_id": "P13b"
+            },
+            {
+              "delta_final_minus_initial": "0.28",
+              "record_key": "Fernandez-Pello::P14",
+              "sample_id_raw": "189M",
+              "sample_id_reused": false,
+              "test_id": "P14"
+            },
+            {
+              "delta_final_minus_initial": "0.49",
+              "record_key": "Fernandez-Pello::P15",
+              "sample_id_raw": "190M",
+              "sample_id_reused": false,
+              "test_id": "P15"
+            },
+            {
+              "delta_final_minus_initial": "0.62",
+              "record_key": "Fernandez-Pello::P16",
+              "sample_id_raw": "191m",
+              "sample_id_reused": false,
+              "test_id": "P16"
+            },
+            {
+              "delta_final_minus_initial": "0.39",
+              "record_key": "Fernandez-Pello::P17",
+              "sample_id_raw": "192m",
+              "sample_id_reused": false,
+              "test_id": "P17"
+            },
+            {
+              "delta_final_minus_initial": "0.86",
+              "record_key": "Fernandez-Pello::P18",
+              "sample_id_raw": "193m",
+              "sample_id_reused": false,
+              "test_id": "P18"
+            },
+            {
+              "delta_final_minus_initial": "0.71",
+              "record_key": "Fernandez-Pello::P19",
+              "sample_id_raw": "194m",
+              "sample_id_reused": false,
+              "test_id": "P19"
+            },
+            {
+              "delta_final_minus_initial": "0.22",
+              "record_key": "Fernandez-Pello::P2",
+              "sample_id_raw": "188M",
+              "sample_id_reused": false,
+              "test_id": "P2"
+            },
+            {
+              "delta_final_minus_initial": "0.71",
+              "record_key": "Fernandez-Pello::P20",
+              "sample_id_raw": "195m",
+              "sample_id_reused": false,
+              "test_id": "P20"
+            },
+            {
+              "delta_final_minus_initial": "0.04",
+              "record_key": "Fernandez-Pello::P21a",
+              "sample_id_raw": "196M",
+              "sample_id_reused": true,
+              "test_id": "P21a"
+            },
+            {
+              "delta_final_minus_initial": "0.03",
+              "record_key": "Fernandez-Pello::P21b",
+              "sample_id_raw": "196M",
+              "sample_id_reused": true,
+              "test_id": "P21b"
+            },
+            {
+              "delta_final_minus_initial": "1.03",
+              "record_key": "Fernandez-Pello::P23",
+              "sample_id_raw": "201m",
+              "sample_id_reused": false,
+              "test_id": "P23"
+            },
+            {
+              "delta_final_minus_initial": "1.04",
+              "record_key": "Fernandez-Pello::P24",
+              "sample_id_raw": "819L",
+              "sample_id_reused": false,
+              "test_id": "P24"
+            },
+            {
+              "delta_final_minus_initial": "0.62",
+              "record_key": "Fernandez-Pello::P25",
+              "sample_id_raw": "217m",
+              "sample_id_reused": true,
+              "test_id": "P25"
+            },
+            {
+              "delta_final_minus_initial": "0.24",
+              "record_key": "Fernandez-Pello::P3a",
+              "sample_id_raw": "215M",
+              "sample_id_reused": true,
+              "test_id": "P3a"
+            },
+            {
+              "delta_final_minus_initial": "1.18",
+              "record_key": "Fernandez-Pello::P4",
+              "sample_id_raw": "197m",
+              "sample_id_reused": true,
+              "test_id": "P4"
+            },
+            {
+              "delta_final_minus_initial": "1.35",
+              "record_key": "Fernandez-Pello::P5",
+              "sample_id_raw": "202m",
+              "sample_id_reused": true,
+              "test_id": "P5"
+            },
+            {
+              "delta_final_minus_initial": "0.32",
+              "record_key": "Fernandez-Pello::P6",
+              "sample_id_raw": "186m",
+              "sample_id_reused": false,
+              "test_id": "P6"
+            },
+            {
+              "delta_final_minus_initial": "0.09",
+              "record_key": "Fernandez-Pello::P8",
+              "sample_id_raw": "197m",
+              "sample_id_reused": true,
+              "test_id": "P8"
+            },
+            {
+              "delta_final_minus_initial": "0.43",
+              "record_key": "Fernandez-Pello::P9",
+              "sample_id_raw": "202m",
+              "sample_id_reused": true,
+              "test_id": "P9"
+            }
+          ],
+          "excluded_pairs": 3,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Fernandez-Pello::P22a",
+              "sample_id_raw": "200m",
+              "test_id": "P22a"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_parsed_decimal_missing_or_invalid",
+                "initial_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Fernandez-Pello::P22b",
+              "sample_id_raw": "200m",
+              "test_id": "P22b"
+            },
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Fernandez-Pello::P3b",
+              "sample_id_raw": "215M",
+              "test_id": "P3b"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 5,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 27,
+          "records_marked_with_reused_sample_id": 13,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "1.35",
+            "mean": "0.5579166666666666666666666667",
+            "median": "0.46",
+            "minimum": "0.03",
+            "n": 24
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0025",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Olson"
+          },
+          "display_order": 6,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 4,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.94",
+              "record_key": "Olson::O13a",
+              "sample_id_raw": "221m",
+              "sample_id_reused": true,
+              "test_id": "O13a"
+            },
+            {
+              "delta_final_minus_initial": "0.24",
+              "record_key": "Olson::O13b",
+              "sample_id_raw": "221m",
+              "sample_id_reused": true,
+              "test_id": "O13b"
+            },
+            {
+              "delta_final_minus_initial": "0.8",
+              "record_key": "Olson::O5a",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O5a"
+            },
+            {
+              "delta_final_minus_initial": "0.09",
+              "record_key": "Olson::O5b",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O5b"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 6,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 4,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.94",
+            "mean": "0.5175",
+            "median": "0.52",
+            "minimum": "0.09",
+            "n": 4
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.01",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 7,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.37",
+              "record_key": "Olson::O20",
+              "sample_id_raw": "204m",
+              "sample_id_reused": false,
+              "test_id": "O20"
+            },
+            {
+              "delta_final_minus_initial": "0.42",
+              "record_key": "Olson::O21",
+              "sample_id_raw": "219m",
+              "sample_id_reused": true,
+              "test_id": "O21"
+            },
+            {
+              "delta_final_minus_initial": "0.41",
+              "record_key": "Olson::O22",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O22"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 7,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.42",
+            "mean": "0.4",
+            "median": "0.41",
+            "minimum": "0.37",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0055555555555555555555555556",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 8,
+          "distinct_exact_sample_ids_in_cohort": 15,
+          "eligible_pairs": 18,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.41",
+              "record_key": "Olson::O1",
+              "sample_id_raw": "207",
+              "sample_id_reused": false,
+              "test_id": "O1"
+            },
+            {
+              "delta_final_minus_initial": "0.49",
+              "record_key": "Olson::O10",
+              "sample_id_raw": "210m",
+              "sample_id_reused": false,
+              "test_id": "O10"
+            },
+            {
+              "delta_final_minus_initial": "0.45",
+              "record_key": "Olson::O11",
+              "sample_id_raw": "184m",
+              "sample_id_reused": false,
+              "test_id": "O11"
+            },
+            {
+              "delta_final_minus_initial": "-0.01",
+              "record_key": "Olson::O12",
+              "sample_id_raw": "217m",
+              "sample_id_reused": true,
+              "test_id": "O12"
+            },
+            {
+              "delta_final_minus_initial": "0.35",
+              "record_key": "Olson::O15a",
+              "sample_id_raw": "218m",
+              "sample_id_reused": true,
+              "test_id": "O15a"
+            },
+            {
+              "delta_final_minus_initial": "1.01",
+              "record_key": "Olson::O15b",
+              "sample_id_raw": "218m",
+              "sample_id_reused": true,
+              "test_id": "O15b"
+            },
+            {
+              "delta_final_minus_initial": "0.05",
+              "record_key": "Olson::O16",
+              "sample_id_raw": "219m",
+              "sample_id_reused": true,
+              "test_id": "O16"
+            },
+            {
+              "delta_final_minus_initial": "0.59",
+              "record_key": "Olson::O17",
+              "sample_id_raw": "211m",
+              "sample_id_reused": false,
+              "test_id": "O17"
+            },
+            {
+              "delta_final_minus_initial": "0.49",
+              "record_key": "Olson::O18",
+              "sample_id_raw": "212m",
+              "sample_id_reused": false,
+              "test_id": "O18"
+            },
+            {
+              "delta_final_minus_initial": "0.15",
+              "record_key": "Olson::O2",
+              "sample_id_raw": "204",
+              "sample_id_reused": false,
+              "test_id": "O2"
+            },
+            {
+              "delta_final_minus_initial": "0.03",
+              "record_key": "Olson::O3a",
+              "sample_id_raw": "205M",
+              "sample_id_reused": true,
+              "test_id": "O3a"
+            },
+            {
+              "delta_final_minus_initial": "0.25",
+              "record_key": "Olson::O3b",
+              "sample_id_raw": "205M",
+              "sample_id_reused": true,
+              "test_id": "O3b"
+            },
+            {
+              "delta_final_minus_initial": "1",
+              "record_key": "Olson::O4",
+              "sample_id_raw": "216m",
+              "sample_id_reused": false,
+              "test_id": "O4"
+            },
+            {
+              "delta_final_minus_initial": "0.42",
+              "record_key": "Olson::O6",
+              "sample_id_raw": "206M",
+              "sample_id_reused": false,
+              "test_id": "O6"
+            },
+            {
+              "delta_final_minus_initial": "0.53",
+              "record_key": "Olson::O7",
+              "sample_id_raw": "214m",
+              "sample_id_reused": false,
+              "test_id": "O7"
+            },
+            {
+              "delta_final_minus_initial": "0.21",
+              "record_key": "Olson::O8a",
+              "sample_id_raw": "208m",
+              "sample_id_reused": true,
+              "test_id": "O8a"
+            },
+            {
+              "delta_final_minus_initial": "0.3",
+              "record_key": "Olson::O8b",
+              "sample_id_raw": "208m",
+              "sample_id_reused": true,
+              "test_id": "O8b"
+            },
+            {
+              "delta_final_minus_initial": "0.22",
+              "record_key": "Olson::O9",
+              "sample_id_raw": "209m",
+              "sample_id_reused": false,
+              "test_id": "O9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 8,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 18,
+          "records_marked_with_reused_sample_id": 8,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "1.01",
+            "mean": "0.3855555555555555555555555556",
+            "median": "0.38",
+            "minimum": "-0.01",
+            "n": 18
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.000",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "T'ien"
+          },
+          "display_order": 9,
+          "distinct_exact_sample_ids_in_cohort": 1,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.28",
+              "record_key": "T'ien::T3",
+              "sample_id_raw": "182m",
+              "sample_id_reused": true,
+              "test_id": "T3"
+            },
+            {
+              "delta_final_minus_initial": "0.27",
+              "record_key": "T'ien::T7",
+              "sample_id_raw": "182m",
+              "sample_id_reused": true,
+              "test_id": "T7"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 9,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.28",
+            "mean": "0.275",
+            "median": "0.275",
+            "minimum": "0.27",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0325",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 10,
+          "distinct_exact_sample_ids_in_cohort": 4,
+          "eligible_pairs": 4,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.1",
+              "record_key": "Bhattacharjee::B15",
+              "sample_id_raw": "149m",
+              "sample_id_reused": false,
+              "test_id": "B15"
+            },
+            {
+              "delta_final_minus_initial": "0.08",
+              "record_key": "Bhattacharjee::B18",
+              "sample_id_raw": "176m",
+              "sample_id_reused": true,
+              "test_id": "B18"
+            },
+            {
+              "delta_final_minus_initial": "0.06",
+              "record_key": "Bhattacharjee::B19",
+              "sample_id_raw": "151m",
+              "sample_id_reused": false,
+              "test_id": "B19"
+            },
+            {
+              "delta_final_minus_initial": "0.25",
+              "record_key": "Bhattacharjee::B8",
+              "sample_id_raw": "157m",
+              "sample_id_reused": false,
+              "test_id": "B8"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 10,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 4,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.25",
+            "mean": "0.1225",
+            "median": "0.09",
+            "minimum": "0.06",
+            "n": 4
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.038",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 11,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 5,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.05",
+              "record_key": "Bhattacharjee::B12",
+              "sample_id_raw": "160",
+              "sample_id_reused": false,
+              "test_id": "B12"
+            },
+            {
+              "delta_final_minus_initial": "0.32",
+              "record_key": "Bhattacharjee::B13",
+              "sample_id_raw": "162m",
+              "sample_id_reused": false,
+              "test_id": "B13"
+            },
+            {
+              "delta_final_minus_initial": "0.06",
+              "record_key": "Bhattacharjee::B3",
+              "sample_id_raw": "148",
+              "sample_id_reused": false,
+              "test_id": "B3"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Bhattacharjee::B5",
+              "sample_id_raw": "156",
+              "sample_id_reused": false,
+              "test_id": "B5"
+            },
+            {
+              "delta_final_minus_initial": "0.06",
+              "record_key": "Bhattacharjee::B7",
+              "sample_id_raw": "161",
+              "sample_id_reused": false,
+              "test_id": "B7"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 11,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 5,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.32",
+            "mean": "0.098",
+            "median": "0.06",
+            "minimum": "0",
+            "n": 5
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.00222222222222222222222222222",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 12,
+          "distinct_exact_sample_ids_in_cohort": 11,
+          "eligible_pairs": 9,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Bhattacharjee::B1",
+              "sample_id_raw": "147",
+              "sample_id_reused": false,
+              "test_id": "B1"
+            },
+            {
+              "delta_final_minus_initial": "0.11",
+              "record_key": "Bhattacharjee::B10",
+              "sample_id_raw": "173m",
+              "sample_id_reused": false,
+              "test_id": "B10"
+            },
+            {
+              "delta_final_minus_initial": "0.14",
+              "record_key": "Bhattacharjee::B11",
+              "sample_id_raw": "158m",
+              "sample_id_reused": false,
+              "test_id": "B11"
+            },
+            {
+              "delta_final_minus_initial": "0.04",
+              "record_key": "Bhattacharjee::B16",
+              "sample_id_raw": "150m",
+              "sample_id_reused": false,
+              "test_id": "B16"
+            },
+            {
+              "delta_final_minus_initial": "0.14",
+              "record_key": "Bhattacharjee::B17",
+              "sample_id_raw": "175m",
+              "sample_id_reused": false,
+              "test_id": "B17"
+            },
+            {
+              "delta_final_minus_initial": "0.05",
+              "record_key": "Bhattacharjee::B20",
+              "sample_id_raw": "152m",
+              "sample_id_reused": false,
+              "test_id": "B20"
+            },
+            {
+              "delta_final_minus_initial": "0.07",
+              "record_key": "Bhattacharjee::B4",
+              "sample_id_raw": "159",
+              "sample_id_reused": false,
+              "test_id": "B4"
+            },
+            {
+              "delta_final_minus_initial": "0.08",
+              "record_key": "Bhattacharjee::B6",
+              "sample_id_raw": "153m",
+              "sample_id_reused": false,
+              "test_id": "B6"
+            },
+            {
+              "delta_final_minus_initial": "0.02",
+              "record_key": "Bhattacharjee::B9",
+              "sample_id_raw": "154m",
+              "sample_id_reused": false,
+              "test_id": "B9"
+            }
+          ],
+          "excluded_pairs": 2,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Bhattacharjee::B14",
+              "sample_id_raw": "174m",
+              "test_id": "B14"
+            },
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:blank"
+              ],
+              "record_key": "Bhattacharjee::B2",
+              "sample_id_raw": "155",
+              "test_id": "B2"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 12,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 11,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.14",
+            "mean": "0.07222222222222222222222222222",
+            "median": "0.07",
+            "minimum": "0",
+            "n": 9
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.00",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 13,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.08",
+              "record_key": "Bhattacharjee::B21",
+              "sample_id_raw": "174m",
+              "sample_id_reused": true,
+              "test_id": "B21"
+            },
+            {
+              "delta_final_minus_initial": "0.06",
+              "record_key": "Bhattacharjee::B22",
+              "sample_id_raw": "176m",
+              "sample_id_reused": true,
+              "test_id": "B22"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 13,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.08",
+            "mean": "0.07",
+            "median": "0.07",
+            "minimum": "0.06",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.01666666666666666666666666667",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Ferkul"
+          },
+          "display_order": 14,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.01",
+              "record_key": "Ferkul::F1",
+              "sample_id_raw": "227",
+              "sample_id_reused": false,
+              "test_id": "F1"
+            },
+            {
+              "delta_final_minus_initial": "0.02",
+              "record_key": "Ferkul::F2",
+              "sample_id_raw": "228m",
+              "sample_id_reused": false,
+              "test_id": "F2"
+            },
+            {
+              "delta_final_minus_initial": "0.1",
+              "record_key": "Ferkul::F4",
+              "sample_id_raw": "39M",
+              "sample_id_reused": false,
+              "test_id": "F4"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 14,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.1",
+            "mean": "0.03666666666666666666666666667",
+            "median": "0.02",
+            "minimum": "-0.01",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.005",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 15,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 4,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.03",
+              "record_key": "T'ien::T25",
+              "sample_id_raw": "138m",
+              "sample_id_reused": false,
+              "test_id": "T25"
+            },
+            {
+              "delta_final_minus_initial": "0.07",
+              "record_key": "T'ien::T26",
+              "sample_id_raw": "137m",
+              "sample_id_reused": false,
+              "test_id": "T26"
+            },
+            {
+              "delta_final_minus_initial": "0.01",
+              "record_key": "T'ien::T27",
+              "sample_id_raw": "146m",
+              "sample_id_reused": true,
+              "test_id": "T27"
+            },
+            {
+              "delta_final_minus_initial": "0.03",
+              "record_key": "T'ien::T29",
+              "sample_id_raw": "145m",
+              "sample_id_reused": true,
+              "test_id": "T29"
+            }
+          ],
+          "excluded_pairs": 2,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "T'ien::T28a",
+              "sample_id_raw": "144m",
+              "test_id": "T28a"
+            },
+            {
+              "exclusion_reasons": [
+                "initial_aggregation_eligible_false",
+                "initial_parsed_decimal_missing_or_invalid",
+                "initial_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "T'ien::T28b",
+              "sample_id_raw": "144m",
+              "test_id": "T28b"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 15,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 6,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.07",
+            "mean": "0.035",
+            "median": "0.03",
+            "minimum": "0.01",
+            "n": 4
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.00333333333333333333333333333",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 16,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.06",
+              "record_key": "T'ien::T15",
+              "sample_id_raw": "138",
+              "sample_id_reused": false,
+              "test_id": "T15"
+            },
+            {
+              "delta_final_minus_initial": "0.03",
+              "record_key": "T'ien::T17",
+              "sample_id_raw": "142m",
+              "sample_id_reused": false,
+              "test_id": "T17"
+            },
+            {
+              "delta_final_minus_initial": "0.01",
+              "record_key": "T'ien::T21",
+              "sample_id_raw": "145m",
+              "sample_id_reused": true,
+              "test_id": "T21"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 16,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.06",
+            "mean": "0.03333333333333333333333333333",
+            "median": "0.03",
+            "minimum": "0.01",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.00166666666666666666666666667",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 17,
+          "distinct_exact_sample_ids_in_cohort": 17,
+          "eligible_pairs": 18,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0.06",
+              "record_key": "T'ien::T1",
+              "sample_id_raw": "128",
+              "sample_id_reused": false,
+              "test_id": "T1"
+            },
+            {
+              "delta_final_minus_initial": "0.02",
+              "record_key": "T'ien::T10",
+              "sample_id_raw": "134M",
+              "sample_id_reused": false,
+              "test_id": "T10"
+            },
+            {
+              "delta_final_minus_initial": "0.04",
+              "record_key": "T'ien::T11",
+              "sample_id_raw": "135m",
+              "sample_id_reused": false,
+              "test_id": "T11"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T12",
+              "sample_id_raw": "136m",
+              "sample_id_reused": false,
+              "test_id": "T12"
+            },
+            {
+              "delta_final_minus_initial": "0.01",
+              "record_key": "T'ien::T13",
+              "sample_id_raw": "137",
+              "sample_id_reused": false,
+              "test_id": "T13"
+            },
+            {
+              "delta_final_minus_initial": "0.02",
+              "record_key": "T'ien::T14",
+              "sample_id_raw": "140m",
+              "sample_id_reused": false,
+              "test_id": "T14"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T16",
+              "sample_id_raw": "139",
+              "sample_id_reused": false,
+              "test_id": "T16"
+            },
+            {
+              "delta_final_minus_initial": "0.02",
+              "record_key": "T'ien::T18",
+              "sample_id_raw": "141M",
+              "sample_id_reused": false,
+              "test_id": "T18"
+            },
+            {
+              "delta_final_minus_initial": "0.02",
+              "record_key": "T'ien::T19",
+              "sample_id_raw": "143m",
+              "sample_id_reused": false,
+              "test_id": "T19"
+            },
+            {
+              "delta_final_minus_initial": "0.04",
+              "record_key": "T'ien::T2",
+              "sample_id_raw": "129",
+              "sample_id_reused": false,
+              "test_id": "T2"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T20",
+              "sample_id_raw": "144m",
+              "sample_id_reused": true,
+              "test_id": "T20"
+            },
+            {
+              "delta_final_minus_initial": "0.03",
+              "record_key": "T'ien::T22",
+              "sample_id_raw": "146m",
+              "sample_id_reused": true,
+              "test_id": "T22"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T23",
+              "sample_id_raw": "133m",
+              "sample_id_reused": true,
+              "test_id": "T23"
+            },
+            {
+              "delta_final_minus_initial": "0.02",
+              "record_key": "T'ien::T24",
+              "sample_id_raw": "133m",
+              "sample_id_reused": true,
+              "test_id": "T24"
+            },
+            {
+              "delta_final_minus_initial": "0.01",
+              "record_key": "T'ien::T4",
+              "sample_id_raw": "130",
+              "sample_id_reused": false,
+              "test_id": "T4"
+            },
+            {
+              "delta_final_minus_initial": "0.05",
+              "record_key": "T'ien::T5",
+              "sample_id_raw": "131",
+              "sample_id_reused": false,
+              "test_id": "T5"
+            },
+            {
+              "delta_final_minus_initial": "0.04",
+              "record_key": "T'ien::T6",
+              "sample_id_raw": "132",
+              "sample_id_reused": false,
+              "test_id": "T6"
+            },
+            {
+              "delta_final_minus_initial": "0.01",
+              "record_key": "T'ien::T9",
+              "sample_id_raw": "133M",
+              "sample_id_reused": false,
+              "test_id": "T9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 17,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 18,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.06",
+            "mean": "0.02166666666666666666666666667",
+            "median": "0.02",
+            "minimum": "0",
+            "n": 18
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        }
+      ],
+      "ranking_method": "Descending signed mean of precomputed paired changes; ranking is confined to this metric and its unit.",
+      "unit": "% by volume"
+    },
+    "o2": {
+      "cohort_count": 18,
+      "extremes": {
+        "highest_mean": {
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 1,
+          "eligible_pairs": 18,
+          "mean": "0.01111111111111111111111111111",
+          "mean_median_sign_relation": "one_zero",
+          "median": "0",
+          "rank": 1,
+          "summary_status": "descriptive_only"
+        },
+        "lowest_mean": {
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 17,
+          "eligible_pairs": 10,
+          "mean": "-2.15",
+          "mean_median_sign_relation": "same_sign",
+          "median": "-0.1",
+          "rank": 17,
+          "summary_status": "descriptive_only"
+        },
+        "most_negative_mean": {
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 17,
+          "eligible_pairs": 10,
+          "mean": "-2.15",
+          "mean_median_sign_relation": "same_sign",
+          "median": "-0.1",
+          "rank": 17,
+          "summary_status": "descriptive_only"
+        },
+        "strongest_positive_mean": {
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 1,
+          "eligible_pairs": 18,
+          "mean": "0.01111111111111111111111111111",
+          "mean_median_sign_relation": "one_zero",
+          "median": "0",
+          "rank": 1,
+          "summary_status": "descriptive_only"
+        }
+      },
+      "interpretation_limit": "Descriptive cohort ordering only. No causal interpretation, inferential statistics, or independent physical-sample claim is supported.",
+      "label": "Oxygen concentration change",
+      "metric": "o2",
+      "not_rankable_cohort_count": 1,
+      "not_rankable_cohorts": [
+        {
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "unclassified",
+            "pi": "Ferkul"
+          },
+          "distinct_exact_sample_ids_in_cohort": 1,
+          "eligible_pairs": 0,
+          "eligible_record_evidence": [],
+          "excluded_pairs": 1,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Ferkul::F3",
+              "sample_id_raw": "229m",
+              "test_id": "F3"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "not_rankable_reason": "no_eligible_pairs",
+          "records_in_cohort": 1,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "no_eligible_pairs"
+        }
+      ],
+      "pair_counts": {
+        "eligible_pairs": 127,
+        "excluded_pairs": 2,
+        "records": 129
+      },
+      "rankable_cohort_count": 17,
+      "ranked_cohorts": [
+        {
+          "absolute_mean_median_gap": "0.01111111111111111111111111111",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 1,
+          "distinct_exact_sample_ids_in_cohort": 17,
+          "eligible_pairs": 18,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T1",
+              "sample_id_raw": "128",
+              "sample_id_reused": false,
+              "test_id": "T1"
+            },
+            {
+              "delta_final_minus_initial": "0.1",
+              "record_key": "T'ien::T10",
+              "sample_id_raw": "134M",
+              "sample_id_reused": false,
+              "test_id": "T10"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "T'ien::T11",
+              "sample_id_raw": "135m",
+              "sample_id_reused": false,
+              "test_id": "T11"
+            },
+            {
+              "delta_final_minus_initial": "0.1",
+              "record_key": "T'ien::T12",
+              "sample_id_raw": "136m",
+              "sample_id_reused": false,
+              "test_id": "T12"
+            },
+            {
+              "delta_final_minus_initial": "0.1",
+              "record_key": "T'ien::T13",
+              "sample_id_raw": "137",
+              "sample_id_reused": false,
+              "test_id": "T13"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T14",
+              "sample_id_raw": "140m",
+              "sample_id_reused": false,
+              "test_id": "T14"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "T'ien::T16",
+              "sample_id_raw": "139",
+              "sample_id_reused": false,
+              "test_id": "T16"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T18",
+              "sample_id_raw": "141M",
+              "sample_id_reused": false,
+              "test_id": "T18"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T19",
+              "sample_id_raw": "143m",
+              "sample_id_reused": false,
+              "test_id": "T19"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T2",
+              "sample_id_raw": "129",
+              "sample_id_reused": false,
+              "test_id": "T2"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T20",
+              "sample_id_raw": "144m",
+              "sample_id_reused": true,
+              "test_id": "T20"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "T'ien::T22",
+              "sample_id_raw": "146m",
+              "sample_id_reused": true,
+              "test_id": "T22"
+            },
+            {
+              "delta_final_minus_initial": "0.1",
+              "record_key": "T'ien::T23",
+              "sample_id_raw": "133m",
+              "sample_id_reused": true,
+              "test_id": "T23"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T24",
+              "sample_id_raw": "133m",
+              "sample_id_reused": true,
+              "test_id": "T24"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T4",
+              "sample_id_raw": "130",
+              "sample_id_reused": false,
+              "test_id": "T4"
+            },
+            {
+              "delta_final_minus_initial": "0.1",
+              "record_key": "T'ien::T5",
+              "sample_id_raw": "131",
+              "sample_id_reused": false,
+              "test_id": "T5"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T6",
+              "sample_id_raw": "132",
+              "sample_id_reused": false,
+              "test_id": "T6"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T9",
+              "sample_id_raw": "133M",
+              "sample_id_reused": false,
+              "test_id": "T9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "positive_mean_change",
+          "mean_median_sign_relation": "one_zero",
+          "rank": 1,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 18,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0.1",
+            "mean": "0.01111111111111111111111111111",
+            "median": "0",
+            "minimum": "-0.1",
+            "n": 18
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Ferkul"
+          },
+          "display_order": 2,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Ferkul::F1",
+              "sample_id_raw": "227",
+              "sample_id_reused": false,
+              "test_id": "F1"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Ferkul::F2",
+              "sample_id_raw": "228m",
+              "sample_id_reused": false,
+              "test_id": "F2"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Ferkul::F4",
+              "sample_id_raw": "39M",
+              "sample_id_reused": false,
+              "test_id": "F4"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "zero_mean_change",
+          "mean_median_sign_relation": "both_zero",
+          "rank": 2,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0",
+            "mean": "0",
+            "median": "0",
+            "minimum": "0",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 3,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T15",
+              "sample_id_raw": "138",
+              "sample_id_reused": false,
+              "test_id": "T15"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T17",
+              "sample_id_raw": "142m",
+              "sample_id_reused": false,
+              "test_id": "T17"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "T'ien::T21",
+              "sample_id_raw": "145m",
+              "sample_id_reused": true,
+              "test_id": "T21"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "zero_mean_change",
+          "mean_median_sign_relation": "both_zero",
+          "rank": 2,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0",
+            "mean": "0",
+            "median": "0",
+            "minimum": "0",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "SIBAL fabric",
+            "pi": "T'ien"
+          },
+          "display_order": 4,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 6,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "T'ien::T25",
+              "sample_id_raw": "138m",
+              "sample_id_reused": false,
+              "test_id": "T25"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "T'ien::T26",
+              "sample_id_raw": "137m",
+              "sample_id_reused": false,
+              "test_id": "T26"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "T'ien::T27",
+              "sample_id_raw": "146m",
+              "sample_id_reused": true,
+              "test_id": "T27"
+            },
+            {
+              "delta_final_minus_initial": "-19.8",
+              "record_key": "T'ien::T28a",
+              "sample_id_raw": "144m",
+              "sample_id_reused": true,
+              "test_id": "T28a"
+            },
+            {
+              "delta_final_minus_initial": "19.7",
+              "record_key": "T'ien::T28b",
+              "sample_id_raw": "144m",
+              "sample_id_reused": true,
+              "test_id": "T28b"
+            },
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "T'ien::T29",
+              "sample_id_raw": "145m",
+              "sample_id_reused": true,
+              "test_id": "T29"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 4,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 6,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "19.7",
+            "mean": "-0.1",
+            "median": "-0.1",
+            "minimum": "-19.8",
+            "n": 6
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.05",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 5,
+          "distinct_exact_sample_ids_in_cohort": 4,
+          "eligible_pairs": 4,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Bhattacharjee::B15",
+              "sample_id_raw": "149m",
+              "sample_id_reused": false,
+              "test_id": "B15"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Bhattacharjee::B18",
+              "sample_id_raw": "176m",
+              "sample_id_reused": true,
+              "test_id": "B18"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Bhattacharjee::B19",
+              "sample_id_raw": "151m",
+              "sample_id_reused": false,
+              "test_id": "B19"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Bhattacharjee::B8",
+              "sample_id_raw": "157m",
+              "sample_id_reused": false,
+              "test_id": "B8"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 5,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 4,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0",
+            "mean": "-0.2",
+            "median": "-0.15",
+            "minimum": "-0.5",
+            "n": 4
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 6,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Bhattacharjee::B21",
+              "sample_id_raw": "174m",
+              "sample_id_reused": true,
+              "test_id": "B21"
+            },
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Bhattacharjee::B22",
+              "sample_id_raw": "176m",
+              "sample_id_reused": true,
+              "test_id": "B22"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 5,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.2",
+            "mean": "-0.2",
+            "median": "-0.2",
+            "minimum": "-0.2",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.02",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 7,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 5,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Bhattacharjee::B12",
+              "sample_id_raw": "160",
+              "sample_id_reused": false,
+              "test_id": "B12"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Bhattacharjee::B13",
+              "sample_id_raw": "162m",
+              "sample_id_reused": false,
+              "test_id": "B13"
+            },
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "Bhattacharjee::B3",
+              "sample_id_raw": "148",
+              "sample_id_reused": false,
+              "test_id": "B3"
+            },
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Bhattacharjee::B5",
+              "sample_id_raw": "156",
+              "sample_id_reused": false,
+              "test_id": "B5"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Bhattacharjee::B7",
+              "sample_id_raw": "161",
+              "sample_id_reused": false,
+              "test_id": "B7"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 7,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 5,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.1",
+            "mean": "-0.28",
+            "median": "-0.3",
+            "minimum": "-0.5",
+            "n": 5
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "T'ien"
+          },
+          "display_order": 8,
+          "distinct_exact_sample_ids_in_cohort": 1,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "T'ien::T3",
+              "sample_id_raw": "182m",
+              "sample_id_reused": true,
+              "test_id": "T3"
+            },
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "T'ien::T7",
+              "sample_id_raw": "182m",
+              "sample_id_reused": true,
+              "test_id": "T7"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 8,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.2",
+            "mean": "-0.3",
+            "median": "-0.3",
+            "minimum": "-0.4",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0333333333333333333333333333",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 9,
+          "distinct_exact_sample_ids_in_cohort": 15,
+          "eligible_pairs": 18,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Olson::O1",
+              "sample_id_raw": "207",
+              "sample_id_reused": false,
+              "test_id": "O1"
+            },
+            {
+              "delta_final_minus_initial": "-0.6",
+              "record_key": "Olson::O10",
+              "sample_id_raw": "210m",
+              "sample_id_reused": false,
+              "test_id": "O10"
+            },
+            {
+              "delta_final_minus_initial": "-0.6",
+              "record_key": "Olson::O11",
+              "sample_id_raw": "184m",
+              "sample_id_reused": false,
+              "test_id": "O11"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Olson::O12",
+              "sample_id_raw": "217m",
+              "sample_id_reused": true,
+              "test_id": "O12"
+            },
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "Olson::O15a",
+              "sample_id_raw": "218m",
+              "sample_id_reused": true,
+              "test_id": "O15a"
+            },
+            {
+              "delta_final_minus_initial": "-1.1",
+              "record_key": "Olson::O15b",
+              "sample_id_raw": "218m",
+              "sample_id_reused": true,
+              "test_id": "O15b"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Olson::O16",
+              "sample_id_raw": "219m",
+              "sample_id_reused": true,
+              "test_id": "O16"
+            },
+            {
+              "delta_final_minus_initial": "-0.8",
+              "record_key": "Olson::O17",
+              "sample_id_raw": "211m",
+              "sample_id_reused": false,
+              "test_id": "O17"
+            },
+            {
+              "delta_final_minus_initial": "-0.7",
+              "record_key": "Olson::O18",
+              "sample_id_raw": "212m",
+              "sample_id_reused": false,
+              "test_id": "O18"
+            },
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Olson::O2",
+              "sample_id_raw": "204",
+              "sample_id_reused": false,
+              "test_id": "O2"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Olson::O3a",
+              "sample_id_raw": "205M",
+              "sample_id_reused": true,
+              "test_id": "O3a"
+            },
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Olson::O3b",
+              "sample_id_raw": "205M",
+              "sample_id_reused": true,
+              "test_id": "O3b"
+            },
+            {
+              "delta_final_minus_initial": "-1.2",
+              "record_key": "Olson::O4",
+              "sample_id_raw": "216m",
+              "sample_id_reused": false,
+              "test_id": "O4"
+            },
+            {
+              "delta_final_minus_initial": "-0.7",
+              "record_key": "Olson::O6",
+              "sample_id_raw": "206M",
+              "sample_id_reused": false,
+              "test_id": "O6"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Olson::O7",
+              "sample_id_raw": "214m",
+              "sample_id_reused": false,
+              "test_id": "O7"
+            },
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "Olson::O8a",
+              "sample_id_raw": "208m",
+              "sample_id_reused": true,
+              "test_id": "O8a"
+            },
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Olson::O8b",
+              "sample_id_raw": "208m",
+              "sample_id_reused": true,
+              "test_id": "O8b"
+            },
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Olson::O9",
+              "sample_id_raw": "209m",
+              "sample_id_reused": false,
+              "test_id": "O9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 9,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 18,
+          "records_marked_with_reused_sample_id": 8,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0",
+            "mean": "-0.4833333333333333333333333333",
+            "median": "-0.45",
+            "minimum": "-1.2",
+            "n": 18
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0333333333333333333333333333",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 10,
+          "distinct_exact_sample_ids_in_cohort": 3,
+          "eligible_pairs": 3,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.6",
+              "record_key": "Olson::O20",
+              "sample_id_raw": "204m",
+              "sample_id_reused": false,
+              "test_id": "O20"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Olson::O21",
+              "sample_id_raw": "219m",
+              "sample_id_reused": true,
+              "test_id": "O21"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Olson::O22",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O22"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 10,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 3,
+          "records_marked_with_reused_sample_id": 2,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.5",
+            "mean": "-0.5333333333333333333333333333",
+            "median": "-0.5",
+            "minimum": "-0.6",
+            "n": 3
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.075",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Olson"
+          },
+          "display_order": 11,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 4,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-1.3",
+              "record_key": "Olson::O13a",
+              "sample_id_raw": "221m",
+              "sample_id_reused": true,
+              "test_id": "O13a"
+            },
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Olson::O13b",
+              "sample_id_raw": "221m",
+              "sample_id_reused": true,
+              "test_id": "O13b"
+            },
+            {
+              "delta_final_minus_initial": "-0.9",
+              "record_key": "Olson::O5a",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O5a"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Olson::O5b",
+              "sample_id_raw": "220m",
+              "sample_id_reused": true,
+              "test_id": "O5b"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 11,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 4,
+          "records_marked_with_reused_sample_id": 4,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.1",
+            "mean": "-0.625",
+            "median": "-0.55",
+            "minimum": "-1.3",
+            "n": 4
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0592592592592592592592592593",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "unclassified",
+            "pi": "Fernandez-Pello"
+          },
+          "display_order": 12,
+          "distinct_exact_sample_ids_in_cohort": 21,
+          "eligible_pairs": 27,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Fernandez-Pello::P1",
+              "sample_id_raw": "185M",
+              "sample_id_reused": false,
+              "test_id": "P1"
+            },
+            {
+              "delta_final_minus_initial": "-0.6",
+              "record_key": "Fernandez-Pello::P10",
+              "sample_id_raw": "187m",
+              "sample_id_reused": false,
+              "test_id": "P10"
+            },
+            {
+              "delta_final_minus_initial": "-0.7",
+              "record_key": "Fernandez-Pello::P12",
+              "sample_id_raw": "199m",
+              "sample_id_reused": false,
+              "test_id": "P12"
+            },
+            {
+              "delta_final_minus_initial": "-1.6",
+              "record_key": "Fernandez-Pello::P13a",
+              "sample_id_raw": "203m",
+              "sample_id_reused": true,
+              "test_id": "P13a"
+            },
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "Fernandez-Pello::P13b",
+              "sample_id_raw": "203m",
+              "sample_id_reused": true,
+              "test_id": "P13b"
+            },
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "Fernandez-Pello::P14",
+              "sample_id_raw": "189M",
+              "sample_id_reused": false,
+              "test_id": "P14"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Fernandez-Pello::P15",
+              "sample_id_raw": "190M",
+              "sample_id_reused": false,
+              "test_id": "P15"
+            },
+            {
+              "delta_final_minus_initial": "-0.8",
+              "record_key": "Fernandez-Pello::P16",
+              "sample_id_raw": "191m",
+              "sample_id_reused": false,
+              "test_id": "P16"
+            },
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Fernandez-Pello::P17",
+              "sample_id_raw": "192m",
+              "sample_id_reused": false,
+              "test_id": "P17"
+            },
+            {
+              "delta_final_minus_initial": "-1",
+              "record_key": "Fernandez-Pello::P18",
+              "sample_id_raw": "193m",
+              "sample_id_reused": false,
+              "test_id": "P18"
+            },
+            {
+              "delta_final_minus_initial": "-0.8",
+              "record_key": "Fernandez-Pello::P19",
+              "sample_id_raw": "194m",
+              "sample_id_reused": false,
+              "test_id": "P19"
+            },
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Fernandez-Pello::P2",
+              "sample_id_raw": "188M",
+              "sample_id_reused": false,
+              "test_id": "P2"
+            },
+            {
+              "delta_final_minus_initial": "-0.8",
+              "record_key": "Fernandez-Pello::P20",
+              "sample_id_raw": "195m",
+              "sample_id_reused": false,
+              "test_id": "P20"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Fernandez-Pello::P21a",
+              "sample_id_raw": "196M",
+              "sample_id_reused": true,
+              "test_id": "P21a"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Fernandez-Pello::P21b",
+              "sample_id_raw": "196M",
+              "sample_id_reused": true,
+              "test_id": "P21b"
+            },
+            {
+              "delta_final_minus_initial": "-20.2",
+              "record_key": "Fernandez-Pello::P22a",
+              "sample_id_raw": "200m",
+              "sample_id_reused": true,
+              "test_id": "P22a"
+            },
+            {
+              "delta_final_minus_initial": "19.1",
+              "record_key": "Fernandez-Pello::P22b",
+              "sample_id_raw": "200m",
+              "sample_id_reused": true,
+              "test_id": "P22b"
+            },
+            {
+              "delta_final_minus_initial": "-1.2",
+              "record_key": "Fernandez-Pello::P23",
+              "sample_id_raw": "201m",
+              "sample_id_reused": false,
+              "test_id": "P23"
+            },
+            {
+              "delta_final_minus_initial": "-1.5",
+              "record_key": "Fernandez-Pello::P24",
+              "sample_id_raw": "819L",
+              "sample_id_reused": false,
+              "test_id": "P24"
+            },
+            {
+              "delta_final_minus_initial": "-0.7",
+              "record_key": "Fernandez-Pello::P25",
+              "sample_id_raw": "217m",
+              "sample_id_reused": true,
+              "test_id": "P25"
+            },
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Fernandez-Pello::P3a",
+              "sample_id_raw": "215M",
+              "sample_id_reused": true,
+              "test_id": "P3a"
+            },
+            {
+              "delta_final_minus_initial": "-0.6",
+              "record_key": "Fernandez-Pello::P3b",
+              "sample_id_raw": "215M",
+              "sample_id_reused": true,
+              "test_id": "P3b"
+            },
+            {
+              "delta_final_minus_initial": "-1.4",
+              "record_key": "Fernandez-Pello::P4",
+              "sample_id_raw": "197m",
+              "sample_id_reused": true,
+              "test_id": "P4"
+            },
+            {
+              "delta_final_minus_initial": "-1.7",
+              "record_key": "Fernandez-Pello::P5",
+              "sample_id_raw": "202m",
+              "sample_id_reused": true,
+              "test_id": "P5"
+            },
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "Fernandez-Pello::P6",
+              "sample_id_raw": "186m",
+              "sample_id_reused": false,
+              "test_id": "P6"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Fernandez-Pello::P8",
+              "sample_id_raw": "197m",
+              "sample_id_reused": true,
+              "test_id": "P8"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Fernandez-Pello::P9",
+              "sample_id_raw": "202m",
+              "sample_id_reused": true,
+              "test_id": "P9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 12,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 27,
+          "records_marked_with_reused_sample_id": 13,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "19.1",
+            "mean": "-0.6592592592592592592592592593",
+            "median": "-0.6",
+            "minimum": "-20.2",
+            "n": 27
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.00",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "unclassified",
+            "pi": "Olson"
+          },
+          "display_order": 13,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-1",
+              "record_key": "Olson::O14",
+              "sample_id_raw": "183m",
+              "sample_id_reused": false,
+              "test_id": "O14"
+            },
+            {
+              "delta_final_minus_initial": "-0.7",
+              "record_key": "Olson::O19",
+              "sample_id_raw": "213m",
+              "sample_id_reused": false,
+              "test_id": "O19"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 13,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.7",
+            "mean": "-0.85",
+            "median": "-0.85",
+            "minimum": "-1",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0230769230769230769230769231",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 14,
+          "distinct_exact_sample_ids_in_cohort": 13,
+          "eligible_pairs": 13,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Miller::M1",
+              "sample_id_raw": "222",
+              "sample_id_reused": false,
+              "test_id": "M1"
+            },
+            {
+              "delta_final_minus_initial": "-1.5",
+              "record_key": "Miller::M10",
+              "sample_id_raw": "180m",
+              "sample_id_reused": false,
+              "test_id": "M10"
+            },
+            {
+              "delta_final_minus_initial": "-1.5",
+              "record_key": "Miller::M11",
+              "sample_id_raw": "181m",
+              "sample_id_reused": false,
+              "test_id": "M11"
+            },
+            {
+              "delta_final_minus_initial": "-0.6",
+              "record_key": "Miller::M14",
+              "sample_id_raw": "223",
+              "sample_id_reused": false,
+              "test_id": "M14"
+            },
+            {
+              "delta_final_minus_initial": "-1",
+              "record_key": "Miller::M15",
+              "sample_id_raw": "225m",
+              "sample_id_reused": false,
+              "test_id": "M15"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Miller::M16",
+              "sample_id_raw": "164m",
+              "sample_id_reused": false,
+              "test_id": "M16"
+            },
+            {
+              "delta_final_minus_initial": "-1.7",
+              "record_key": "Miller::M17",
+              "sample_id_raw": "166m",
+              "sample_id_reused": false,
+              "test_id": "M17"
+            },
+            {
+              "delta_final_minus_initial": "-1.1",
+              "record_key": "Miller::M18",
+              "sample_id_raw": "168m",
+              "sample_id_reused": false,
+              "test_id": "M18"
+            },
+            {
+              "delta_final_minus_initial": "-1.6",
+              "record_key": "Miller::M19",
+              "sample_id_raw": "170m",
+              "sample_id_reused": false,
+              "test_id": "M19"
+            },
+            {
+              "delta_final_minus_initial": "-1.1",
+              "record_key": "Miller::M3",
+              "sample_id_raw": "226m",
+              "sample_id_reused": false,
+              "test_id": "M3"
+            },
+            {
+              "delta_final_minus_initial": "-0.5",
+              "record_key": "Miller::M7",
+              "sample_id_raw": "177m",
+              "sample_id_reused": false,
+              "test_id": "M7"
+            },
+            {
+              "delta_final_minus_initial": "-0.9",
+              "record_key": "Miller::M8",
+              "sample_id_raw": "178m",
+              "sample_id_reused": false,
+              "test_id": "M8"
+            },
+            {
+              "delta_final_minus_initial": "-0.4",
+              "record_key": "Miller::M9",
+              "sample_id_raw": "179m",
+              "sample_id_reused": false,
+              "test_id": "M9"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 14,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 13,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.3",
+            "mean": "-0.9769230769230769230769230769",
+            "median": "-1",
+            "minimum": "-1.7",
+            "n": 13
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.06",
+          "cohort": {
+            "flow_restrictor_code": "1",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 15,
+          "distinct_exact_sample_ids_in_cohort": 5,
+          "eligible_pairs": 5,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-1.3",
+              "record_key": "Miller::M12",
+              "sample_id_raw": "165m",
+              "sample_id_reused": false,
+              "test_id": "M12"
+            },
+            {
+              "delta_final_minus_initial": "-1.8",
+              "record_key": "Miller::M13",
+              "sample_id_raw": "169m",
+              "sample_id_reused": false,
+              "test_id": "M13"
+            },
+            {
+              "delta_final_minus_initial": "-0.6",
+              "record_key": "Miller::M20",
+              "sample_id_raw": "172m",
+              "sample_id_reused": false,
+              "test_id": "M20"
+            },
+            {
+              "delta_final_minus_initial": "-2",
+              "record_key": "Miller::M4",
+              "sample_id_raw": "171m",
+              "sample_id_reused": false,
+              "test_id": "M4"
+            },
+            {
+              "delta_final_minus_initial": "-1.1",
+              "record_key": "Miller::M6",
+              "sample_id_raw": "163m",
+              "sample_id_reused": false,
+              "test_id": "M6"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 15,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 5,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-0.6",
+            "mean": "-1.36",
+            "median": "-1.3",
+            "minimum": "-2",
+            "n": 5
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "0.0",
+          "cohort": {
+            "flow_restrictor_code": "0",
+            "material_class": "PMMA",
+            "pi": "Miller"
+          },
+          "display_order": 16,
+          "distinct_exact_sample_ids_in_cohort": 2,
+          "eligible_pairs": 2,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "-1",
+              "record_key": "Miller::M2",
+              "sample_id_raw": "224",
+              "sample_id_reused": false,
+              "test_id": "M2"
+            },
+            {
+              "delta_final_minus_initial": "-3.2",
+              "record_key": "Miller::M5",
+              "sample_id_raw": "167",
+              "sample_id_reused": false,
+              "test_id": "M5"
+            }
+          ],
+          "excluded_pairs": 0,
+          "excluded_record_evidence": [],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 16,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 2,
+          "records_marked_with_reused_sample_id": 0,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "-1",
+            "mean": "-2.1",
+            "median": "-2.1",
+            "minimum": "-3.2",
+            "n": 2
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "small_n_descriptive_only"
+        },
+        {
+          "absolute_mean_median_gap": "2.05",
+          "cohort": {
+            "flow_restrictor_code": "2",
+            "material_class": "PMMA",
+            "pi": "Bhattacharjee"
+          },
+          "display_order": 17,
+          "distinct_exact_sample_ids_in_cohort": 11,
+          "eligible_pairs": 10,
+          "eligible_record_evidence": [
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Bhattacharjee::B1",
+              "sample_id_raw": "147",
+              "sample_id_reused": false,
+              "test_id": "B1"
+            },
+            {
+              "delta_final_minus_initial": "-0.2",
+              "record_key": "Bhattacharjee::B10",
+              "sample_id_raw": "173m",
+              "sample_id_reused": false,
+              "test_id": "B10"
+            },
+            {
+              "delta_final_minus_initial": "-0.3",
+              "record_key": "Bhattacharjee::B11",
+              "sample_id_raw": "158m",
+              "sample_id_reused": false,
+              "test_id": "B11"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Bhattacharjee::B16",
+              "sample_id_raw": "150m",
+              "sample_id_reused": false,
+              "test_id": "B16"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Bhattacharjee::B17",
+              "sample_id_raw": "175m",
+              "sample_id_reused": false,
+              "test_id": "B17"
+            },
+            {
+              "delta_final_minus_initial": "-20.6",
+              "record_key": "Bhattacharjee::B2",
+              "sample_id_raw": "155",
+              "sample_id_reused": false,
+              "test_id": "B2"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Bhattacharjee::B20",
+              "sample_id_raw": "152m",
+              "sample_id_reused": false,
+              "test_id": "B20"
+            },
+            {
+              "delta_final_minus_initial": "0",
+              "record_key": "Bhattacharjee::B4",
+              "sample_id_raw": "159",
+              "sample_id_reused": false,
+              "test_id": "B4"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Bhattacharjee::B6",
+              "sample_id_raw": "153m",
+              "sample_id_reused": false,
+              "test_id": "B6"
+            },
+            {
+              "delta_final_minus_initial": "-0.1",
+              "record_key": "Bhattacharjee::B9",
+              "sample_id_raw": "154m",
+              "sample_id_reused": false,
+              "test_id": "B9"
+            }
+          ],
+          "excluded_pairs": 1,
+          "excluded_record_evidence": [
+            {
+              "exclusion_reasons": [
+                "final_aggregation_eligible_false",
+                "final_parsed_decimal_missing_or_invalid",
+                "final_status_not_numeric_exact:source_none"
+              ],
+              "record_key": "Bhattacharjee::B14",
+              "sample_id_raw": "174m",
+              "test_id": "B14"
+            }
+          ],
+          "inferential_statistics_produced": false,
+          "mean_direction": "negative_mean_change",
+          "mean_median_sign_relation": "same_sign",
+          "rank": 17,
+          "ranked_by": "signed_mean_paired_change_within_metric_only",
+          "records_in_cohort": 11,
+          "records_marked_with_reused_sample_id": 1,
+          "sample_reuse_caveat": "Repeated exact Sample IDs may indicate dependent experiment records; do not interpret record-pair n as independent physical-sample n.",
+          "statistics": {
+            "maximum": "0",
+            "mean": "-2.15",
+            "median": "-0.1",
+            "minimum": "-20.6",
+            "n": 10
+          },
+          "statistics_n_definition": "eligible experiment records; not necessarily independent physical samples",
+          "summary_status": "descriptive_only"
+        }
+      ],
+      "ranking_method": "Descending signed mean of precomputed paired changes; ranking is confined to this metric and its unit.",
+      "unit": "% by volume"
+    }
+  },
+  "ranking_basis": "signed mean paired change from the verified paired-analysis artifact; median is shown as a direction/consistency context, not a second ranking axis",
+  "ranking_scope": "separate rankings within O2, CO2, and CO; never compare or combine their numerical scales",
+  "record_count": 129,
+  "sample_reuse_summary": {
+    "distinct_nonblank_exact_raw_sample_ids": 107,
+    "identifier_matching": "exact_raw_case_sensitive",
+    "records_flagged_reused_by_canonicalizer": 42,
+    "records_in_reused_exact_raw_id_groups": 42,
+    "reused_exact_raw_id_groups": 20
+  },
+  "schema": "sira.psi25.findings_ranking.v1",
+  "scientific_use_constraints": [
+    "Descriptive within-record final-minus-initial differences only; no causal inference.",
+    "No values are imputed, normalized, or converted between units.",
+    "Only paired numeric_exact measurements with aggregation_eligible=true are included.",
+    "Censored, over-range, approximate, negative-review, missing, and otherwise ineligible values are excluded and retained in the record-level audit.",
+    "Cohorts are stratified by PI, canonical material class, and flow-restrictor code; no dataset-wide pooled summary is produced.",
+    "Repeated Sample IDs do not merge experiment records; each canonical record key remains a separate experiment, but repeated IDs may represent dependent observations from the same physical sample.",
+    "O2 sensor caveat: the BASS-II ReadMe states the O2 sensor was out of calibration and an MCA ISS reading was used for daily constant-offset correction; this engine uses canonical exported calibrated values as-is and does not independently validate calibration or residual uncertainty.",
+    "Descriptive cohort statistics count eligible experiment records, not necessarily independent physical samples; no sample-cluster adjustment, standard errors, confidence intervals, p-values, or inferential comparisons are produced.",
+    "A concentration difference is not an emission rate, heat-release rate, combustion efficiency, or independent measure of flame intensity.",
+    "The fan calibration workbook, fan display, air display, and radiometer gain are not used in this analysis."
+  ],
+  "source_investigation": "PSI-25",
+  "study_version": 4
+}

@@ -1,0 +1,166 @@
+name: Publish SIRA FireLab container
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".dockerignore"
+      - "Dockerfile"
+      - ".github/workflows/publish-container.yml"
+      - "firelab_service/**"
+      - "firelab_site/**"
+      - "requirements-dev.txt"
+      - "src/**"
+      - "tests/**"
+      - "tools/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - ".dockerignore"
+      - "Dockerfile"
+      - ".github/workflows/publish-container.yml"
+      - "firelab_service/**"
+      - "firelab_site/**"
+      - "requirements-dev.txt"
+      - "src/**"
+      - "tests/**"
+      - "tools/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sira-firelab-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Regression and public-source gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    env:
+      PYTHONPATH: .
+    steps:
+      - name: Check out reviewed source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python 3.12 (container runtime parity)
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Set up Node.js 24
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+          package-manager-cache: false
+
+      - name: Guard public source tree and tracked files
+        shell: bash
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import PurePosixPath
+
+          raw = subprocess.check_output(["git", "ls-files", "-z"])
+          paths = [PurePosixPath(p.decode("utf-8")) for p in raw.split(b"\0") if p]
+          bad = []
+          for path in paths:
+              name = path.name.lower()
+              if name == ".env" or name.startswith(".env."):
+                  bad.append(f"environment file: {path}")
+              if name in {"id_rsa", "id_ed25519"} or name.endswith((".pem", ".key", ".p12", ".pfx")):
+                  bad.append(f"private-key/certificate file: {path}")
+              if name.endswith((".sqlite", ".sqlite3", ".db")):
+                  bad.append(f"runtime database: {path}")
+              if path.parts and path.parts[0] == "src" and str(path) != "src/.gitkeep":
+                  bad.append(f"private SIRA source is not allowed in public src/: {path}")
+          if bad:
+              print("PUBLIC-SOURCE GATE FAILED:")
+              for item in bad:
+                  print(f" - {item}")
+              raise SystemExit(1)
+          print(f"PASS: reviewed {len(paths)} tracked paths; src/ contains only its placeholder")
+          PY
+
+      - name: Install test dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements-dev.txt
+
+      - name: Full Python regression (Python 3.12)
+        run: python -m pytest -q
+
+      - name: JavaScript regression
+        run: >-
+          node --test
+          tests/test_firelab_condition_analysis.js
+          tests/test_firelab_outcome_ranking.js
+          tests/test_firelab_source_label.js
+
+      - name: JavaScript syntax validation
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in firelab_site/*.js; do
+            node --check "$file"
+          done
+
+      - name: Python compilation
+        run: python -m compileall -q firelab_service tools
+
+  publish:
+    name: Build and publish GHCR image
+    needs: test
+    if: >-
+      github.event_name != 'pull_request' &&
+      (github.event_name != 'workflow_dispatch' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Check out tested source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069 # v4.4.1
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate immutable and convenience tags
+        id: meta
+        uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302 # v6.2.0
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=latest
+            type=sha,format=long
+            type=ref,event=branch
+
+      - name: Build and publish Linux AMD64 image with provenance and SBOM
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64
+          push: true
+          provenance: mode=max
+          sbom: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}

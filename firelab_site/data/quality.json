@@ -1,0 +1,134 @@
+{
+  "recordCount": 274,
+  "inputRows": 274,
+  "acceptedRows": 274,
+  "excludedRows": 0,
+  "testNumberCheck": {
+    "unique": 274,
+    "sequentialFromOne": true
+  },
+  "identifierChecks": {
+    "FLEX Test #": {
+      "unique": 274,
+      "duplicateRows": 0
+    },
+    "FLEX Identifier": {
+      "unique": 273,
+      "duplicateRows": 1,
+      "reusedValues": {
+        "193F001": 2
+      },
+      "note": "Repeated hardware identifiers are retained; FLEX Test # is the record key."
+    }
+  },
+  "fuelCounts": {
+    "Heptane": 117,
+    "Methanol": 157
+  },
+  "testEndCounts": {
+    "Completion": 27,
+    "Disruption": 61,
+    "Extinction": 186
+  },
+  "measurementQuality": {
+    "ambientPressureMmHg": {
+      "label": "Ambient pressure",
+      "unit": "mmHg",
+      "exact": 274,
+      "approximate": 0,
+      "missing": 0,
+      "invalid": 0,
+      "sourceHeader": "Ambient pressure; mmHg"
+    },
+    "oxygenMoleFraction": {
+      "label": "O₂ fraction",
+      "unit": "mole fraction",
+      "exact": 274,
+      "approximate": 0,
+      "missing": 0,
+      "invalid": 0,
+      "sourceHeader": "O initial ambient composition; mole fraction"
+    },
+    "nitrogenMoleFraction": {
+      "label": "N₂ fraction",
+      "unit": "mole fraction",
+      "exact": 274,
+      "approximate": 0,
+      "missing": 0,
+      "invalid": 0,
+      "sourceHeader": "N initial ambient composition; mole fraction"
+    },
+    "coSourceMoleFraction": {
+      "label": "CO / CO₂ source field",
+      "unit": "mole fraction",
+      "exact": 274,
+      "approximate": 0,
+      "missing": 0,
+      "invalid": 0,
+      "sourceHeader": "CO initial ambient composition; mole fraction"
+    },
+    "heliumMoleFraction": {
+      "label": "He fraction",
+      "unit": "mole fraction",
+      "exact": 274,
+      "approximate": 0,
+      "missing": 0,
+      "invalid": 0,
+      "sourceHeader": "He initial ambient composition; mole fraction"
+    },
+    "initialDropletDiameterMm": {
+      "label": "Initial droplet diameter",
+      "unit": "mm",
+      "exact": 262,
+      "approximate": 0,
+      "missing": 12,
+      "invalid": 0,
+      "sourceHeader": "Droplet initial diameter; mm"
+    },
+    "visibleFlameExtinctionDiameterMm": {
+      "label": "Visible-flame extinction diameter",
+      "unit": "mm",
+      "exact": 197,
+      "approximate": 0,
+      "missing": 77,
+      "invalid": 0,
+      "sourceHeader": "Visible flame extinction diameter; mm"
+    },
+    "burningRateMm2PerSec": {
+      "label": "Average burning-rate constant",
+      "unit": "mm²/s",
+      "exact": 258,
+      "approximate": 0,
+      "missing": 16,
+      "invalid": 0,
+      "sourceHeader": "Burning rate; mm"
+    },
+    "burnTimeSeconds": {
+      "label": "Burn time",
+      "unit": "s",
+      "exact": 266,
+      "approximate": 2,
+      "missing": 6,
+      "invalid": 0,
+      "sourceHeader": "Burn time; s"
+    }
+  },
+  "missingTimeRows": 1,
+  "dateParseErrors": 50,
+  "zeroPressureTestNumbers": [
+    114
+  ],
+  "compositionCheck": {
+    "outsideOnePercent": 25,
+    "policy": "source values retained; not normalized"
+  },
+  "sourceSha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+  "sourceNotes": [
+    "The PSI CSV labels this composition field CO; NASA/TP-2015-216046 defines its CO₂ field as ambient carbon-dioxide mole fraction. The first 31 PSI tests match NASA Table IX across eight checked fields (248 comparisons, zero mismatches); the PSI label is preserved and full row-by-row reconciliation remains outstanding.",
+    "The NASA report record states that it presents the first 284 tests; the PSI Version 5 CSV has 274 rows. The 10-test scope difference is unresolved and does not by itself identify missing or additional records.",
+    "The PSI CSV header abbreviates burning-rate units as mm; NASA/TP-2015-216046 documents the average burning-rate constant in mm²/s from a linear fit of droplet diameter squared versus time, shortly after ignition through extinction. The PSI header is preserved.",
+    "Blank and en-dash values are missing measurements. Tilde-prefixed values are approximate and are excluded from exact-value summaries.",
+    "Test 114 reports ambient pressure as 0 mmHg in both source records; this published value is preserved and flagged, not silently changed or interpreted as a valid pressure condition.",
+    "Mixture fractions are preserved as reported. No normalization is applied; deviations from unity are shown as a quality check."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "project_title": "SIRA FireLab — Evidence-Grounded Intelligence for Microgravity Fire Safety",
+  "team_name": "SIRA Earth Intelligence",
+  "challenge": "Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data",
+  "event": "NASA Space Apps Challenge 2026",
+  "ai_assisted_development": true,
+  "ai_tools": [
+    {
+      "name": "OpenAI ChatGPT",
+      "uses": [
+        "planning",
+        "architecture discussions",
+        "code drafting/refinement",
+        "debugging",
+        "test design/review",
+        "documentation"
+      ]
+    },
+    {
+      "name": "Anthropic Claude",
+      "uses": [
+        "planning",
+        "architecture discussions",
+        "code drafting/refinement",
+        "debugging",
+        "test design/review",
+        "documentation"
+      ]
+    }
+  ],
+  "ai_assisted_code_included": true,
+  "ai_generated_experimental_data_included": false,
+  "ai_generated_numeric_results_included": false,
+  "deterministic_analysis": true,
+  "datasets": [
+    {
+      "agency": "NASA",
+      "repository": "Physical Sciences Informatics",
+      "investigation": "PSI-69 FLEX",
+      "release": "Version 5",
+      "doi": "10.60555/mbq8-0451",
+      "experimental_records": 274,
+      "license_metadata": "CC0-1.0"
+    },
+    {
+      "agency": "NASA",
+      "repository": "Physical Sciences Informatics",
+      "investigation": "PSI-25 BASS-II",
+      "release": "Study Version 4",
+      "doi": "10.60555/4qc4-de67",
+      "experimental_records": 129,
+      "license_metadata": "CC0-1.0 at investigation metadata scope"
+    }
+  ],
+  "scientific_boundaries": [
+    "No cross-investigation pooling",
+    "No numeric imputation",
+    "No causal claims from descriptive cohort comparisons",
+    "No operational fire-safety recommendations",
+    "No universal safest-fuel ranking",
+    "No AI-generated experimental measurements or deterministic numerical results"
+  ],
+  "disclosures": {
+    "full_ai_disclosure": "docs/AI_USAGE.md",
+    "data_provenance": "docs/DATA_SOURCES.md",
+    "methods": "docs/METHODS.md",
+    "NASA_compliance": "docs/NASA_COMPLIANCE.md"
+  },
+  "license_status": "Apache-2.0 adopted for original SIRA FireLab project software; both contributors approved public release and licensing. Third-party and NASA source materials retain separate applicable terms; see docs/LICENSE_STATUS.md.",
+  "challenge_resources_entry_verified": false,
+  "release_dataset_baseline": {
+    "baseline_id": "SIRA-FIRELAB-DATA-BASELINE-2026-11-12",
+    "snapshot_date": "2026-11-12",
+    "status": "frozen_public_release_candidate",
+    "data_origin_note": "The team reports that its local-event teachers/organizers provided the dataset packages and instructed the team to use them for local-event judging; the underlying scientific data are identified by NASA Physical Sciences Informatics repository records.",
+    "datasets": [
+      {
+        "investigation": "PSI-69",
+        "name": "FLEX",
+        "version": 5,
+        "record_count": 274,
+        "doi": "10.60555/mbq8-0451",
+        "repository": "NASA Physical Sciences Informatics",
+        "license_metadata": "CC0-1.0",
+        "challenge_resources_tab_match_verified": false
+      },
+      {
+        "investigation": "PSI-25",
+        "name": "BASS-II",
+        "version": 4,
+        "record_count": 129,
+        "doi": "10.60555/4qc4-de67",
+        "repository": "NASA Physical Sciences Informatics",
+        "license_metadata": "CC0-1.0",
+        "license_metadata_scope": "Investigation-level metadata; not an independent file-by-file legal review.",
+        "challenge_resources_tab_match_verified": false
+      }
+    ],
+    "challenge_resources_alignment": "pending_exact_resources_list_verification",
+    "future_updates": "Any later source alignment is to be recorded as a separate explicit update; this snapshot must not be silently overwritten.",
+    "software_license": {
+      "repository_license_file_present": false,
+      "license_file_created_by_this_script": false,
+      "team_rights_confirmation_required": true
+    },
+    "local_event_instruction_context": {
+      "status": "team_reported",
+      "instruction": "Local-event teachers/mentors supplied PSI-69 FLEX v5 and PSI-25 BASS-II v4 data packages and instructed the team to use these datasets for local judging.",
+      "applies_to": [
+        "PSI-69 FLEX v5",
+        "PSI-25 BASS-II v4"
+      ],
+      "challenge_resources_tab_match_verified": false
+    }
+  },
+  "release_baseline_updated_at_utc": "2026-11-12T13:49:15+00:00",
+  "software_license": {
+    "spdx_identifier": "Apache-2.0",
+    "license_file": "LICENSE",
+    "license_file_present": true,
+    "status": "approved_by_both_contributors",
+    "contributors": [
+      "Project lead",
+      "Sadia"
+    ],
+    "consent_basis": "Project lead confirmed that both contributors explicitly approved public release and Apache-2.0 licensing.",
+    "scope": "Original SIRA FireLab project software",
+    "third_party_materials_included_under_this_license": false
+  }
+}

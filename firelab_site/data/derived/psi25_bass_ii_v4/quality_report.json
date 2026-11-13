@@ -1,0 +1,188 @@
+{
+  "censoring_documentation": {
+    "co_or_threshold_readme_paragraphs": [
+      23
+    ],
+    "co_or_threshold_verified": true,
+    "or_threshold_used_ppm": "1000"
+  },
+  "dataset": "NASA PSI-25 BASS-II",
+  "identity_reconciliation": {
+    "core_checks": {
+      "date_exact": 129,
+      "flow_restrictor_exact": 129,
+      "gmt_exact": 129,
+      "identity_exact": 129,
+      "sample_id_exact": 129
+    },
+    "csv_records": 129,
+    "field_reconciliation": {
+      "air_display": {
+        "comma_whitespace_candidate": 85,
+        "exact": 44
+      },
+      "fan_display": {
+        "comma_whitespace_candidate": 89,
+        "exact": 40
+      },
+      "final_co": {
+        "exact": 129
+      },
+      "final_co2": {
+        "exact": 118,
+        "floating_point_close": 11
+      },
+      "final_o2": {
+        "exact": 102,
+        "floating_point_close": 27
+      },
+      "flow_restrictor": {
+        "exact": 129
+      },
+      "initial_co": {
+        "exact": 129
+      },
+      "initial_co2": {
+        "exact": 123,
+        "floating_point_close": 6
+      },
+      "initial_o2": {
+        "exact": 107,
+        "floating_point_close": 22
+      },
+      "material": {
+        "case_whitespace_equivalent": 19,
+        "comma_whitespace_candidate": 28,
+        "exact": 76,
+        "verified_sibal_word_order_alias": 6
+      },
+      "radiometer_gain": {
+        "comma_whitespace_candidate": 9,
+        "exact": 120
+      },
+      "total_frames": {
+        "exact": 129
+      }
+    },
+    "matched_composite_identities": 129,
+    "matrix_records": 129
+  },
+  "investigation_version": 4,
+  "material_mapping": {
+    "sibal_composition_verified": true,
+    "sibal_readme_paragraphs": [
+      9
+    ],
+    "sphere_mapping_verified": true,
+    "sphere_readme_paragraphs": [
+      9
+    ],
+    "status_counts": {
+      "explicit_in_source_description": 41,
+      "raw_description_only": 59,
+      "source_verified": 29
+    }
+  },
+  "measurement_status_counts": {
+    "air_display": {
+      "blank": 4,
+      "numeric_scalar_steady_state_unverified": 25,
+      "sequence_or_note": 100
+    },
+    "fan_display": {
+      "blank": 13,
+      "sequence_or_note": 97,
+      "single_numeric_token_uninterpreted": 19
+    },
+    "final_co": {
+      "blank": 1,
+      "numeric_exact": 120,
+      "over_range_threshold_unspecified": 1,
+      "right_censored": 3,
+      "source_none": 4
+    },
+    "final_co2": {
+      "blank": 1,
+      "numeric_exact": 123,
+      "source_none": 5
+    },
+    "final_o2": {
+      "numeric_exact": 127,
+      "source_none": 2
+    },
+    "initial_co": {
+      "negative_numeric_requires_review": 13,
+      "numeric_exact": 113,
+      "right_censored": 1,
+      "source_none": 2
+    },
+    "initial_co2": {
+      "numeric_exact": 127,
+      "source_none": 2
+    },
+    "initial_o2": {
+      "numeric_exact": 129
+    },
+    "radiometer_gain": {
+      "sequence_or_note": 19,
+      "single_gain_setting": 110
+    },
+    "total_frames_shot": {
+      "integer_frame_count": 123,
+      "source_descriptor": 5,
+      "source_none": 1
+    }
+  },
+  "pi_record_counts": {
+    "Bhattacharjee": 22,
+    "Ferkul": 4,
+    "Fernandez-Pello": 27,
+    "Miller": 20,
+    "Olson": 27,
+    "T'ien": 29
+  },
+  "record_count": 129,
+  "sample_reuse": {
+    "case_sensitive": true,
+    "distinct_exact_raw_ids": 107,
+    "reused_exact_raw_id_groups": 20,
+    "reused_ids": {
+      "133m": 2,
+      "144m": 3,
+      "145m": 2,
+      "146m": 2,
+      "174m": 2,
+      "176m": 2,
+      "182m": 2,
+      "196M": 2,
+      "197m": 2,
+      "200m": 2,
+      "202m": 2,
+      "203m": 2,
+      "205M": 2,
+      "208m": 2,
+      "215M": 2,
+      "217m": 2,
+      "218m": 2,
+      "219m": 2,
+      "220m": 3,
+      "221m": 2
+    }
+  },
+  "schema": "sira.firelab.psi25.quality_report.v1",
+  "scientific_use_constraints": [
+    "Raw source strings are retained; no original source was normalized.",
+    "OR is right-censored only when the ReadMe verifies its >1000 ppm meaning.",
+    "Explicit >N source values remain right-censored and are not replaced by N.",
+    "The word 'over' has no inferred numeric threshold.",
+    "Blank and literal none are separate states.",
+    "Negative CO readings are retained and flagged for review.",
+    "Fan display scalar tokens are not interpreted as fan voltage or potentiometer settings.",
+    "Air display sequences and notes are not split into invented measurements.",
+    "Single Air display scalars are not aggregation eligible without steady-state evidence.",
+    "Radiometer gain is a setting, not absolute heat flux.",
+    "Total Frames Shot is not experiment duration or FPS.",
+    "No airflow reconstruction or fan calibration is performed.",
+    "Repeated samples remain separate experiment records."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "builder": {
+    "module": "tools/firelab/psi25_canonical.py",
+    "sha256": "3a8b8016d266796c458dc40b5d140a34f7fbd697c9a271b87ecf923dfd29b2f4"
+  },
+  "dataset": "NASA PSI-25 BASS-II",
+  "derived_files": {
+    "canonical_records.json": {
+      "bytes": 550498,
+      "sha256": "568da88a10a8482a023e2c3016df4a4cd2c5903c110bc728d0784aa779639a6f"
+    },
+    "quality_report.json": {
+      "bytes": 4745,
+      "sha256": "8fb15d6f22baa756a07e173b88ef2f8e4fbb5e87a3bd06c37469cae5bbc1f9c7"
+    }
+  },
+  "deterministic_build": true,
+  "original_sources_modified": false,
+  "record_count": 129,
+  "schema": "sira.firelab.psi25.canonical_manifest.v1",
+  "source_files": {
+    "PSI-25_Experimental table_BASS-II.csv": {
+      "bytes": 16590,
+      "path": "firelab_site/data/source/PSI-25_BASS-II_v4_selected/PSI-25_Experimental table_BASS-II.csv",
+      "sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042"
+    },
+    "PSI-25_Reference Data_Fan calibration data.xlsx": {
+      "bytes": 23973,
+      "path": "firelab_site/data/source/PSI-25_BASS-II_v4_selected/PSI-25_Reference Data_Fan calibration data.xlsx",
+      "sha256": "bc0dca3efdef44a7774d8dd37aebc0cedae8d67d7bae8c9cbde9590014a3c983"
+    },
+    "PSI-25_Science Documents_BASS-II_ReadMe.docx": {
+      "bytes": 21538,
+      "path": "firelab_site/data/source/PSI-25_BASS-II_v4_selected/PSI-25_Science Documents_BASS-II_ReadMe.docx",
+      "sha256": "69f32647792f54ab2a561e3cdafc6c87d854564fe487aed2b09265286bd84e1d"
+    },
+    "PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx": {
+      "bytes": 28956,
+      "path": "firelab_site/data/source/PSI-25_BASS-II_v4_selected/PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx",
+      "sha256": "1a3b283dd0adec861793bbc4a454aab64d398cd32d6f37d7a1ad0f642879e686"
+    }
+  },
+  "source_manifest_sha256": "ad5c62211fc0be8ff60fd218c5bd18d2d9299ce1bb94ebc3024184dbb433796a",
+  "study_version": 4
+}

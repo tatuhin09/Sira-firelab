@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071522">
+  <meta name="description" content="An evidence-led workspace for exploring NASA's FLEX microgravity combustion experiments.">
+  <title>Ask SIRA · SIRA FireLab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="FireLab workspace">
+      <a class="brand" href="#ask" aria-label="SIRA FireLab home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-wordmark">SIRA <b>FIRELAB</b></span>
+      </a>
+
+      <a class="mission-card" id="active-investigation-link" href="#overview">
+        <span class="mission-glyph" aria-hidden="true"><span></span></span>
+        <span><small>ACTIVE INVESTIGATION</small><strong id="active-investigation-name">NASA PSI-69</strong><em id="active-investigation-description">FLEX · droplet combustion</em></span>
+        <span class="mission-chevron" aria-hidden="true">›</span>
+      </a>
+
+      <p class="nav-caption">WORKSPACE</p>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#ask" data-page="ask" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18.5 3.8 21l3.5-1.1a9 9 0 1 0-2.3-1.4Z"/><path d="M8 10h8M8 14h5"/></svg><span>Ask SIRA</span><span class="nav-new">SIRA</span>
+        </a>
+        <a class="nav-link" href="#overview" data-page="overview">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="4" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Overview</span>
+        </a>
+        <a class="nav-link" href="#data" data-page="data">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16M4 10h16M4 14.5h16M4 19h16"/><path d="M8 4v16M16 4v16"/></svg><span>Data Explorer</span>
+        </a>
+        <a class="nav-link" href="#psi25" data-page="psi25">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 10h16M4 15h16M4 20h16"/><path d="M8 4v17M16 4v17"/></svg><span>BASS-II Explorer</span><span class="nav-new">PSI-25</span>
+        </a>
+        <a class="nav-link" href="#research" data-page="research">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19.5h12M8 17V9.5M12 17V4.5M16 17v-5"/><circle cx="8" cy="7" r="1.5"/><circle cx="12" cy="3.5" r="1.5"/><circle cx="16" cy="10" r="1.5"/></svg><span>Research Lab</span>
+        </a>
+        <a class="nav-link" href="#methods" data-page="methods">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h14v15H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Methods &amp; Sources</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="bundle-card">
+          <span class="bundle-indicator" id="sidebar-indicator"></span>
+          <div><strong id="sidebar-bundle-state">Loading source bundle</strong><small id="sidebar-bundle-count">NASA PSI-69 · FLEX</small></div>
+        </div>
+        <a class="sidebar-source" id="sidebar-source-link" href="https://psi.nasa.gov/physci/repo/data/investigations/PSI-69" target="_blank" rel="noreferrer"><span id="sidebar-source-label">NASA PSI-69 source</span> <span aria-hidden="true">↗</span></a>
+        <div class="sidebar-version"><span>SIRA FIRELAB</span><span>RESEARCH PREVIEW</span></div>
+      </div>
+    </aside>
+
+    <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+    <div class="app-main">
+      <header class="workspace-topbar">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar"><span></span><span></span></button>
+        <div class="breadcrumbs"><span>MISSION WORKSPACE</span><i aria-hidden="true">/</i><strong id="current-page-label">Ask SIRA</strong></div>
+        <div class="topbar-status"><span class="mode-pill"><i></i>SERVER-SIDE EVIDENCE MODE</span><span class="dataset-pill" id="header-data-state">Loading dataset</span></div>
+      </header>
+
+      <main class="page-stack">
+        <section class="page-view assistant-view" id="view-ask" data-view="ask" aria-labelledby="ask-title">
+          <div class="view-heading assistant-heading">
+            <div><p class="eyebrow">SIRA RESEARCH ASSISTANT <span class="eyebrow-rule"></span> NASA PSI DATA</p><h1 id="ask-title">Start with a question.</h1><p class="view-intro">Explore the experiment record with answers that point back to evidence.</p></div>
+            <span class="model-state"><span class="model-state-dot"></span> SIRA CORE · EVIDENCE MODE</span>
+          </div>
+          <div class="assistant-layout">
+            <aside class="chat-history-rail" aria-label="Research conversation history">
+              <div class="history-rail-heading"><div><p class="eyebrow">YOUR WORKSPACE</p><h2>Chat history</h2></div><button type="button" id="new-chat-button" class="new-chat-button" aria-label="Start a new investigation" title="Start a new investigation">+</button></div>
+              <p id="history-storage-status" class="history-storage-status">Saved only in this browser</p>
+              <div id="conversation-list" class="conversation-list" role="group" aria-label="Saved investigations"></div>
+            </aside>
+            <section class="assistant-panel" aria-label="Ask SIRA about registered NASA investigations">
+              <div class="thread-toolbar">
+                <div class="thread-toolbar-title"><p class="eyebrow">ACTIVE INVESTIGATION</p><strong id="active-conversation-title">New investigation</strong></div>
+                <div class="thread-toolbar-controls">
+                  <label class="investigation-control" for="investigation-select"><span>QUERY SOURCE</span>
+                    <select id="investigation-select" name="investigation_id" aria-label="Select the registered investigation for Ask SIRA">
+                      <option value="auto" selected>Auto-detect investigation</option>
+                      <option value="psi69-flex-v5">NASA PSI-69 · FLEX Version 5</option>
+                      <option value="psi25-bass-ii-v4">NASA PSI-25 · BASS-II Study Version 4</option>
+                    </select>
+                  </label>
+                  <span class="thread-toolbar-service">SIRA EVIDENCE SERVICE</span>
+                </div>
+              </div>
+              <div class="conversation" id="conversation" role="log" aria-live="polite" aria-relevant="additions">
+                <article class="assistant-message welcome-message" id="welcome-message">
+                  <div class="assistant-avatar" aria-hidden="true">S</div>
+                  <div class="message-content">
+                    <div class="message-meta"><strong>SIRA</strong><span>SIRA EVIDENCE SERVICE</span></div>
+                    <p class="welcome-title">What would you like to investigate?</p>
+                    <p>Explore registered NASA investigation evidence: FLEX outcomes and measurement-quality flags, BASS-II metric-specific paired findings, and evidence-gap research questions. Answers use separate deterministic analyses for each investigation.</p>
+                    <div class="welcome-note"><span aria-hidden="true">i</span><span>Numeric answers are produced by the local SIRA FireLab server using registered, deterministic analyses. Generative explanations are not enabled in this release; conversation history stays in this browser.</span></div>
+                    <div class="suggestion-grid" aria-label="Example questions">
+                      <button type="button" class="suggestion" data-prompt="Summarize the FLEX dataset"><span>01</span><span>Summarize the FLEX dataset</span><b aria-hidden="true">↗</b></button>
+                      <button type="button" class="suggestion" data-prompt="Show outcome counts by fuel"><span>02</span><span>Show outcome counts by fuel</span><b aria-hidden="true">↗</b></button>
+                      <button type="button" class="suggestion" data-prompt="What should I know about data quality?"><span>03</span><span>What should I know about data quality?</span><b aria-hidden="true">↗</b></button>
+                      <button type="button" class="suggestion" data-prompt="Compare oxygen conditions"><span>04</span><span>Compare oxygen conditions</span><b aria-hidden="true">↗</b></button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <form class="composer" id="ask-form">
+                <label class="sr-only" for="question-input">Ask a question about registered NASA investigation evidence</label>
+                <textarea id="question-input" name="question" rows="2" maxlength="400" placeholder="Ask about records, outcomes, or data quality…" required></textarea>
+                <div class="composer-bottom"><span id="assistant-hint">Local evidence · Browser-only history</span><button type="submit"><span>Ask SIRA</span><b aria-hidden="true">↑</b></button></div>
+              </form>
+            </section>
+            <aside class="evidence-rail" aria-label="Evidence context">
+              <div class="rail-card source-card">
+                <div class="rail-card-heading"><span class="rail-icon" aria-hidden="true">⌁</span><span class="eyebrow">ACTIVE EVIDENCE</span></div>
+                <h2 id="assistant-evidence-title">Automatic routing</h2><p id="assistant-evidence-description">PSI-69 FLEX v5 · PSI-25 BASS-II v4</p>
+                <div class="source-stat"><span id="assistant-record-label">Registered investigations</span><strong id="assistant-record-count">2 approved</strong></div>
+                <div class="source-stat"><span>Dataset release</span><strong id="assistant-source-version">Auto · registered sources</strong></div>
+                <a class="text-link" id="assistant-source-link" href="#methods" target="_self" rel="noopener noreferrer"><span id="assistant-source-link-label">Review registered sources</span> <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="rail-card evidence-note-card">
+                <p class="eyebrow">EVIDENCE RULE</p><p>Counts and summaries come from code. Explanations never replace the source record or its limitations.</p>
+                <a href="#methods" class="inline-route">Review methods &amp; flags <span aria-hidden="true">→</span></a>
+              </div>
+              <div class="rail-footnote"><span class="footnote-dot"></span><span>Offline-ready NASA data<br><b>Research traces show server-reported calculations</b></span></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="page-view overview-view" id="view-overview" data-view="overview" aria-labelledby="overview-title" hidden>
+          <div class="view-heading">
+            <div><p class="eyebrow">MISSION OVERVIEW <span class="eyebrow-rule"></span> INVESTIGATION PSI-69</p><h1 id="overview-title">Flame in freefall.</h1><p class="view-intro">A focused research workspace for exploring how droplet flames behave in microgravity.</p></div>
+            <a class="outline-link" href="https://psi.nasa.gov/physci/repo/data/investigations/PSI-69" target="_blank" rel="noreferrer">NASA data source <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="overview-hero">
+            <div class="overview-copy"><span class="mission-label"><i></i> NASA PHYSICAL SCIENCES INFORMATICS</span><h2>Make every result<br><em>traceable.</em></h2><p>Start with a research question, follow it to the experiment records, then inspect the method and limits behind every summary.</p><a class="primary-link" href="#ask">Ask SIRA <span aria-hidden="true">→</span></a></div>
+            <div class="orbit-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="planet"></div><div class="flame"></div><span>FLEX</span></div>
+          </div>
+          <div class="stat-grid">
+            <article class="stat-card"><span class="stat-label">SOURCE RECORDS</span><strong id="overview-record-count">—</strong><small>FLEX tests retained</small></article>
+            <article class="stat-card"><span class="stat-label">FUEL GROUPS</span><strong id="overview-fuel-count">—</strong><small>As reported in source</small></article>
+            <article class="stat-card"><span class="stat-label">TEST OUTCOMES</span><strong id="overview-outcome-count">—</strong><small>Reported end states</small></article>
+            <article class="stat-card stat-status"><span class="stat-label">EVIDENCE STATUS</span><strong id="overview-evidence-status">Loading</strong><small>Quality flags stay visible</small></article>
+          </div>
+          <div class="section-label-row"><div><p class="eyebrow">EXPLORE THE WORKSPACE</p><h2>From question to evidence.</h2></div><span>Four views · one source trail</span></div>
+          <div class="workspace-cards">
+            <a class="workspace-card" href="#data"><span class="card-index">01 / DATA</span><span class="workspace-card-icon" aria-hidden="true">▦</span><h3>Browse experiment records</h3><p>Filter the original test table by fuel and reported outcome.</p><b>Open Data Explorer <span aria-hidden="true">→</span></b></a>
+            <a class="workspace-card" href="#research"><span class="card-index">02 / ANALYSIS</span><span class="workspace-card-icon" aria-hidden="true">⌁</span><h3>Inspect descriptive summaries</h3><p>Review reproducible counts and unadjusted summaries with limits attached.</p><b>Open Research Lab <span aria-hidden="true">→</span></b></a>
+            <a class="workspace-card" href="#methods"><span class="card-index">03 / METHODS</span><span class="workspace-card-icon" aria-hidden="true">≡</span><h3>Trace methods and sources</h3><p>See provenance, missingness, source notes, and measurement rules.</p><b>Open Methods &amp; Sources <span aria-hidden="true">→</span></b></a>
+          </div>
+        </section>
+
+        <section class="page-view data-view" id="view-data" data-view="data" aria-labelledby="data-title" hidden>
+          <div class="view-heading">
+            <div><p class="eyebrow">DATA EXPLORER <span class="eyebrow-rule"></span> NASA PSI-69</p><h1 id="data-title">Experiment records.</h1><p class="view-intro">Browse source-reported FLEX tests. Original missing and approximate values remain visible.</p></div>
+            <a class="outline-link" id="data-source-link" href="https://psi.nasa.gov/physci/repo/data/investigations/PSI-69" target="_blank" rel="noreferrer">Source dataset <span aria-hidden="true">↗</span></a>
+          </div>
+          <section class="panel data-panel">
+            <div class="panel-heading"><div><p class="eyebrow">RECORD TABLE</p><h2>NASA FLEX test data</h2></div><span class="tag">PSI-69 · FLEX</span></div>
+            <div class="explorer-controls">
+              <label>Fuel<select id="fuel-filter"><option value="">All fuels</option></select></label>
+              <label>Test outcome<select id="outcome-filter"><option value="">All outcomes</option></select></label>
+              <span id="record-match" role="status" aria-live="polite">Loading records…</span>
+            </div>
+            <div class="table-wrap" role="region" aria-label="Filtered FLEX experiment records" tabindex="0">
+              <table class="record-table"><thead><tr><th scope="col">Test #</th><th scope="col">Fuel</th><th scope="col">Pressure<br><small>mmHg</small></th><th scope="col">O₂<br><small>mole fraction</small></th><th scope="col">Extinction Ø<br><small>mm</small></th><th scope="col">Burn rate<br><small>mm²/s</small></th><th scope="col">Test end</th></tr></thead><tbody id="records-body"><tr><td colspan="7">Loading source records…</td></tr></tbody></table>
+            </div>
+            <div class="table-legend"><span><i class="legend-exact"></i>Source value</span><span><i class="legend-approx"></i>Approximate source value</span><span><i class="legend-missing"></i>Not reported</span></div>
+            <div class="panel-foot"><span>Record key: FLEX Test #</span><span id="data-record-foot">Source values preserved</span></div>
+          </section>
+          <div class="below-panel-note"><span class="note-mark">i</span><p>For measurement completeness, source-field discrepancies, and data-quality flags, open <a href="#methods">Methods &amp; Sources</a>.</p></div>
+        </section>
+
+        <section class="page-view psi25-view" id="view-psi25" data-view="psi25" aria-labelledby="psi25-title" hidden>
+          <div class="view-heading">
+            <div><p class="eyebrow">DATA EXPLORER <span class="eyebrow-rule"></span> NASA PSI-25 · BASS-II</p><h1 id="psi25-title">Burning and suppression of solids.</h1><p class="view-intro">Browse the 129 canonical BASS-II experiment records. Raw source strings, censoring, and measurement limitations remain visible.</p></div>
+            <span class="license-badge">PSI-25 · STUDY V4</span>
+          </div>
+          <div class="stat-grid psi25-stat-grid" aria-label="BASS-II dataset summary">
+            <article class="stat-card"><span class="stat-label">EXPERIMENT RECORDS</span><strong id="psi25-record-count">—</strong><small>Distinct test identities</small></article>
+            <article class="stat-card"><span class="stat-label">PRINCIPAL INVESTIGATORS</span><strong id="psi25-pi-count">—</strong><small>As reported in the source</small></article>
+            <article class="stat-card"><span class="stat-label">EXACT SAMPLE IDs</span><strong id="psi25-sample-count">—</strong><small>Case-sensitive identifiers</small></article>
+            <article class="stat-card"><span class="stat-label">REUSED SAMPLE GROUPS</span><strong id="psi25-reuse-count">—</strong><small>Experiments remain separate</small></article>
+          </div>
+
+          <section class="panel psi25-analysis-panel" aria-labelledby="psi25-analysis-title">
+            <div class="panel-heading">
+              <div><p class="eyebrow">FIRE SCIENCE ANALYSIS <span class="eyebrow-rule"></span> PAIRED MEASUREMENTS</p><h2 id="psi25-analysis-title">Gas concentration change by cohort</h2></div>
+              <span class="tag">CODE-CALCULATED · DESCRIPTIVE ONLY</span>
+            </div>
+            <p class="panel-description">Values are precomputed from eligible exact initial/final pairs. Change is final minus initial. Cohorts remain separated by principal investigator, canonical material class, and flow-restrictor code. No inferential statistics or causal claims are produced.</p>
+            <div id="psi25-analysis-status" class="psi25-analysis-status" role="status" aria-live="polite">Loading verified paired-analysis artifact…</div>
+            <div class="psi25-analysis-controls">
+              <label>Measurement<select id="psi25-analysis-metric"><option value="o2">Oxygen · O₂</option><option value="co2">Carbon dioxide · CO₂</option><option value="co">Carbon monoxide · CO</option></select></label>
+              <label>Principal Investigator<select id="psi25-analysis-pi"><option value="">All investigators</option></select></label>
+              <label>Material class<select id="psi25-analysis-material"><option value="">All material classes</option></select></label>
+              <label>Flow restrictor<select id="psi25-analysis-restrictor"><option value="">All codes</option></select></label>
+              <button id="psi25-analysis-reset" class="condition-reset" type="button">Reset analysis filters</button>
+            </div>
+            <div id="psi25-analysis-summary" class="psi25-analysis-summary" aria-live="polite">
+              <article><span>ELIGIBLE PAIRS</span><strong>—</strong><small>Exact paired records</small></article>
+              <article><span>EXCLUDED PAIRS</span><strong>—</strong><small>Not used in summaries</small></article>
+              <article><span>COHORTS SHOWN</span><strong>—</strong><small>After current filters</small></article>
+              <article><span>SMALL-N COHORTS</span><strong>—</strong><small>Descriptive only</small></article>
+            </div>
+            <div class="psi25-analysis-chart-block">
+              <div class="psi25-analysis-subheading"><h3>Mean paired change by cohort</h3><span id="psi25-analysis-chart-unit">—</span></div>
+              <p class="psi25-analysis-hint">Bars show the absolute magnitude of the precomputed cohort mean; the signed value is printed alongside each bar. Bar length is a visual scale only.</p>
+              <div id="psi25-analysis-chart" class="psi25-analysis-chart" role="group" aria-label="Precomputed mean paired change by cohort"><p class="psi25-analysis-empty">Waiting for verified analysis.</p></div>
+            </div>
+            <div class="psi25-analysis-table-block">
+              <div class="psi25-analysis-subheading"><h3>Cohort statistics</h3><span>Mean · median · min · max</span></div>
+              <div class="table-wrap psi25-analysis-table-wrap" role="region" aria-label="Filtered BASS-II cohort statistics" tabindex="0">
+                <table class="record-table psi25-analysis-table">
+                  <thead><tr><th scope="col">PI</th><th scope="col">Material</th><th scope="col">Restrictor</th><th scope="col">Eligible n</th><th scope="col">Mean Δ</th><th scope="col">Median Δ</th><th scope="col">Min–max</th><th scope="col">Interpretation</th></tr></thead>
+                  <tbody id="psi25-analysis-cohorts"><tr><td colspan="8">Waiting for verified analysis.</td></tr></tbody>
+                </table>
+              </div>
+            </div>
+            <details class="psi25-analysis-audit-details">
+              <summary>Open record-level paired-measurement audit</summary>
+              <p class="panel-description">Each row is an experiment record, not an independent physical sample. Exclusion reasons are retained from the analysis artifact.</p>
+              <label class="psi25-analysis-audit-search">Search test / sample<input id="psi25-analysis-audit-search" type="search" maxlength="120" autocomplete="off" placeholder="e.g. O12 or 220m"></label>
+              <p id="psi25-analysis-audit-count" class="psi25-analysis-hint" aria-live="polite">129 records in the audit.</p>
+              <div class="table-wrap psi25-analysis-table-wrap" role="region" aria-label="Paired measurement record audit" tabindex="0">
+                <table class="record-table psi25-analysis-audit-table">
+                  <thead><tr><th scope="col">Test</th><th scope="col">Sample ID</th><th scope="col">PI</th><th scope="col">Material</th><th scope="col">Initial</th><th scope="col">Final</th><th scope="col">Δ</th><th scope="col">Eligibility / reason</th></tr></thead>
+                  <tbody id="psi25-analysis-audit"><tr><td colspan="8">Waiting for verified analysis.</td></tr></tbody>
+                </table>
+              </div>
+            </details>
+            <div id="psi25-analysis-caveats" class="psi25-analysis-caveats" aria-live="polite"></div>
+            <div class="psi25-analysis-provenance">
+              <span id="psi25-analysis-hash">Analysis artifact SHA-256: pending verification</span>
+              <span id="psi25-analysis-builder">Builder: pending</span>
+            </div>
+          </section>
+
+          <section class="panel psi25-findings-panel" aria-labelledby="psi25-findings-title">
+            <div class="panel-heading">
+              <div><p class="eyebrow">EVIDENCE SYNTHESIS <span class="eyebrow-rule"></span> FINDINGS &amp; RANKING</p><h2 id="psi25-findings-title">Observed cohort patterns</h2></div>
+              <span class="tag">DESCRIPTIVE · METRIC-SPECIFIC</span>
+            </div>
+            <p class="panel-description">Rankings reproduce the verified findings artifact: signed mean paired change within one gas metric only. Filters hide cohorts without recalculating or re-ranking them. A rank is descriptive, not a fuel-safety score, causal effect, or inferential result.</p>
+            <div id="psi25-findings-status" class="psi25-findings-status" role="status" aria-live="polite">Waiting for verified paired analysis and findings artifact…</div>
+            <div class="psi25-findings-controls">
+              <label>Measurement<select id="psi25-findings-metric"><option value="o2">Oxygen · O₂</option><option value="co2">Carbon dioxide · CO₂</option><option value="co">Carbon monoxide · CO</option></select></label>
+              <label>Principal Investigator<select id="psi25-findings-pi"><option value="">All investigators</option></select></label>
+              <label>Material class<select id="psi25-findings-material"><option value="">All material classes</option></select></label>
+              <label>Flow restrictor<select id="psi25-findings-restrictor"><option value="">All codes</option></select></label>
+              <button id="psi25-findings-reset" class="condition-reset" type="button">Reset finding filters</button>
+            </div>
+            <p class="psi25-findings-hint">Displayed rank numbers retain their original position in the full metric ranking. Applying filters does not create a new ranking.</p>
+            <div id="psi25-findings-summary" class="psi25-findings-summary" aria-live="polite">
+              <article><span>RANKABLE COHORTS</span><strong>—</strong><small>Pre-ranked within this metric</small></article>
+              <article><span>NOT RANKABLE</span><strong>—</strong><small>No eligible exact pairs</small></article>
+              <article><span>ELIGIBLE PAIRS</span><strong>—</strong><small>Filtered cohort records</small></article>
+              <article><span>EXCLUDED PAIRS</span><strong>—</strong><small>Not used in cohort means</small></article>
+            </div>
+            <div class="psi25-findings-extremes" id="psi25-findings-extremes" aria-live="polite">
+              <p class="psi25-findings-empty">Waiting for verified findings.</p>
+            </div>
+            <div class="psi25-findings-table-block">
+              <div class="psi25-findings-subheading"><h3>Ranked cohorts</h3><span id="psi25-findings-unit">—</span></div>
+              <div class="table-wrap psi25-findings-table-wrap" role="region" aria-label="Ranked BASS-II cohorts" tabindex="0">
+                <table class="record-table psi25-findings-table">
+                  <thead><tr><th scope="col">Rank</th><th scope="col">PI</th><th scope="col">Material</th><th scope="col">Restrictor</th><th scope="col">Eligible n</th><th scope="col">Unique IDs</th><th scope="col">Reused records</th><th scope="col">Mean Δ</th><th scope="col">Median Δ</th><th scope="col">Mean–median</th><th scope="col">Status</th><th scope="col">Evidence</th></tr></thead>
+                  <tbody id="psi25-findings-ranked"><tr><td colspan="12">Waiting for verified findings.</td></tr></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="psi25-findings-table-block">
+              <div class="psi25-findings-subheading"><h3>Not rankable cohorts</h3><span>No eligible exact pairs</span></div>
+              <div class="table-wrap psi25-findings-table-wrap" role="region" aria-label="Not-rankable BASS-II cohorts" tabindex="0">
+                <table class="record-table psi25-findings-table">
+                  <thead><tr><th scope="col">PI</th><th scope="col">Material</th><th scope="col">Restrictor</th><th scope="col">Records</th><th scope="col">Excluded</th><th scope="col">Unique IDs</th><th scope="col">Reused records</th><th scope="col">Reason</th><th scope="col">Evidence</th></tr></thead>
+                  <tbody id="psi25-findings-not-ranked"><tr><td colspan="9">Waiting for verified findings.</td></tr></tbody>
+                </table>
+              </div>
+            </div>
+            <section id="psi25-findings-evidence" class="psi25-findings-evidence" aria-labelledby="psi25-findings-evidence-title" hidden>
+              <div class="psi25-findings-subheading"><div><p class="eyebrow">SOURCE-LINKED COHORT INSPECTION</p><h3 id="psi25-findings-evidence-title">Selected cohort evidence</h3></div><button id="psi25-findings-evidence-close" class="condition-reset" type="button">Close evidence</button></div>
+              <div id="psi25-findings-evidence-summary" class="psi25-findings-evidence-summary"></div>
+              <div class="psi25-findings-table-block"><div class="psi25-findings-subheading"><h4>Eligible supporting experiments</h4><span>Exact paired records</span></div>
+                <div class="table-wrap psi25-findings-table-wrap" role="region" aria-label="Eligible supporting experiment records" tabindex="0">
+                  <table class="record-table psi25-findings-evidence-table"><thead><tr><th scope="col">Test</th><th scope="col">Sample ID</th><th scope="col">Paired Δ</th><th scope="col">Sample reuse</th><th scope="col">Source record</th></tr></thead><tbody id="psi25-findings-eligible-evidence"><tr><td colspan="5">Select a cohort to inspect supporting records.</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="psi25-findings-table-block"><div class="psi25-findings-subheading"><h4>Excluded experiment records</h4><span>Reasons retained from the paired analysis</span></div>
+                <div class="table-wrap psi25-findings-table-wrap" role="region" aria-label="Excluded experiment records" tabindex="0">
+                  <table class="record-table psi25-findings-evidence-table"><thead><tr><th scope="col">Test</th><th scope="col">Sample ID</th><th scope="col">Exclusion reason(s)</th><th scope="col">Source record</th></tr></thead><tbody id="psi25-findings-excluded-evidence"><tr><td colspan="4">Select a cohort to inspect exclusions.</td></tr></tbody></table>
+                </div>
+              </div>
+            </section>
+            <div id="psi25-findings-caveats" class="psi25-findings-caveats" aria-live="polite"></div>
+            <div class="psi25-findings-provenance"><span id="psi25-findings-hash">Findings SHA-256: pending verification</span><span id="psi25-findings-builder">Builder SHA-256: pending</span></div>
+          </section>
+
+          <section class="panel psi25-data-panel" aria-labelledby="psi25-table-title">
+            <div class="panel-heading"><div><p class="eyebrow">CANONICAL RECORD BROWSER</p><h2 id="psi25-table-title">BASS-II experiment table</h2></div><span class="tag">PSI-25 · VERSION 4</span></div>
+            <p class="panel-description">Filters operate on the canonical identity and documented material/restrictor fields. Measurement cells display the original source token, not a substituted estimate.</p>
+            <div class="psi25-controls">
+              <label>Principal Investigator<select id="psi25-filter-pi"><option value="">All investigators</option></select></label>
+              <label>Material class<select id="psi25-filter-material"><option value="">All material classes</option></select></label>
+              <label>Flow restrictor<select id="psi25-filter-restrictor"><option value="">All restrictor codes</option></select></label>
+              <label class="psi25-search-label">Search test / sample<input id="psi25-filter-search" type="search" maxlength="120" autocomplete="off" placeholder="e.g. O12 or 220m"></label>
+              <button id="psi25-filter-reset" class="condition-reset" type="button">Reset filters</button>
+              <span id="psi25-record-match" role="status" aria-live="polite">Loading BASS-II records…</span>
+            </div>
+            <div class="table-wrap psi25-table-wrap" role="region" aria-label="Filtered BASS-II experiment records" tabindex="0">
+              <table class="record-table psi25-record-table">
+                <thead><tr><th scope="col">PI</th><th scope="col">Test ID</th><th scope="col">Date</th><th scope="col">Sample ID</th><th scope="col">Material</th><th scope="col">Restrictor</th><th scope="col">Initial O₂</th><th scope="col">Final O₂</th><th scope="col">Initial CO</th><th scope="col">Final CO</th><th scope="col">Record</th></tr></thead>
+                <tbody id="psi25-records-body"><tr><td colspan="11">Loading canonical records…</td></tr></tbody>
+              </table>
+            </div>
+            <div class="table-legend psi25-legend"><span><i class="legend-exact"></i>Exact source token</span><span><i class="legend-approx"></i>Censored / review flag</span><span><i class="legend-missing"></i>Blank or source none</span><span>Use “Details” for field-level status and provenance.</span></div>
+            <div class="panel-foot"><span id="psi25-schema-label">Canonical PSI-25 schema</span><span id="psi25-load-state">Waiting for local data bundle</span></div>
+          </section>
+
+          <section class="panel psi25-detail-panel" id="psi25-record-detail" aria-labelledby="psi25-detail-title" aria-live="polite" hidden>
+            <div class="panel-heading"><div><p class="eyebrow">SOURCE-LEVEL INSPECTION</p><h2 id="psi25-detail-title">Selected experiment</h2></div><button id="psi25-detail-close" class="condition-reset" type="button">Close details</button></div>
+            <div id="psi25-detail-content"></div>
+          </section>
+
+          <div class="psi25-lower-grid">
+            <section class="panel psi25-quality-panel" aria-labelledby="psi25-quality-title">
+              <div class="panel-heading"><div><p class="eyebrow">FIELD-LEVEL AUDIT</p><h2 id="psi25-quality-title">Measurement status counts</h2></div><span class="tag">NO IMPUTATION</span></div>
+              <p class="panel-description">Counts classify source entries; they are not physical summaries. Ineligible values are not used for aggregation.</p>
+              <div id="psi25-quality-grid" class="psi25-quality-grid"><p>Loading measurement status report…</p></div>
+              <p id="psi25-censoring-note" class="psi25-censoring-note"></p>
+            </section>
+            <section class="panel psi25-provenance-panel" aria-labelledby="psi25-provenance-title">
+              <div class="panel-heading"><div><p class="eyebrow">SOURCE LINEAGE</p><h2 id="psi25-provenance-title">Provenance and hashes</h2></div><span class="tag">NASA PSI</span></div>
+              <p class="panel-description">The canonical build links every record to the selected CSV and, where matched, the Test Matrices workbook. Hashes identify the retained files.</p>
+              <dl class="psi25-provenance-summary"><div><dt>Investigation</dt><dd>Burning and Suppression of Solids – II (BASS-II)</dd></div><div><dt>Study version</dt><dd id="psi25-study-version">—</dd></div><div><dt>Investigation DOI</dt><dd>10.60555/4qc4-de67</dd></div><div><dt>Canonical records SHA-256</dt><dd id="psi25-records-hash" class="hash-value">—</dd></div><div><dt>Quality report SHA-256</dt><dd id="psi25-quality-hash" class="hash-value">—</dd></div></dl>
+              <details class="psi25-manifest-details"><summary>View complete canonical manifest source-file metadata</summary><pre id="psi25-manifest-json">Loading manifest…</pre></details>
+            </section>
+          </div>
+
+          <section id="psi25-synthesis-panel" class="panel psi25-synthesis-panel" aria-labelledby="psi25-synthesis-title">
+            <div class="panel-heading">
+              <div><p class="eyebrow">SCIENTIFIC INTERPRETATION <span class="eyebrow-rule"></span> EVIDENCE SYNTHESIS</p><h2 id="psi25-synthesis-title">What the evidence says — and what it cannot say</h2></div>
+              <span class="tag">RULE-BASED · SOURCE-LINKED</span>
+            </div>
+            <p class="panel-description">Interpretations are deterministic summaries of verified cohort evidence. They preserve mixed experiment directions, mean–median differences, missing/censored data, sample reuse and source limitations. They are not causal findings, safety ratings, inferential statistics or operational guidance.</p>
+            <div id="psi25-synthesis-status" class="psi25-synthesis-status" role="status" aria-live="polite">Waiting for verified synthesis artifact…</div>
+            <div class="psi25-synthesis-controls">
+              <label>Measurement<select id="psi25-synthesis-metric"><option value="o2">Oxygen · O₂</option><option value="co2">Carbon dioxide · CO₂</option><option value="co">Carbon monoxide · CO</option></select></label>
+              <label>Principal Investigator<select id="psi25-synthesis-pi"><option value="">All investigators</option></select></label>
+              <label>Material class<select id="psi25-synthesis-material"><option value="">All material classes</option></select></label>
+              <label>Flow restrictor<select id="psi25-synthesis-restrictor"><option value="">All codes</option></select></label>
+              <label>Evidence flag<select id="psi25-synthesis-flag"><option value="">All flags</option></select></label>
+              <button id="psi25-synthesis-reset" class="condition-reset" type="button">Reset synthesis filters</button>
+            </div>
+            <p class="psi25-synthesis-hint">Filters hide or show precomputed insight cards. They do not recalculate statistics, change cohort rankings, or create new claims.</p>
+            <div id="psi25-synthesis-summary" class="psi25-synthesis-summary" aria-live="polite">
+              <article><span>INSIGHT CARDS</span><strong>—</strong><small>Filtered metric</small></article>
+              <article><span>NOT RANKABLE</span><strong>—</strong><small>No eligible paired values</small></article>
+              <article><span>RESEARCH QUESTIONS</span><strong>—</strong><small>Card-linked plus global gaps</small></article>
+              <article><span>RECORD EVIDENCE</span><strong>—</strong><small>Eligible and excluded records</small></article>
+            </div>
+            <div id="psi25-synthesis-cards" class="psi25-synthesis-cards" aria-live="polite"><p class="psi25-synthesis-empty">Waiting for verified evidence synthesis.</p></div>
+            <section class="psi25-synthesis-global" aria-labelledby="psi25-synthesis-global-title">
+              <div class="psi25-synthesis-subheading"><div><p class="eyebrow">CROSS-CUTTING EVIDENCE GAPS</p><h3 id="psi25-synthesis-global-title">Research questions for follow-up studies</h3></div><span id="psi25-synthesis-global-count">—</span></div>
+              <div id="psi25-synthesis-global-questions" class="psi25-synthesis-question-list"><p class="psi25-synthesis-empty">Waiting for verified research questions.</p></div>
+            </section>
+            <div id="psi25-synthesis-limitations" class="psi25-synthesis-limitations" aria-live="polite"></div>
+            <div class="psi25-synthesis-provenance"><span id="psi25-synthesis-hash">Synthesis SHA-256: pending verification</span><span id="psi25-synthesis-builder">Builder SHA-256: pending</span><span id="psi25-synthesis-source">Findings lineage: pending</span></div>
+          </section>
+
+          <section class="panel psi25-constraints-panel" aria-labelledby="psi25-constraints-title">
+            <div class="panel-heading"><div><p class="eyebrow">SCIENTIFIC INTERPRETATION BOUNDARIES</p><h2 id="psi25-constraints-title">What this dataset does—and does not—support</h2></div><span class="tag">PRESERVE · ABSTAIN · TRACE</span></div>
+            <ul id="psi25-constraints" class="psi25-constraint-list"><li>Loading canonical scientific-use constraints…</li></ul>
+            <p class="psi25-license-note">The investigation-level metadata indicates CC0-1.0. Rights for each individual retained file have not been independently reviewed; consult the original NASA repository terms before redistribution.</p>
+          </section>
+        </section>
+
+        <section class="page-view research-view" id="view-research" data-view="research" aria-labelledby="research-title" hidden>
+          <div class="view-heading">
+            <div><p class="eyebrow">RESEARCH LAB <span class="eyebrow-rule"></span> DESCRIPTIVE ANALYSIS</p><h1 id="research-title">What the records show.</h1><p class="view-intro">Reproducible summaries of the released table. These describe this dataset; they do not establish a causal fuel effect.</p></div>
+            <span class="analysis-badge"><i></i>CODE-CALCULATED</span>
+          </div>
+          <div class="research-grid">
+            <section class="panel condition-panel" aria-labelledby="condition-title">
+              <div class="panel-heading"><div><p class="eyebrow">CONDITION EVIDENCE LAB</p><h2 id="condition-title">Compare like-condition records.</h2></div><span class="tag">OUTCOME SHARES · 95% WILSON CI</span></div>
+              <p class="panel-description">Choose a pressure and exact gas composition to inspect the source-reported outcomes. Fuel groups are ordered by matched record count; that order describes evidence coverage, not fire risk.</p>
+              <form class="condition-controls" id="condition-filter-form">
+                <label>Minimum pressure <span>mmHg</span><input id="condition-pressure-min" name="pressureMin" type="number" min="0" max="3000" step="0.1" value="750" required></label>
+                <label>Maximum pressure <span>mmHg</span><input id="condition-pressure-max" name="pressureMax" type="number" min="0" max="3000" step="0.1" value="770" required></label>
+                <label>O₂ mole fraction<select id="condition-oxygen" name="oxygenMoleFraction"><option value="0.21" selected>0.21</option></select></label>
+                <label>PSI CSV CO field <select id="condition-co" name="coSourceMoleFraction"><option value="0" selected>0</option></select><small>NASA report uses CO₂; <a href="#methods">details</a></small></label>
+                <label>He mole fraction<select id="condition-helium" name="heliumMoleFraction"><option value="0" selected>0</option></select></label>
+                <div class="condition-actions"><button class="primary-link" type="submit">Run comparison <span aria-hidden="true">→</span></button><button class="condition-reset" id="condition-reset" type="button">Reset baseline</button></div>
+              </form>
+              <p class="condition-error" id="condition-error" role="status" aria-live="polite" hidden></p>
+              <div class="condition-cohort" id="condition-cohort" role="status" aria-live="polite">Waiting for NASA source records…</div>
+              <div class="condition-results" id="condition-results" aria-live="polite"></div>
+              <section class="condition-ranking" aria-labelledby="condition-ranking-title">
+                <div class="condition-ranking-heading"><div><p class="eyebrow">RANKED OUTCOME CONTRASTS</p><h3 id="condition-ranking-title">Which observed outcomes differ most?</h3></div><span class="tag">ABSOLUTE SHARE GAP</span></div>
+                <ol class="condition-rank-list" id="condition-ranking-list" aria-live="polite"></ol>
+                <p class="condition-ranking-empty" id="condition-ranking-empty" role="status" aria-live="polite" hidden></p>
+                <p class="condition-ranking-note">Sorted by absolute difference in within-fuel share. This is descriptive, does not test significance or control remaining conditions, and is not a fire-safety score.</p>
+              </section>
+              <section class="condition-sensitivity" aria-labelledby="condition-sensitivity-title">
+                <div class="condition-ranking-heading"><div><p class="eyebrow">OXYGEN SENSITIVITY</p><h3 id="condition-sensitivity-title">Does the contrast ranking depend on O₂?</h3></div><span class="tag">0.21 VS ALL EXACT O₂</span></div>
+                <p class="condition-sensitivity-intro">Pressure, PSI CO, and He filters stay fixed. Only the exact oxygen selection changes.</p>
+                <div class="condition-sensitivity-content" id="condition-sensitivity" role="status" aria-live="polite"></div>
+                <p class="condition-sensitivity-note">The all-exact-O₂ slice pools multiple oxygen levels and includes the 0.21 records. These overlapping slices are a sensitivity check, not independent validation or a causal comparison.</p>
+              </section>
+              <div class="condition-caveat"><b>Interpretation boundary</b><span>Observed records only. These comparisons do not control for every experiment difference and cannot establish a causal fuel effect, suppressant efficacy, LOI, or a fire-safety ranking.</span></div>
+              <div class="chart-source" id="condition-source-note">Source: NASA PSI-69 Version 5 · source values preserved · no imputation</div>
+            </section>
+            <section class="panel paper-search-panel" aria-labelledby="paper-search-title">
+              <div class="panel-heading">
+                <div><p class="eyebrow">EXTERNAL SCHOLARLY REFERENCES</p><h2 id="paper-search-title">Find supporting papers.</h2></div>
+                <span class="tag" id="paper-search-mode">LOCAL CACHE · FREE PROVIDERS</span>
+              </div>
+              <p class="panel-description" id="paper-search-notice">Retrieve up to three paper records from scholarly metadata providers. Your query is sent to external scholarly APIs. Do not enter private information.</p>
+              <form id="paper-search-form" class="paper-search-form">
+                <label class="sr-only" for="paper-search-query">Scholarly paper keyword query</label>
+                <input id="paper-search-query" name="query" type="search" minlength="3" maxlength="200" autocomplete="off" placeholder="e.g. microgravity flame extinguishment" required>
+                <button id="paper-search-submit" type="submit">Find papers <span aria-hidden="true">→</span></button>
+              </form>
+              <p id="paper-search-status" class="paper-search-status" role="status" aria-live="polite">Checking the local research service…</p>
+              <div id="paper-search-results" class="paper-search-results" aria-live="polite"></div>
+              <p class="paper-search-boundary">Retrieved papers are references. They do not verify any NASA dataset result.</p>
+            </section>
+            <section class="panel research-synthesis-panel" aria-labelledby="research-synthesis-title">
+              <div class="panel-heading">
+                <div><p class="eyebrow">SI-POWERED RESEARCH SYNTHESIS</p><h2 id="research-synthesis-title">Connect findings to research context.</h2></div>
+                <span class="tag" id="research-synthesis-mode">SERVER-SIDE · USER-INITIATED</span>
+              </div>
+              <p class="panel-description" id="research-synthesis-description">Build a bounded research packet from the latest verified Ask SIRA answer and a scholarly metadata query. The server reruns the registered deterministic analysis; retrieved papers are discovery references, not validation of NASA measurements.</p>
+              <p class="research-synthesis-context" id="research-synthesis-context" role="status" aria-live="polite">Ask SIRA a question and receive a verified answer before starting synthesis.</p>
+              <form id="research-synthesis-form" class="research-synthesis-form">
+                <label for="research-synthesis-query">Scholarly literature keywords</label>
+                <input id="research-synthesis-query" name="literature_query" type="search" minlength="3" maxlength="200" autocomplete="off" value="microgravity flame combustion" required>
+                <button id="research-synthesis-submit" type="submit" disabled>Build research synthesis <span aria-hidden="true">→</span></button>
+              </form>
+              <p id="research-synthesis-status" class="research-synthesis-status" role="status" aria-live="polite">Waiting for a verified Ask SIRA answer.</p>
+              <div id="research-synthesis-results" class="research-synthesis-results" aria-live="polite"></div>
+              <p class="research-synthesis-boundary">The literature query may be sent to approved scholarly metadata providers when the server is online. Do not enter private information. This feature does not establish causality, mission transferability, or operational fire-safety conclusions.</p>
+            </section>
+            <section class="panel outcome-panel"><div class="panel-heading"><div><p class="eyebrow">REPORTED TEST END</p><h2>Outcome counts</h2></div><span class="tag">n = <span id="outcome-total">—</span></span></div><p class="panel-description">Each bar shows the count of retained records with that reported test end.</p><div class="outcome-chart" id="outcome-chart" role="img" aria-label="Reported test outcome counts"></div><div class="chart-source">Source field: <b>Test end</b> · no outcome reclassification</div></section>
+            <section class="panel fuel-panel"><div class="panel-heading"><div><p class="eyebrow">OUTCOME × FUEL</p><h2>Reported outcome mix</h2></div><span class="tag">Within-fuel share</span></div><p class="panel-description">Rows are normalized within each fuel group for readability. Counts remain visible on hover and in the labels.</p><div class="mix-legend" id="mix-legend"></div><div class="fuel-mix" id="fuel-outcome-mix"></div><div class="chart-source">Descriptive only · test conditions differ across groups.</div></section>
+            <section class="panel rate-panel"><div class="panel-heading"><div><p class="eyebrow">BURNING-RATE CONSTANT</p><h2>Exact-value summary</h2></div><span class="tag">mm²/s</span></div><p class="panel-description">Arithmetic mean and sample standard deviation, using exact values only.</p><div class="rate-summary" id="burn-rate-summary"></div><div class="analysis-caution"><span aria-hidden="true">!</span><p>Fuel groups are not adjusted for pressure, oxygen, suppressant mixture, or outcome. This summary is not a causal comparison.</p></div></section>
+            <section class="panel research-steps"><p class="eyebrow">REPRODUCIBILITY</p><h2>How to read these summaries</h2><div class="method-step"><span>01</span><div><b>Same source snapshot</b><small id="analysis-hash">SHA-256 available in Methods &amp; Sources</small></div></div><div class="method-step"><span>02</span><div><b>Per-metric sample size</b><small>Missing and approximate measurements are counted separately.</small></div></div><div class="method-step"><span>03</span><div><b>Interpret within limits</b><small>No normalization, imputation, or causal claim is applied here.</small></div></div><a class="inline-route" href="#methods">Read the full method notes <span aria-hidden="true">→</span></a></section>
+          </div>
+        </section>
+
+        <section class="page-view methods-view" id="view-methods" data-view="methods" aria-labelledby="methods-title" hidden>
+          <div class="view-heading">
+            <div><p class="eyebrow">METHODS &amp; SOURCES <span class="eyebrow-rule"></span> AUDIT TRAIL</p><h1 id="methods-title">Trust the trail.</h1><p class="view-intro">Inspect where the records came from, how values were handled, and what still needs review.</p></div>
+            <span class="license-badge" id="license-badge">NASA DATA</span>
+          </div>
+          <div class="methods-grid">
+            <section class="panel provenance-panel"><div class="panel-heading"><div><p class="eyebrow">SOURCE PROVENANCE</p><h2>Dataset identity</h2></div><span class="tag" id="source-version-tag">PSI-69</span></div><dl class="provenance-list"><div><dt>Investigation</dt><dd id="source-investigation">Flame Extinguishment Experiment (FLEX)</dd></div><div><dt>NASA source</dt><dd><a id="source-link" href="https://psi.nasa.gov/physci/repo/data/investigations/PSI-69" target="_blank" rel="noreferrer">NASA Physical Sciences Informatics ↗</a></dd></div><div><dt>Technical report</dt><dd><a id="report-link" href="https://ntrs.nasa.gov/citations/20150023456" target="_blank" rel="noreferrer">NASA/TP-2015-216046 ↗</a></dd></div><div><dt>DOI</dt><dd id="source-doi">Loading…</dd></div><div><dt>License</dt><dd id="source-license">Loading…</dd></div><div><dt>Source file</dt><dd id="source-file">Loading…</dd></div><div><dt>SHA-256</dt><dd class="hash-value" id="source-hash">Loading…</dd></div><div><dt>Retrieved</dt><dd id="source-retrieved">Loading…</dd></div></dl><div class="provenance-warning"><span aria-hidden="true">i</span><p>A matching hash identifies the bundled file. It does not mean every measurement or scientific definition has been independently resolved.</p></div></section>
+            <section class="panel quality-panel"><div class="panel-heading"><div><p class="eyebrow">DATA QUALITY</p><h2>Measurement availability</h2></div><span class="tag">No imputation</span></div><p class="panel-description">Exact, approximate, missing, and invalid entries are shown separately for each field.</p><div class="table-wrap quality-wrap" role="region" aria-label="Measurement quality summary" tabindex="0"><table class="quality-table"><thead><tr><th scope="col">Measurement</th><th scope="col">Exact</th><th scope="col">Approx.</th><th scope="col">Missing</th><th scope="col">Invalid</th></tr></thead><tbody id="quality-body"><tr><td colspan="5">Waiting for quality report…</td></tr></tbody></table></div><div class="quality-flag-grid" id="quality-flags"></div></section>
+            <section class="panel method-details"><p class="eyebrow">MEASUREMENT RULES</p><h2>Preserve first. Interpret carefully.</h2><div class="rule-list"><article><span>01</span><div><b>Record identity</b><p>FLEX Test # is the record key. Reused secondary hardware identifiers do not remove otherwise distinct tests.</p></div></article><article><span>02</span><div><b>Missing and approximate values</b><p>Blank and dash values remain missing. Tilde-prefixed values are labeled approximate and excluded from exact-value summaries.</p></div></article><article><span>03</span><div><b>Reported composition</b><p>Gas fractions are preserved as given. No normalization is applied when their total differs from one.</p></div></article><article><span>04</span><div><b>Composition field crosswalk</b><p>The PSI CSV keeps the field name “CO”. NASA/TP-2015-216046 defines its report field “CO₂” as ambient carbon-dioxide mole fraction. The first 31 PSI tests match the corresponding NASA Table IX entries across eight fields (248 comparisons, zero mismatches), including PSI “CO” versus report “CO₂”. This supports the mapping in that checked range only; the other 243 PSI rows remain unverified. NASA's report states 284 tests versus 274 PSI rows, an unresolved scope difference.</p></div></article><article><span>05</span><div><b>Burning-rate unit and method</b><p>The PSI header abbreviates the unit as “mm”. The NASA report defines burning rate in mm²/s as an average constant from a linear fit of droplet diameter squared versus time, shortly after ignition through extinction. FireLab preserves the PSI header and displays the report-documented unit.</p></div></article></div></section>
+            <section class="panel source-notes-panel"><p class="eyebrow">REVIEW FLAGS</p><h2>Open questions in this release</h2><div id="source-notes" class="source-notes"><p>Loading source review notes…</p></div><div class="research-boundary"><span class="boundary-icon" aria-hidden="true">↗</span><p><b>AI boundary</b><br>The current local assistant can summarize bundled evidence. A connected model will only be added after a reviewed, read-only research interface is ready; credentials and private SIRA memory stay outside this public view.</p></div></section>
+          </div>
+        </section>
+      </main>
+      <footer class="app-footer"><span>SIRA FIRELAB <i>·</i> <span id="footer-investigation-label">NASA PSI data</span></span><span>Source values are preserved. Interpretations stay within evidence.</span></footer>
+    </div>
+  </div>
+  <script src="condition-analysis.js" defer></script>
+  <script src="source-label.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="psi25.js" defer></script>
+  <script src="papers.js" defer></script>
+</body>
+</html>

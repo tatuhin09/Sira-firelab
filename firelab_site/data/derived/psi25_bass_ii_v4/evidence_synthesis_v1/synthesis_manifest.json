@@ -1,0 +1,46 @@
+{
+  "builder": {
+    "path": "tools/firelab/psi25_synthesis.py",
+    "sha256": "e4ed03a2387beb37df3d92d362a8de6182f3957c31c983052696d9e245d7905b"
+  },
+  "causal_claims_produced": false,
+  "cross_metric_ranking": false,
+  "dataset": "NASA PSI-25 BASS-II",
+  "derived_output": {
+    "bytes": 351775,
+    "path": "evidence_synthesis.json",
+    "sha256": "bf97f4fd69d87e7bacc01585642d3a907963bbc6eef97f02d3d36e4c154f7553"
+  },
+  "deterministic_build": true,
+  "independent_sample_inference": false,
+  "inferential_statistics_produced": false,
+  "insight_card_count": 54,
+  "llm_used": false,
+  "not_rankable_cohort_count": 5,
+  "output_policy": "create_new_directory_refuse_overwrite",
+  "record_count": 129,
+  "research_question_count": 146,
+  "schema": "sira.psi25.evidence_synthesis_manifest.v1",
+  "source_artifacts": {
+    "findings_manifest": {
+      "bytes": 1577,
+      "path": "../findings_ranking_v1/findings_manifest.json",
+      "sha256": "af91e20a4d30418e9a27bad2c4f48a72864189d260e63f2ce304eb3a4f7b915d"
+    },
+    "findings_ranking": {
+      "bytes": 175040,
+      "path": "../findings_ranking_v1/findings_ranking.json",
+      "sha256": "a2a64384696c84da0f3ac64bc0d838a4f77afd1289e1698e8da277264bdd1249"
+    },
+    "paired_analysis_manifest": {
+      "path": "../paired_analysis_v1/analysis_manifest.json",
+      "sha256": "d3ae098f82922244a13853e18fd5b3f1459e1070ef71752a3c5cf546a3c356ae"
+    },
+    "paired_measurement_analysis": {
+      "bytes": 473815,
+      "path": "../paired_analysis_v1/paired_measurement_analysis.json",
+      "sha256": "a0562fe7a587e4f63cbb09fff226e5e9bfc5d7ee4bc1cd9aeee03085cf504e4b"
+    }
+  },
+  "study_version": 4
+}
