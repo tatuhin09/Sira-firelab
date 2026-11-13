@@ -67,7 +67,7 @@
     "NASA_compliance": "docs/NASA_COMPLIANCE.md"
   },
   "license_status": "Apache-2.0 adopted for original SIRA FireLab project software; both contributors approved public release and licensing. Third-party and NASA source materials retain separate applicable terms; see docs/LICENSE_STATUS.md.",
-  "challenge_resources_entry_verified": false,
+  "challenge_resources_entry_verified": true,
   "release_dataset_baseline": {
     "baseline_id": "SIRA-FIRELAB-DATA-BASELINE-2026-11-12",
     "snapshot_date": "2026-11-12",
@@ -82,7 +82,8 @@
         "doi": "10.60555/mbq8-0451",
         "repository": "NASA Physical Sciences Informatics",
         "license_metadata": "CC0-1.0",
-        "challenge_resources_tab_match_verified": false
+        "challenge_resources_tab_match_verified": true,
+        "challenge_resources_match_scope": "source repository is the challenge-listed PSI Data Repository: Combustion Science; investigation ID is not separately named in the challenge entry"
       },
       {
         "investigation": "PSI-25",
@@ -93,10 +94,11 @@
         "repository": "NASA Physical Sciences Informatics",
         "license_metadata": "CC0-1.0",
         "license_metadata_scope": "Investigation-level metadata; not an independent file-by-file legal review.",
-        "challenge_resources_tab_match_verified": false
+        "challenge_resources_tab_match_verified": true,
+        "challenge_resources_match_scope": "source repository is the challenge-listed PSI Data Repository: Combustion Science; investigation ID is not separately named in the challenge entry"
       }
     ],
-    "challenge_resources_alignment": "pending_exact_resources_list_verification",
+    "challenge_resources_alignment": "matched_repository_level_resource_entry; individual PSI-69 and PSI-25 records cited separately",
     "future_updates": "Any later source alignment is to be recorded as a separate explicit update; this snapshot must not be silently overwritten.",
     "software_license": {
       "repository_license_file_present": false,
@@ -126,5 +128,27 @@
     "consent_basis": "Project lead confirmed that both contributors explicitly approved public release and Apache-2.0 licensing.",
     "scope": "Original SIRA FireLab project software",
     "third_party_materials_included_under_this_license": false
+  },
+  "challenge_resources_entry": {
+    "title": "PSI Data Repository: Combustion Science",
+    "url": "https://psi.nasa.gov/physci/repo/search?q=combustion",
+    "match_scope": "repository-level challenge resource entry",
+    "investigation_records_used": [
+      {
+        "investigation": "PSI-69 FLEX",
+        "release": "Version 5",
+        "doi": "10.60555/mbq8-0451",
+        "records": 274,
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69"
+      },
+      {
+        "investigation": "PSI-25 BASS-II",
+        "release": "Study Version 4",
+        "doi": "10.60555/4qc4-de67",
+        "records": 129,
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25"
+      }
+    ],
+    "precision_note": "The challenge Resources entry names the PSI repository at repository level; it does not separately enumerate PSI-69 or PSI-25."
   }
 }
