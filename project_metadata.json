@@ -76,7 +76,6 @@
     "baseline_id": "SIRA-FIRELAB-DATA-BASELINE-2026-11-12",
     "snapshot_date": "2026-11-12",
     "status": "frozen_public_release_candidate",
-    "data_origin_note": "The team reports that its local-event teachers/organizers provided the dataset packages and instructed the team to use them for local-event judging; the underlying scientific data are identified by NASA Physical Sciences Informatics repository records.",
     "datasets": [
       {
         "investigation": "PSI-69",
@@ -106,15 +105,6 @@
       "repository_license_file_present": false,
       "license_file_created_by_this_script": false,
       "team_rights_confirmation_required": true
-    },
-    "local_event_instruction_context": {
-      "status": "team_reported",
-      "instruction": "Local-event teachers/mentors supplied PSI-69 FLEX v5 and PSI-25 BASS-II v4 data packages and instructed the team to use these datasets for local judging.",
-      "applies_to": [
-        "PSI-69 FLEX v5",
-        "PSI-25 BASS-II v4"
-      ],
-      "challenge_resources_tab_match_verified": false
     }
   },
   "release_baseline_updated_at_utc": "2026-11-12T13:49:15+00:00",
