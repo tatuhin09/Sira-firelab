@@ -29,15 +29,6 @@
         "verification support",
         "documentation"
       ]
-    },
-    {
-      "name": "Google Gemini",
-      "uses": [
-        "development masterplans",
-        "task decomposition",
-        "implementation guidance",
-        "iterative development coordination"
-      ]
     }
   ],
   "ai_assisted_code_included": true,
