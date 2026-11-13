@@ -2,13 +2,20 @@
 
 **An evidence-grounded research intelligence workspace for microgravity combustion and human-spaceflight fire-safety research.**
 
-SIRA FireLab is the integrated SIRA solution developed by **Team SIRA Earth Intelligence** for the NASA Space Apps Challenge 2026 challenge **Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**.
+SIRA FireLab is the project developed by **Team SIRA Earth Intelligence** for the NASA Space Apps Challenge 2026 challenge **Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**.
 
-It brings together NASA combustion research records, reproducible scientific analysis, evidence ranking, research planning, and claim-level verification in one interactive workspace. It is designed to make experimental findings easier to discover, compare, and interpret while retaining source provenance, measurement quality, and scientific limitations.
+The workspace brings NASA combustion investigation data, reproducible scientific analysis, evidence ranking, research planning, and claim-level verification into one interactive interface. It is designed to make experimental findings easier to discover, inspect, compare, and interpret while preserving source provenance, measurement quality, and scientific limitations.
+
+## Live project
+
+- **Public demo:** https://sira-firelab.nicesmoke-f799e021.malaysiawest.azurecontainerapps.io/
+- **Public source repository:** https://github.com/tatuhin09/Sira-firelab
+
+The hosted demo is an offline-ready research prototype. It may scale to zero while idle and may take time to wake for a new visitor. It is not a hardened multi-user production service.
 
 ## Research workspace
 
-The current application navigation, extracted from the shipped interface, is:
+The current application navigation, checked against the shipped interface, is:
 
 - Ask SIRA
 - Overview
@@ -17,58 +24,52 @@ The current application navigation, extracted from the shipped interface, is:
 - Research Lab
 - Methods & Sources
 
-## Live project
+## NASA challenge-listed data resource
 
-- **Public demo:** https://sira-firelab.nicesmoke-f799e021.malaysiawest.azurecontainerapps.io/
-- **Public source repository:** https://github.com/tatuhin09/Sira-firelab
+The official Flame in Freefall Challenge Resources list names **PSI Data Repository: Combustion Science**:
 
-The hosted demo is an offline-ready research prototype. It may scale to zero when idle and may take time to wake for a new visitor. It is not a hardened multi-user production service.
+https://psi.nasa.gov/physci/repo/search?q=combustion
 
-## Challenge-listed NASA data resource
+SIRA FireLab uses two investigation datasets hosted by that NASA Physical Sciences Informatics repository:
 
-The official Flame in Freefall Challenge Resources list names **PSI Data Repository: Combustion Science**: https://psi.nasa.gov/physci/repo/search?q=combustion
-
-SIRA FireLab uses two investigation datasets hosted by that repository:
-
-| Investigation | Release | Records | DOI | NASA PSI record |
+| Investigation | Release | Bundled experimental records | DOI | NASA PSI record |
 |---|---|---:|---|---|
 | PSI-69 FLEX | Version 5 | 274 | `10.60555/mbq8-0451` | https://psi.nasa.gov/physci/repo/data/investigations/PSI-69 |
 | PSI-25 BASS-II | Study Version 4 | 129 | `10.60555/4qc4-de67` | https://psi.nasa.gov/physci/repo/data/investigations/PSI-25 |
 
-**Attribution precision:** the challenge entry names the PSI repository at repository level; it does not separately list the PSI-69 or PSI-25 identifiers. The investigation records identify the exact datasets bundled by this project. The datasets remain separate and are not pooled.
-
-## NASA investigations
-
-| NASA investigation | Release | Bundled experimental records | DOI |
-|---|---|---:|---|
-| PSI-69 — Flame Extinguishment Experiment (FLEX) | Version 5 | 274 | `10.60555/mbq8-0451` |
-| PSI-25 — Burning and Suppression of Solids II (BASS-II) | Study Version 4 | 129 | `10.60555/4qc4-de67` |
-
-Each investigation retains its own source identity, release, record keys, provenance, analysis scope, and limitations. Their records are not pooled into a common experimental dataset.
+**Attribution precision:** the challenge Resources entry names the PSI repository at repository level; it does not separately enumerate the PSI-69 or PSI-25 identifiers. The NASA investigation pages and DOIs above identify the exact dataset releases bundled by this project. The two investigations remain separate and are not pooled.
 
 ## What the system does
 
 - Explore NASA experimental records and their reported conditions.
-- Preserve exact, approximate, missing, and invalid measurement states.
+- Preserve exact, approximate, missing, censored, and invalid measurement states.
 - Run registered, deterministic descriptive analyses.
 - Compare explicitly bounded cohorts and display sample sizes and exclusions.
-- Rank findings within their stated metric and cohort scope.
+- Rank findings only within their declared metric, cohort, and investigation scope.
 - Trace findings to supporting and excluded experiment records.
 - Maintain a claim ledger and run scientific consistency verification.
 - Expose research questions and evidence gaps for further investigation.
 - Present dataset versions, DOI references, file hashes, methods, and caveats.
 
+## SI terminology and AI transparency
+
+The challenge title uses **SI** to mean **super intelligence**. SIRA FireLab uses the challenge's research-intelligence framing, but does not claim to be artificial superintelligence or artificial general intelligence.
+
+AI assistants were used during development. Their roles are disclosed in [AI Usage Disclosure](docs/AI_USAGE.md). Importantly, the public **Ask SIRA** runtime is model-free: it uses bounded question classification, server-side evidence retrieval, and registered deterministic calculations. Generative explanations are not enabled in this release. The deployed application does not call ChatGPT, Claude, or Gemini.
+
+NASA experimental records and scientific numeric outputs are not AI-generated. The PSI-25 evidence-synthesis build is deterministic and its manifest records `llm_used: false`.
+
 ## Run the offline research workspace
 
 Requirements: Python 3.10 or later.
 
-From the candidate repository root:
+From the repository root:
 
 ```bash
 python3 tools/run_firelab_m2.py --offline
 ```
 
-Open the loopback URL printed by the server (default port `8765`). Offline mode uses the locally bundled evidence and does not execute the scholarly-paper retrieval worker or contact external providers. A paper query can therefore return an explicit offline cache miss.
+Open the loopback URL printed by the server (default port `8765`). Offline mode uses locally bundled evidence and does not execute the scholarly-paper retrieval worker or contact external providers. A paper query can therefore return an explicit offline cache miss.
 
 Live scholarly-reference retrieval requires the separately configured research-worker/provider environment. It is not part of the standalone offline operation described above.
 
@@ -83,7 +84,7 @@ Descriptive cohort differences are not causal effects. Record counts are not aut
 - [NASA challenge alignment and submission requirements](docs/NASA_COMPLIANCE.md)
 - [NASA data sources and provenance](docs/DATA_SOURCES.md)
 - [Methods and scientific limitations](docs/METHODS.md)
-- [AI usage disclosure](docs/AI_USAGE.md)
+- [AI and SI usage disclosure](docs/AI_USAGE.md)
 - [Security and deployment](docs/SECURITY.md)
 - [Development and testing](docs/DEVELOPMENT.md)
 - [Project submission draft](docs/PROJECT_SUBMISSION_DRAFT.md)
@@ -95,30 +96,16 @@ Descriptive cohort differences are not causal effects. Record counts are not aut
 
 Original SIRA FireLab project software is licensed under the Apache License 2.0. See [LICENSE](LICENSE).
 
-This project license does not replace the separate licenses or terms applicable to NASA datasets and other third-party materials. See [Software and Dataset License Status](docs/LICENSE_STATUS.md) and [Data Sources](docs/DATA_SOURCES.md).
+The Apache-2.0 project license does not replace the separate licenses or terms applicable to NASA datasets and other third-party materials. See [Software and Dataset License Status](docs/LICENSE_STATUS.md) and [Data Sources](docs/DATA_SOURCES.md).
 
-## Attribution and independence
+## NASA attribution, branding, and independence
 
-SIRA FireLab is an independently developed participant project using cited NASA source data. It is not a NASA product and does not imply NASA endorsement, sponsorship, or certification. NASA source material and the original project software have separate licensing terms.
+SIRA FireLab is an independently developed participant project using cited NASA source data. It is not a NASA product and does not imply NASA endorsement, sponsorship, certification, or operational approval. NASA source material and original project software have separate licensing terms.
 
-<!-- SIRA_FIRELAB_RELEASE_BASELINE_V1 -->
-## Dataset baseline
+The public repository does not include NASA insignia, seal, or logotype assets. For any separate presentation, slide, or video, follow the current [NASA Space Apps Brand Guide](https://www.spaceappschallenge.org/brand/); do not modify the official Space Apps mark or use NASA identifiers in a way that implies endorsement.
 
-This release candidate freezes NASA PSI investigation data snapshots selected
-through the team's local-event materials: **PSI-69 FLEX Version 5 (274 records)**
-and **PSI-25 BASS-II Version 4 (129 records)**. Their DOIs, provenance, license
-metadata scope, and source-selection note are documented in
-[`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md).
+## Local-event dataset context
 
-The team does not claim that either dataset has been matched to the challenge-
-specific Resources list until the exact published list is checked. See
-[`docs/NASA_COMPLIANCE.md`](docs/NASA_COMPLIANCE.md) for the status and update
-rule. This candidate keeps the current data snapshot fixed; any later source
-alignment will be recorded as an explicit subsequent update.
+**Team-reported context:** local-event teachers/mentors supplied the PSI-69 FLEX Version 5 and PSI-25 BASS-II Study Version 4 data packages and instructed the team to use them for local judging. The team selected and used those exact snapshots. The underlying scientific records are attributed to NASA's Physical Sciences Informatics repository. This local-event instruction is separate from the repository-level challenge Resources listing described above.
 
-<!-- SIRA_LOCAL_EVENT_INSTRUCTION_CONTEXT_V1 -->
-## Local-event dataset instruction and judging context
-
-**Team-reported context:** the local-event teachers/mentors supplied the PSI-69 FLEX Version 5 and PSI-25 BASS-II Version 4 data packages and instructed the team to use these datasets for local judging. The team selected and used these exact snapshots in line with that local-event instruction. The scientific source records remain attributed to NASA's Physical Sciences Informatics repository.
-
-This local-event instruction is distinct from the international challenge's challenge-specific Resources list. The current snapshots remain the team's frozen baseline. Once the official *Flame in Freefall* Resources list is published, the team will compare the listed identifiers with these exact datasets. If they match, no dataset replacement is needed; if they do not, any additional challenge-resource integration will be documented as a separate explicit update while preserving this local-event baseline.
+The data snapshot is frozen for this public release candidate. Any later source alignment or dataset addition must be documented as a separate explicit update rather than silently replacing the released baseline.
