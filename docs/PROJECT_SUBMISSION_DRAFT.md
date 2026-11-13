@@ -68,7 +68,7 @@ Include only resources actually used in project research, implementation, or pre
 
 OpenAI ChatGPT and Anthropic Claude assisted the development of SIRA FireLab. Their roles included planning, architecture discussions, task specification, code drafting/refinement, debugging, test design/review, technical review, and documentation. AI-assisted code is included in the public repository and was reviewed and tested by the team. The deployed Ask SIRA runtime does not call these models: it is a model-free, server-side evidence assistant using registered deterministic analyses. NASA experimental data were not AI-generated or altered; numeric results and PSI-25 evidence-synthesis artifacts are deterministic (`llm_used: false`). Exact model-version identifiers were not consistently recorded. See [docs/AI_USAGE.md](docs/AI_USAGE.md).
 
-The team should ensure this disclosure matches the tools actually used by all contributors. Disclose any AI-generated media or other external assets actually added to the submission, and follow the GO Team's watermark and metadata disclosure requirements where applicable.
+The demo video includes selected AI-generated visual segments, NASA video excerpts, real screen recordings of the running application, and human-recorded narration by Sadia. AI-generated visual segments must carry a visible AI-GENERATED watermark throughout each generated segment. The exact NASA source clip titles and official URLs must be included in the video's credits/description before upload. The narration is not AI-generated. See [docs/AI_USAGE.md](AI_USAGE.md).
 
 ## NASA independence statement
 
@@ -76,7 +76,7 @@ SIRA FireLab is an independently developed participant project. NASA does not en
 
 ## Demo video
 
-Status: to be recorded and uploaded by the team. Add the final publicly accessible video URL here: [ADD VIDEO URL]
+Status: to be recorded and uploaded by the team. The planned video uses AI-generated visual segments (to be visibly watermarked), NASA video excerpts (exact clip sources to be credited), real screen recordings of the live application, and narration recorded by Sadia in her own voice. Add the final publicly accessible video URL here: [ADD VIDEO URL].
 
 Suggested 2–3 minute walkthrough: challenge and project purpose; Overview; PSI-69 FLEX explorer; PSI-25 BASS-II explorer; Research Lab and Claim Ledger; Ask SIRA; Methods & Sources and scientific limitations. Use actual application footage and truthful narration.
 
