@@ -44,7 +44,7 @@ The GO Team submission clarification identifies project title, high-level summar
 
 The challenge uses **SI** to mean **super intelligence**. The GO Team submission clarification asks teams to identify any AI/SI tools used. SIRA FireLab does not claim artificial superintelligence or artificial general intelligence.
 
-OpenAI ChatGPT, Anthropic Claude, and Google Gemini assisted development. Their roles and limits are described in [AI_USAGE.md](AI_USAGE.md) and `project_metadata.json`. The public Ask SIRA runtime is model-free and uses registered deterministic evidence analyses; generative explanations are disabled. NASA experimental data and deterministic numerical results were not AI-generated. Confirm all contributors' actual AI-tool use and add any additional tools before final submission.
+OpenAI ChatGPT and Anthropic Claude assisted development. Their roles and limits are described in [AI_USAGE.md](AI_USAGE.md) and `project_metadata.json`. The public Ask SIRA runtime is model-free and uses registered deterministic evidence analyses; generative explanations are disabled. NASA experimental data and deterministic numerical results were not AI-generated.
 
 ## Branding and independence
 
