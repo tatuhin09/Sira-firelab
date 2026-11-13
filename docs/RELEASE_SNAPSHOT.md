@@ -15,7 +15,7 @@
 | PSI-69 | FLEX | 5 | 274 | https://doi.org/10.60555/mbq8-0451 | CC0-1.0 |
 | PSI-25 | BASS-II | 4 | 129 | https://doi.org/10.60555/4qc4-de67 | CC0-1.0 (investigation-level metadata) |
 
-The team reports that its local-event teachers/organizers provided these data packages and instructed the team to use them for local-event judging. The underlying scientific datasets are attributed to NASA Physical Sciences Informatics. The exact challenge-specific Resources-list match is not asserted in this snapshot.
+The underlying scientific datasets are attributed to the NASA Physical Sciences Informatics investigation records and DOIs listed in DATA_SOURCES.md. Challenge-resource alignment is documented separately in NASA_COMPLIANCE.md.
 
 ## Source-file checksums
 
@@ -44,10 +44,3 @@ The four PSI-25 source files total 91,057 bytes. PSI-25 synthesis contains 129 r
 ## Change control
 
 This document records the candidate's current source baseline. Do not silently overwrite these source files. If a later NASA challenge-resource review requires a change, create an explicit subsequent update, record new source identifiers/versions/checksums, and rerun the full acceptance suite.
-
-<!-- SIRA_LOCAL_EVENT_INSTRUCTION_CONTEXT_V1 -->
-## Local-event dataset instruction and judging context
-
-**Team-reported context:** the local-event teachers/mentors supplied the PSI-69 FLEX Version 5 and PSI-25 BASS-II Version 4 data packages and instructed the team to use these datasets for local judging. The team selected and used these exact snapshots in line with that local-event instruction. The scientific source records remain attributed to NASA's Physical Sciences Informatics repository.
-
-This local-event instruction is distinct from the international challenge's challenge-specific Resources list. The current snapshots remain the team's frozen baseline. Once the official *Flame in Freefall* Resources list is published, the team will compare the listed identifiers with these exact datasets. If they match, no dataset replacement is needed; if they do not, any additional challenge-resource integration will be documented as a separate explicit update while preserving this local-event baseline.
