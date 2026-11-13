@@ -2,7 +2,7 @@
 
 **An evidence-grounded research intelligence workspace for microgravity combustion and human-spaceflight fire-safety research.**
 
-SIRA FireLab is the project developed by **Team SIRA Earth Intelligence** for the NASA Space Apps Challenge 2026 challenge **Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**.
+SIRA FireLab is the integrated SIRA research workspace developed by **Team SIRA Earth Intelligence** for the NASA Space Apps Challenge 2026 challenge **Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**.
 
 The workspace brings NASA combustion investigation data, reproducible scientific analysis, evidence ranking, research planning, and claim-level verification into one interactive interface. It is designed to make experimental findings easier to discover, inspect, compare, and interpret while preserving source provenance, measurement quality, and scientific limitations.
 
@@ -53,9 +53,9 @@ SIRA FireLab uses two investigation datasets hosted by that NASA Physical Scienc
 
 ## SI terminology and AI transparency
 
-The challenge title uses **SI** to mean **super intelligence**. SIRA FireLab uses the challenge's research-intelligence framing, but does not claim to be artificial superintelligence or artificial general intelligence.
+The challenge uses **SI** to mean **super intelligence**. SIRA FireLab follows the challenge's research-intelligence objective, but does not claim to be artificial superintelligence or artificial general intelligence.
 
-AI assistants were used during development. Their roles are disclosed in [AI Usage Disclosure](docs/AI_USAGE.md). Importantly, the public **Ask SIRA** runtime is model-free: it uses bounded question classification, server-side evidence retrieval, and registered deterministic calculations. Generative explanations are not enabled in this release. The deployed application does not call ChatGPT, Claude, or Gemini.
+OpenAI ChatGPT and Anthropic Claude assisted development. Their roles are disclosed in [AI Usage Disclosure](docs/AI_USAGE.md). Importantly, the public **Ask SIRA** runtime is model-free: it uses bounded question classification, server-side evidence retrieval, and registered deterministic calculations. Generative explanations are not enabled in this release. The deployed application does not call ChatGPT or Claude.
 
 NASA experimental records and scientific numeric outputs are not AI-generated. The PSI-25 evidence-synthesis build is deterministic and its manifest records `llm_used: false`.
 
@@ -104,8 +104,4 @@ SIRA FireLab is an independently developed participant project using cited NASA 
 
 The public repository does not include NASA insignia, seal, or logotype assets. For any separate presentation, slide, or video, follow the current [NASA Space Apps Brand Guide](https://www.spaceappschallenge.org/brand/); do not modify the official Space Apps mark or use NASA identifiers in a way that implies endorsement.
 
-## Local-event dataset context
-
-**Team-reported context:** local-event teachers/mentors supplied the PSI-69 FLEX Version 5 and PSI-25 BASS-II Study Version 4 data packages and instructed the team to use them for local judging. The team selected and used those exact snapshots. The underlying scientific records are attributed to NASA's Physical Sciences Informatics repository. This local-event instruction is separate from the repository-level challenge Resources listing described above.
-
-The data snapshot is frozen for this public release candidate. Any later source alignment or dataset addition must be documented as a separate explicit update rather than silently replacing the released baseline.
+The released dataset snapshot and its source-selection record are documented in [Data Sources](docs/DATA_SOURCES.md). Any later source alignment or dataset addition must be documented as a separate explicit update rather than silently replacing the released baseline.
