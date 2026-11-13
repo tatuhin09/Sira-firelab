@@ -77,7 +77,7 @@ NASA's own media guidance says NASA media should be acknowledged and must not be
 
 ## 7. Short disclosure for the submission form
 
-> SIRA FireLab's development was assisted by OpenAI ChatGPT and Anthropic Claude for planning, architecture discussions, task specification, code drafting/refinement, debugging, test design/review, technical review, and documentation. AI-assisted code is included in the public repository and was reviewed and tested by the project team. The demo video includes selected AI-generated visual segments, NASA video excerpts, and real screen recordings of the running application. AI-generated visual segments are visibly watermarked as AI-generated. The narration is recorded by a team member in her own voice; no AI-generated voice is used. NASA footage sources are credited in the video. The deployed Ask SIRA feature does not call generative models: it is a model-free, server-side evidence assistant using registered deterministic analyses. NASA experimental data were not AI-generated or altered, and scientific numerical outputs and PSI-25 evidence-synthesis artifacts are produced deterministically (`llm_used: false`). Exact model-version identifiers were not consistently recorded.
+> SIRA FireLab's development was assisted by OpenAI ChatGPT and Anthropic Claude for planning, architecture discussions, task specification, code drafting/refinement, debugging, test design/review, technical review, and documentation. AI-assisted code is included in the public repository and was reviewed and tested by the project team. The demo video includes selected AI-generated visual segments, NASA video excerpts, and real screen recordings of the running application. AI-generated visual segments will be visibly watermarked as AI-generated before the video is published. The narration is recorded by a team member in her own voice; no AI-generated voice is used. NASA footage sources are credited in the video. The deployed Ask SIRA feature does not call generative models: it is a model-free, server-side evidence assistant using registered deterministic analyses. NASA experimental data were not AI-generated or altered, and scientific numerical outputs and PSI-25 evidence-synthesis artifacts are produced deterministically (`llm_used: false`). Exact model-version identifiers were not consistently recorded.
 
 ## 8. Sources and responsibility
 
@@ -88,16 +88,3 @@ NASA's own media guidance says NASA media should be acknowledged and must not be
 - 2026 NASA Space Apps Participant Terms and Conditions: https://www.spaceappschallenge.org/legal/
 
 The project team is responsible for verifying every factual statement, dataset citation, license, AI-use disclosure, video watermark, NASA footage credit, and final submission field.
-
-## 7. Short disclosure for the submission form
-
-> SIRA FireLab's development was assisted by OpenAI ChatGPT and Anthropic Claude for planning, architecture discussions, task specification, code drafting/refinement, debugging, test design/review, technical review, and documentation. AI-assisted code is included in the public repository and was reviewed and tested by the project team. The deployed Ask SIRA feature does not call these models: it is a model-free, server-side evidence assistant using registered deterministic analyses. NASA experimental data were not AI-generated or altered, and scientific numerical outputs and PSI-25 evidence-synthesis artifacts are produced deterministically (`llm_used: false`). Exact model-version identifiers were not consistently recorded.
-
-## 8. Sources and responsibility
-
-- NASA Space Apps Challenge 2026 — Flame in Freefall: https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/
-- NASA GO Team, AI-tool disclosure and challenge Resources guidance, Discussion #1849: https://github.com/nasa/spaceapps/discussions/1849
-- NASA GO Team, Submission format and branding, Discussion #1858 (9 November 2026): https://github.com/nasa/spaceapps/discussions/1858
-- 2026 NASA Space Apps Participant Terms and Conditions: https://www.spaceappschallenge.org/legal/
-
-The project team is responsible for verifying every factual statement, dataset citation, license, AI-use disclosure, and final submission field.
