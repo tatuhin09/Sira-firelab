@@ -57,7 +57,7 @@ The challenge uses **SI** to mean **super intelligence**. SIRA FireLab follows t
 
 OpenAI ChatGPT and Anthropic Claude assisted development. Their roles are disclosed in [AI Usage Disclosure](docs/AI_USAGE.md). Importantly, the public **Ask SIRA** runtime is model-free: it uses bounded question classification, server-side evidence retrieval, and registered deterministic calculations. Generative explanations are not enabled in this release. The deployed application does not call ChatGPT or Claude.
 
-NASA experimental records and scientific numeric outputs are not AI-generated. The PSI-25 evidence-synthesis build is deterministic and its manifest records `llm_used: false`.
+NASA experimental records and scientific numeric outputs are not AI-generated. The PSI-25 evidence-synthesis build is deterministic and its manifest records `llm_used: false`. The team's demo video combines selected AI-generated visual segments, NASA video excerpts, real application screen recordings, and human-recorded narration; see [AI Usage Disclosure](docs/AI_USAGE.md) for watermark and source-credit requirements.
 
 ## Run the offline research workspace
 
