@@ -82,8 +82,7 @@
         "doi": "10.60555/mbq8-0451",
         "repository": "NASA Physical Sciences Informatics",
         "license_metadata": "CC0-1.0",
-        "challenge_resources_tab_match_verified": true,
-        "challenge_resources_match_scope": "source repository is the challenge-listed PSI Data Repository: Combustion Science; investigation ID is not separately named in the challenge entry"
+        "challenge_resources_tab_match_verified": false
       },
       {
         "investigation": "PSI-25",
@@ -94,11 +93,10 @@
         "repository": "NASA Physical Sciences Informatics",
         "license_metadata": "CC0-1.0",
         "license_metadata_scope": "Investigation-level metadata; not an independent file-by-file legal review.",
-        "challenge_resources_tab_match_verified": true,
-        "challenge_resources_match_scope": "source repository is the challenge-listed PSI Data Repository: Combustion Science; investigation ID is not separately named in the challenge entry"
+        "challenge_resources_tab_match_verified": false
       }
     ],
-    "challenge_resources_alignment": "matched_repository_level_resource_entry; individual PSI-69 and PSI-25 records cited separately",
+    "challenge_resources_alignment": "pending_exact_resources_list_verification",
     "future_updates": "Any later source alignment is to be recorded as a separate explicit update; this snapshot must not be silently overwritten.",
     "software_license": {
       "repository_license_file_present": false,
@@ -149,6 +147,7 @@
         "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25"
       }
     ],
-    "precision_note": "The challenge Resources entry names the PSI repository at repository level; it does not separately enumerate PSI-69 or PSI-25."
+    "precision_note": "The challenge Resources entry names the PSI repository at repository level; it does not separately enumerate PSI-69 or PSI-25.",
+    "verification_basis": "Official challenge Resources text supplied by the team and NASA PSI investigation records; exact source identifiers cross-referenced."
   }
 }
