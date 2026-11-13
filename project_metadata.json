@@ -8,23 +8,35 @@
     {
       "name": "OpenAI ChatGPT",
       "uses": [
-        "planning",
+        "project planning",
         "architecture discussions",
-        "code drafting/refinement",
+        "task and prompt specification",
+        "code drafting and refinement",
         "debugging",
-        "test design/review",
+        "test design and review",
+        "technical review",
         "documentation"
       ]
     },
     {
       "name": "Anthropic Claude",
       "uses": [
-        "planning",
+        "project planning",
         "architecture discussions",
-        "code drafting/refinement",
+        "code drafting and refinement",
         "debugging",
-        "test design/review",
+        "test design and review",
+        "verification support",
         "documentation"
+      ]
+    },
+    {
+      "name": "Google Gemini",
+      "uses": [
+        "development masterplans",
+        "task decomposition",
+        "implementation guidance",
+        "iterative development coordination"
       ]
     }
   ],
@@ -64,7 +76,8 @@
     "full_ai_disclosure": "docs/AI_USAGE.md",
     "data_provenance": "docs/DATA_SOURCES.md",
     "methods": "docs/METHODS.md",
-    "NASA_compliance": "docs/NASA_COMPLIANCE.md"
+    "NASA_compliance": "docs/NASA_COMPLIANCE.md",
+    "runtime_ai_status": "Ask SIRA is model-free in the public release; registered deterministic analyses; generative explanations disabled."
   },
   "license_status": "Apache-2.0 adopted for original SIRA FireLab project software; both contributors approved public release and licensing. Third-party and NASA source materials retain separate applicable terms; see docs/LICENSE_STATUS.md.",
   "challenge_resources_entry_verified": true,
