@@ -52,9 +52,20 @@ The optional scholarly-reference workflow may retrieve bibliographic metadata fr
 - Missing, approximate, censored, and invalid values remain subject to the documented source and analysis rules; the project does not silently impute missing measurements.
 - AI-assisted software code and documentation are disclosed, but they must not be confused with AI-generated experimental evidence.
 
-## 6. Images, video, and audio
+## 6. Demo video, images, and audio
 
-No AI-generated image, video, or audio asset is identified in the checked public repository snapshot. Any separately prepared slides, screen recordings, voice-over, music, or other submission materials must be reviewed by the team.
+The team's demo video is being prepared with a mixed-media format:
+
+| Component | Actual production method | Disclosure |
+|---|---|---|
+| Selected visual segments | AI-generated visuals/video | Must have a visible, readable watermark stating **AI-GENERATED** on the generated portions, as required by the NASA GO Team. |
+| NASA footage | Excerpts from NASA video material | Credit NASA and identify the exact source clip title and official URL in the video's end credits or description. Verify that the selected clip does not contain separately copyrighted third-party footage or music requiring permission. |
+| Product demonstration | Real screen recordings of the running SIRA FireLab application | These are actual recordings of the implemented product, not AI-generated interface mockups. |
+| Narration | Recorded in Sadia's own voice | Human-recorded narration; no AI-generated voice or narration is being used. |
+
+**Before publication:** place a visible **AI-GENERATED** watermark over every AI-generated visual/video segment. The label should remain on screen for the entire generated segment and be clear enough to read. Do not put NASA logos, insignia, flags, mission identifiers, or other NASA branding into AI-generated content. Do not edit AI-generated footage to make it appear to be authentic NASA footage, a real spaceflight recording, or actual experimental evidence.
+
+The exact NASA clip titles and official source URLs have not yet been entered in this repository. Add them to the final video credits/description and to the submission's references before uploading. A general NASA acknowledgment is not a substitute for identifying the actual clips used.
 
 The NASA GO Team's AI-use clarification states that:
 - AI-generated images and videos must carry a visible watermark identifying them as AI-generated.
@@ -62,7 +73,21 @@ The NASA GO Team's AI-use clarification states that:
 - AI-generated code and data must be acknowledged in descriptive text and metadata.
 - AI-generated content must not use, contain, or modify NASA branding or design elements such as NASA logos, flags, or mission identifiers.
 
-If AI-generated media is added, disclose it and follow those requirements. Do not imply that AI-generated media is human-recorded or original photography.
+NASA's own media guidance says NASA media should be acknowledged and must not be used to imply NASA endorsement. NASA-hosted audiovisual material can sometimes include third-party copyrighted footage or music; NASA's publication of such material does not automatically grant reuse rights for those third-party elements. Check the selected clip's own markings, credits, and usage notes.
+
+## 7. Short disclosure for the submission form
+
+> SIRA FireLab's development was assisted by OpenAI ChatGPT and Anthropic Claude for planning, architecture discussions, task specification, code drafting/refinement, debugging, test design/review, technical review, and documentation. AI-assisted code is included in the public repository and was reviewed and tested by the project team. The demo video includes selected AI-generated visual segments, NASA video excerpts, and real screen recordings of the running application. AI-generated visual segments are visibly watermarked as AI-generated. The narration is recorded by a team member in her own voice; no AI-generated voice is used. NASA footage sources are credited in the video. The deployed Ask SIRA feature does not call generative models: it is a model-free, server-side evidence assistant using registered deterministic analyses. NASA experimental data were not AI-generated or altered, and scientific numerical outputs and PSI-25 evidence-synthesis artifacts are produced deterministically (`llm_used: false`). Exact model-version identifiers were not consistently recorded.
+
+## 8. Sources and responsibility
+
+- NASA Space Apps Challenge 2026 — Flame in Freefall: https://www.spaceappschallenge.org/2026/challenges/flame-in-freefall/
+- NASA GO Team, AI-tool disclosure and challenge Resources guidance, Discussion #1849: https://github.com/nasa/spaceapps/discussions/1849
+- NASA GO Team, Submission format and branding, Discussion #1858 (9 November 2026): https://github.com/nasa/spaceapps/discussions/1858
+- NASA Images and Media Usage Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/
+- 2026 NASA Space Apps Participant Terms and Conditions: https://www.spaceappschallenge.org/legal/
+
+The project team is responsible for verifying every factual statement, dataset citation, license, AI-use disclosure, video watermark, NASA footage credit, and final submission field.
 
 ## 7. Short disclosure for the submission form
 
