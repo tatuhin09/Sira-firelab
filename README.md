@@ -17,6 +17,26 @@ The current application navigation, extracted from the shipped interface, is:
 - Research Lab
 - Methods & Sources
 
+## Live project
+
+- **Public demo:** https://sira-firelab.nicesmoke-f799e021.malaysiawest.azurecontainerapps.io/
+- **Public source repository:** https://github.com/tatuhin09/Sira-firelab
+
+The hosted demo is an offline-ready research prototype. It may scale to zero when idle and may take time to wake for a new visitor. It is not a hardened multi-user production service.
+
+## Challenge-listed NASA data resource
+
+The official Flame in Freefall Challenge Resources list names **PSI Data Repository: Combustion Science**: https://psi.nasa.gov/physci/repo/search?q=combustion
+
+SIRA FireLab uses two investigation datasets hosted by that repository:
+
+| Investigation | Release | Records | DOI | NASA PSI record |
+|---|---|---:|---|---|
+| PSI-69 FLEX | Version 5 | 274 | `10.60555/mbq8-0451` | https://psi.nasa.gov/physci/repo/data/investigations/PSI-69 |
+| PSI-25 BASS-II | Study Version 4 | 129 | `10.60555/4qc4-de67` | https://psi.nasa.gov/physci/repo/data/investigations/PSI-25 |
+
+**Attribution precision:** the challenge entry names the PSI repository at repository level; it does not separately list the PSI-69 or PSI-25 identifiers. The investigation records identify the exact datasets bundled by this project. The datasets remain separate and are not pooled.
+
 ## NASA investigations
 
 | NASA investigation | Release | Bundled experimental records | DOI |
