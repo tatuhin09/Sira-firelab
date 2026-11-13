@@ -8,67 +8,84 @@
 
 **SIRA Earth Intelligence**
 
+## Challenge
+
+**Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data**
+
 ## High-level project summary
 
-SIRA FireLab transforms NASA microgravity combustion research into an interactive, traceable evidence workspace. It verifies source datasets, preserves measurement-quality limits, and produces reproducible summaries, bounded cohort rankings, research questions, and claim-level evidence to help researchers understand combustion findings relevant to human-spaceflight fire-safety research.
+SIRA FireLab is an evidence-grounded research workspace that makes NASA microgravity combustion data easier to explore, analyze, and trace. It brings two NASA Physical Sciences Informatics investigations—PSI-69 FLEX and PSI-25 BASS-II—into separate, provenance-preserving explorers and combines deterministic scientific analysis, bounded evidence rankings, research questions, and claim-level verification. It helps users inspect experimental conditions and understand what the available evidence supports, what remains uncertain, and where further research is needed. It is a research tool, not an operational fire-response or certified spacecraft-safety system.
 
 ## Detailed project description
 
-As human exploration returns to the Moon and prepares for missions to Mars, understanding fire and combustion behavior in spacecraft and future habitats is an important research need. NASA's microgravity combustion experiments contain valuable observations, but findings are distributed across investigations, source tables, technical reports, and scholarly literature. Discovering and comparing these records while preserving their original experimental context is difficult.
+As human exploration returns to the Moon and prepares for missions to Mars, understanding combustion behavior in spacecraft and future habitats is an important research need. NASA microgravity combustion investigations contain valuable observations, but data tables, investigation records, technical reports, and scholarly references can be difficult to navigate together while preserving original experimental context.
 
-SIRA FireLab brings NASA combustion evidence into one interactive research workspace. It includes two NASA Physical Sciences Informatics investigations: PSI-69 FLEX Version 5 with 274 experimental records and PSI-25 BASS-II Study Version 4 with 129 experimental records. Each investigation retains its own release, record identity, provenance, analysis scope, and limitations; the records are not pooled into a single experimental dataset.
+SIRA FireLab organizes this evidence into an interactive research workspace. It includes two NASA Physical Sciences Informatics investigations: PSI-69 FLEX Version 5 with 274 experimental records and PSI-25 BASS-II Study Version 4 with 129 experimental records. Both are hosted by the NASA PSI Data Repository: Combustion Science resource listed in the Flame in Freefall Challenge Resources. The challenge entry names the repository; the two investigation records identify the exact datasets used. Each investigation retains its own release, record identity, provenance, analysis scope, and limitations. Records are not pooled into one experimental dataset.
 
-Researchers can inspect source records and experimental conditions, review exact/approximate/missing/invalid measurement status, and run registered descriptive analyses. The FLEX workspace provides outcome summaries, exact-value burning-rate summaries, measurement-quality reporting, and bounded condition comparisons. The BASS-II workspace provides paired-measurement eligibility audits, record-level exclusions, descriptive cohort statistics, within-metric rankings, and deterministic evidence-synthesis cards.
+Users inspect source records and experimental conditions, review exact, approximate, missing, and invalid measurement states, and run registered descriptive analyses. FLEX provides outcome summaries, exact-value burning-rate summaries, measurement-quality reporting, and bounded condition comparisons. BASS-II provides paired-measurement eligibility audits, record-level exclusions, descriptive cohort statistics, within-metric rankings, and deterministic evidence-synthesis cards.
 
-The research workflow links questions, selected NASA investigations, registered calculations, source records, exclusions, and resulting claims. The Claim Ledger and scientific verifier check source lineage, record scope, numeric outputs, evidence coverage, and interpretation safeguards. Research questions expose evidence gaps that can guide future investigation.
+The research workflow links questions, selected NASA investigations, registered calculations, source records, exclusions, and resulting claims. The Claim Ledger and scientific verifier check source lineage, record scope, numeric outputs, evidence coverage, and interpretation safeguards. Research questions expose evidence gaps that can guide further investigation.
 
 The system prioritizes transparency: approximate values are not treated as exact, missing values are not silently imputed, source labels and unresolved differences remain visible, and potentially reused sample identifiers are retained as caveats. Rankings remain limited to their declared metric and cohort.
 
 SIRA FireLab provides foundational descriptive evidence for researchers studying combustion in microgravity and its relevance to future human exploration. It is not an operational firefighting system, certified spacecraft safety model, universal safest-material ranking, or validated prediction of spacecraft fire behavior.
 
-## Demo URL
+## Public demo URL
 
-`[ADD THE FINAL PUBLICLY ACCESSIBLE DEMO URL]`
+https://sira-firelab.nicesmoke-f799e021.malaysiawest.azurecontainerapps.io/
 
-## Final project URL
+The hosted demo may scale to zero when idle and can take time to wake. It is a research prototype, not a hardened multi-user production service.
 
-`[ADD THE FINAL PUBLIC REPOSITORY OR PROJECT URL]`
+## Final project / source repository URL
 
-## NASA data resources
+https://github.com/tatuhin09/Sira-firelab
 
-- NASA PSI-69 FLEX, Version 5. DOI `10.60555/mbq8-0451`: https://psi.nasa.gov/physci/repo/data/investigations/PSI-69
-- NASA PSI-25 BASS-II, Study Version 4. DOI `10.60555/4qc4-de67`: https://psi.nasa.gov/physci/repo/data/investigations/PSI-25
-- NASA/TP-2015-216046, NTRS record `20150023456`: https://ntrs.nasa.gov/citations/20150023456
+## NASA data resource listed by the challenge
 
-**Before submitting:** confirm the exact source entry in the challenge's official Resources tab and include its displayed name and URL in the NASA Data and References field.
+**PSI Data Repository: Combustion Science**  
+https://psi.nasa.gov/physci/repo/search?q=combustion
 
-## Other scholarly resources
+Exact investigation datasets used from this repository:
 
+- NASA PSI-69 FLEX, Version 5; 274 records; DOI 10.60555/mbq8-0451: https://psi.nasa.gov/physci/repo/data/investigations/PSI-69
+- NASA PSI-25 BASS-II, Study Version 4; 129 records; DOI 10.60555/4qc4-de67: https://psi.nasa.gov/physci/repo/data/investigations/PSI-25
+
+The challenge entry names the repository, not the individual investigation IDs. Cite the repository as the challenge-listed resource and both investigation pages as the exact datasets used.
+
+## Other NASA and scholarly resources
+
+- NASA/TP-2015-216046, NTRS record 20150023456: https://ntrs.nasa.gov/citations/20150023456
+- NASA Combustion Science: https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/
+- A Researcher's Guide to ISS Combustion Science: https://www.nasa.gov/missions/station/a-researchers-guide-to-combustion-science/
 - Crossref: https://www.crossref.org/
 - OpenAlex: https://openalex.org/
 - Semantic Scholar: https://www.semanticscholar.org/
 - arXiv: https://arxiv.org/
 
-These services are used for scholarly metadata discovery, not as experimental data sources.
+Include only resources actually used in project research, implementation, or presentation. List all code, text, images, video, tools, and other materials actually used, including freely available assets.
 
-## AI/SI tools
+## AI/SI tools disclosure
 
-OpenAI ChatGPT and Anthropic Claude assisted software development, including planning, architecture discussions, code drafting/refinement, debugging, test design/review, and documentation. AI-assisted code was reviewed and tested. NASA experimental data were not generated by AI. Numerical parsing, analysis, rankings, and PSI-25 evidence synthesis are deterministic. See `AI_USAGE.md`.
+OpenAI ChatGPT and Anthropic Claude assisted software development, including planning, architecture discussions, code drafting/refinement, debugging, test design/review, verification support, and documentation. AI-assisted code and suggestions were reviewed and tested. NASA experimental data and deterministic numerical results were not AI-generated. Parsing, registered calculations, cohort summaries, rankings, and PSI-25 evidence synthesis are deterministic. See docs/AI_USAGE.md.
 
-## Tools and resources
+Before submitting, confirm this disclosure with every team contributor and add any other AI tools actually used by any contributor. Do not list tools that were not used.
 
-List Python, Node.js, pytest, SIRA FireLab, NASA PSI source data, NASA technical reporting, scholarly metadata providers, and every additional code, text, image, video, or other resource actually used by the team in the designated submission fields.
+## NASA independence statement
 
-<!-- SIRA_FIRELAB_RELEASE_BASELINE_V1 -->
-## Data provenance wording for the submission form
+SIRA FireLab is an independently developed participant project. NASA does not endorse this non-U.S. Government project. The project is not a NASA product and does not imply NASA sponsorship, certification, or operational approval.
 
-SIRA FireLab uses two NASA Physical Sciences Informatics data snapshots: PSI-69 FLEX Version 5 (274 retained records; DOI: 10.60555/mbq8-0451) and PSI-25 BASS-II Version 4 (129 records; DOI: 10.60555/4qc4-de67). The team reports that its local-event teachers/organizers provided these data packages and instructed the team to use them for local-event judging. The submission should cite both repository records and list every other data source, tool, codebase, text, image, and asset actually used.
+## Demo video
 
-Do not describe either dataset as a challenge-Resources-tab entry unless the published *Flame in Freefall* Resources list has been checked and the exact entry matched. Keep the AI-use disclosure consistent with `docs/AI_USAGE.md` and `project_metadata.json`: development assistance used ChatGPT and Claude; do not list tools that were not used.
+Status: to be recorded and uploaded by the team. Add the final publicly accessible video URL here: [ADD VIDEO URL]
 
-<!-- SIRA_LOCAL_EVENT_INSTRUCTION_CONTEXT_V1 -->
-## Local-event dataset instruction and judging context
+Suggested 2–3 minute walkthrough: challenge and project purpose; Overview; PSI-69 FLEX explorer; PSI-25 BASS-II explorer; Research Lab and Claim Ledger; Ask SIRA; Methods & Sources and scientific limitations. Use actual application footage and truthful narration.
 
-**Team-reported context:** the local-event teachers/mentors supplied the PSI-69 FLEX Version 5 and PSI-25 BASS-II Version 4 data packages and instructed the team to use these datasets for local judging. The team selected and used these exact snapshots in line with that local-event instruction. The scientific source records remain attributed to NASA's Physical Sciences Informatics repository.
+## Team confirmation before submission
 
-This local-event instruction is distinct from the international challenge's challenge-specific Resources list. The current snapshots remain the team's frozen baseline. Once the official *Flame in Freefall* Resources list is published, the team will compare the listed identifiers with these exact datasets. If they match, no dataset replacement is needed; if they do not, any additional challenge-resource integration will be documented as a separate explicit update while preserving this local-event baseline.
+- Confirm exact registered team name, member list, and Local Event.
+- Confirm every contributor's AI-tool use and acknowledgements.
+- Confirm all external data, code, text, images, video, and other assets actually used.
+- Confirm rights/permissions for third-party materials.
+- Confirm local-event deadline and official NASA platform deadline separately.
+- Review the live Project Submission Guide and every required form field.
+- Confirm Participant Terms and Conditions acceptance by the authorized submitter.
