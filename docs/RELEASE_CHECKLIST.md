@@ -21,10 +21,12 @@
 
 ## AI/SI disclosure
 
-- [x] OpenAI ChatGPT and Anthropic Claude listed as development assistants.
-- [x] Software-development assistance described in AI_USAGE.md and project_metadata.json.
+- [x] OpenAI ChatGPT, Anthropic Claude, and Google Gemini listed as development assistants based on the project-development history and existing project records.
+- [x] Development uses, AI-assisted code inclusion, and model-version uncertainty described in `AI_USAGE.md`.
+- [x] Public Ask SIRA runtime accurately described as model-free with deterministic registered analyses; generative explanations are disabled.
 - [x] NASA experimental data and deterministic numerical results identified as not AI-generated.
-- [ ] Confirm disclosure with every contributor and add any other AI tools actually used; do not list unused tools.
+- [ ] Confirm disclosure with every contributor and add any other AI/SI tools actually used; do not list unused tools.
+- [ ] Check any separately created demo video, slides, narration, music, and other media; apply the GO Team's AI-generated media watermark/metadata rules where applicable.
 
 ## Rights and licensing
 
