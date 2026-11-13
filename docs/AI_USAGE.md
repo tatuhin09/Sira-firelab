@@ -19,7 +19,7 @@ The project used the following AI assistants during development:
 | OpenAI | ChatGPT | Project planning, architecture discussions, task and prompt specification, code drafting/refinement, debugging, test design/review, technical review, and documentation. | Exact model identifiers were not consistently recorded. |
 | Anthropic | Claude | Planning, architecture discussions, code drafting/refinement, debugging, test design/review, verification support, and documentation. | Exact model identifiers were not consistently recorded. |
 
-**These are the two AI development tools used by the team. Gemini was not used and is intentionally not listed.** This is a project-level disclosure, not an attribution of every individual change to a particular contributor.
+**These are the two AI development tools used by the team.** This is a project-level disclosure, not an attribution of every individual change to a particular contributor.
 
 ## 3. How AI assistance was used
 
