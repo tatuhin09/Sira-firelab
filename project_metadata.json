@@ -68,7 +68,8 @@
     "data_provenance": "docs/DATA_SOURCES.md",
     "methods": "docs/METHODS.md",
     "NASA_compliance": "docs/NASA_COMPLIANCE.md",
-    "runtime_ai_status": "Ask SIRA is model-free in the public release; registered deterministic analyses; generative explanations disabled."
+    "runtime_ai_status": "Ask SIRA is model-free in the public release; registered deterministic analyses; generative explanations disabled.",
+    "submission_media_disclosure": "docs/AI_USAGE.md"
   },
   "license_status": "Apache-2.0 adopted for original SIRA FireLab project software; both contributors approved public release and licensing. Third-party and NASA source materials retain separate applicable terms; see docs/LICENSE_STATUS.md.",
   "challenge_resources_entry_verified": true,
@@ -143,5 +144,25 @@
     ],
     "precision_note": "The challenge Resources entry names the PSI repository at repository level; it does not separately enumerate PSI-69 or PSI-25.",
     "verification_basis": "Official challenge Resources text supplied by the team and NASA PSI investigation records; exact source identifiers cross-referenced."
+  },
+  "submission_media": {
+    "demo_video_components": {
+      "ai_generated_visual_segments": true,
+      "nasa_video_excerpts": true,
+      "real_application_screen_recordings": true,
+      "narration": {
+        "type": "human_recorded",
+        "performer": "Sadia",
+        "ai_generated_voice": false
+      }
+    },
+    "requirements_before_publication": [
+      "Visible AI-GENERATED watermark throughout every AI-generated visual/video segment",
+      "No NASA branding, logos, flags, or mission identifiers in AI-generated content",
+      "Exact NASA source clip titles and official URLs in video credits/description and references",
+      "Review NASA source clips for embedded third-party copyrighted footage or music"
+    ],
+    "ai_generated_visual_watermark_status": "must_be_verified_before_publication",
+    "nasa_video_source_credit_status": "exact_clip_titles_and_urls_pending"
   }
 }
